@@ -10,7 +10,7 @@
  import React, { Component } from "react";
  import { Platform, Image, ScrollView, StyleSheet, Text, View } from "react-native";
  import {BackgroundCarousel} from './BackgroundCarousel'
-import Dime from "./Dime";
+ import Dime from "./Dime";
 
 
  const dime = [
