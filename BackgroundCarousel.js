@@ -33,7 +33,7 @@ class BackgroundCarousel extends React.Component {
 
         })
         
-        } , 4000)
+        } , 3500)
         
     }
     setSelectedIndex = event => {
@@ -55,7 +55,8 @@ class BackgroundCarousel extends React.Component {
         const {selectedIndex} = this.state
         return(
 
-        
+           
+      
             < View style ={{position: "absolute", bottom: 506, height: "40%", width: "100%"}}>
                     <ScrollView 
                     horizontal 
@@ -81,9 +82,13 @@ class BackgroundCarousel extends React.Component {
                             key={image}   style={[styles.whiteCircle, {opacity: i == selectedIndex ? 0.5 : 1}]} />
                         ))}
                     </View>             
+             
+
+                   
                   
 
            </View>
+    
       
 
       

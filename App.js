@@ -29,9 +29,34 @@
       
      <View style={styles.container}>
         <BackgroundCarousel images={dime} />
+        <ScrollView style={{position: "absolute", bottom: 0, height: "60%", width: "100%"}}>
         <Text style = {styles.welcome}>
           The Dime 
+          The Dime
+          The Dime
+          The Dime
+          The Dime
+          The Dime
+          The Dime
+          The Dime
+          The Dime
+          The Dime
+          The Dime
+          The Dime
+          The Dime
+          The Dime
+          The Dime
+          The Dime
+          The Dime 
+          The Dime
+          The Dime
+          The Dime
+          The Dime
+          The Dime
+          The Dime
         </Text>
+        </ScrollView>
+
     </View>
      );
    }
@@ -42,20 +67,22 @@
      flex: 1,
      justifyContent: "center",
      alignItems: "center",
-     backgroundColor: "#023047"
+     backgroundColor: "#219EBC"
    },
    welcome: {
-     fontSize: 35,
+     fontSize: 40,
      color: "#fff",
      textAlign: "center",
      bottom: 50,
      fontWeight: "bold",
+     fontFamily: "Futura",
      letterSpacing: 3.5,
      margin: 10
    },
    instructions: {
      textAlign: "center",
      color: "#333333",
+     fontFamily: "Economica-Bold",
      marginBottom: 5
    }
  });
