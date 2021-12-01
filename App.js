@@ -8,7 +8,7 @@
 
 
  import React, { Component } from "react";
- import { Platform, Image, ScrollView, StyleSheet, Text, View } from "react-native";
+ import { Platform, Button, SafeAreaView, Alert, Image, ScrollView, StyleSheet, Text, View } from "react-native";
  import {BackgroundCarousel} from './BackgroundCarousel'
  import Dime from "./Dime";
 
@@ -27,19 +27,19 @@
      return (
       
      <View style={styles.container}>
+{/* button press will trigger the view change (ex: images, bar info, etc) */}
         <BackgroundCarousel images={dime} />
-        <ScrollView style={{position: "absolute", bottom: 0, height: "60%", width: "100%"}}>
-        {
+        {/* <ScrollView style={{position: "absolute", bottom: 0, height: "60%", width: "100%"}}>
+        { */}
          
-
             <Dime />
 
-            
+ 
 
         
-        }
+        {/* }
 
-        </ScrollView>
+        </ScrollView> */}
 
     </View>
      );

@@ -1,11 +1,11 @@
-import {StyleSheet, Text, View, SafeAreaView, Button, Alert} from 'react-native';
+import {StyleSheet, Text, View, SafeAreaView, Button, Alert, Pressable, ScrollView} from 'react-native';
 import React from 'react';
 import { BackgroundCarousel } from './BackgroundCarousel';
 
 var barName = "The Dime";
 var barLocation = "2263 N Lincoln Ave, Chicago, IL 60614";
 var barBio = "The Dime is in the heart of Lincoln Park! \n A sports bar perfect for every occasion."
-var barDays = ["THURSDAY", "FRIDAY" , "SATURDAY", "SUNDAY"]
+var barDays = [" THURSDAY", "FRIDAY" , "SATURDAY", "SUNDAY"]
 
 
 
@@ -79,8 +79,10 @@ class Dime extends React.Component {
 
     render () {
         return (
-  
+<ScrollView keyboardShouldPersistTaps="always" style={{position: "absolute", bottom: 0, height: "60%", width: "100%"}}> 
   <View style = {styles.container}>
+
+
     <View style = {styles.container1}>
       <Text>
       <Text style = {styles.barTitle}>
@@ -101,14 +103,23 @@ class Dime extends React.Component {
             {"\n"}
             </Text>
           </Text>
+
+
+  
+
     </View>
 
-    {/* <SafeAreaView style = {styles.container1}> 
-          <Button 
-          color='orange'
-          title='Click Me' 
-          onPress={() => Alert.alert('Button tapped')} />
-    </SafeAreaView> */}
+
+  
+    <View style = {styles.container1}> 
+          <Pressable 
+          onPress={() => alert('Button tapped')} >
+          <Text>
+            Click Me
+          </Text>
+          </Pressable>
+    </View>
+
 
 <View style = {styles.container3}>
 <Text style = {styles.barHours}>
@@ -136,18 +147,17 @@ class Dime extends React.Component {
               {"\n"} {barDays[3]}
               </Text>
             <Text style = {styles.barAddress} >
-            {"\n"}11AM - 6PM
+            {"\n"} 11AM - 6PM
             </Text>
-
-            
 
   </View>
 
+ 
 
   
   </View>
 
-
+  </ScrollView>
         );
 }
 }

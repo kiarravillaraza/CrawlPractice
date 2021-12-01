@@ -81,21 +81,9 @@ class BackgroundCarousel extends React.Component {
                             <View 
                             key={image}   style={[styles.whiteCircle, {opacity: i == selectedIndex ? 0.5 : 1}]} />
                         ))}
-                    </View>             
-             
-
-                   
-                  
-
+                    </View>           
            </View>
     
-      
-
-      
-
-        
-    
-
         );
     }
 
