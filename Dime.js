@@ -68,11 +68,11 @@ const styles = StyleSheet.create({
         },
         container2 :{
           flex: 1, 
-          backgroundColor: 'black'
+          backgroundColor: '#023047'
         },
         container3 :{
           flex: 1, 
-          backgroundColor: '#023047'
+          backgroundColor: 'black'
         }
 });
 class Dime extends React.Component {
@@ -93,7 +93,7 @@ class Dime extends React.Component {
       </Text>
     </View>
 
-    <View style = {styles.container3}>
+    <View style = {styles.container2}>
         <Text>
             <Text style = {styles.barBiography} >
             {"\n"}
@@ -104,7 +104,7 @@ class Dime extends React.Component {
 
   </View>
 
-<View style = {styles.container2}>
+<View style = {styles.container3}>
 <Text style = {styles.barHours}>
             {"\n"} HOURS
           </Text>
