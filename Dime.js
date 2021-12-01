@@ -4,6 +4,11 @@ import { BackgroundCarousel } from './BackgroundCarousel';
 
 var barName = "The Dime";
 var barLocation = "2263 N Lincoln Ave, Chicago, IL 60614";
+var barBio = "The Dime is in the heart of Lincoln Park! \n A sports bar perfect for every occasion."
+var barDays = ["THURSDAY", "FRIDAY" , "SATURDAY", "SUNDAY"]
+
+
+
 const styles = StyleSheet.create({
     barTitle: {
     padding: 35,
@@ -47,14 +52,27 @@ const styles = StyleSheet.create({
         fontFamily: "Futura",
         letterSpacing: 3.5,
         },
-
+        barBiography: {
+          padding: 35,
+          margin: 20,
+          fontSize: 35,
+          color: "#ededed",
+          textAlign: "center",
+          bottom: 50,
+          fontFamily: "Futura",
+          letterSpacing: 3.5,
+          },
         container1: {
           flex: 1,
-          backgroundColor: '219EBC'
+          backgroundColor: '#219ebc'
         },
-        containter2 :{
+        container2 :{
           flex: 1, 
           backgroundColor: 'black'
+        },
+        container3 :{
+          flex: 1, 
+          backgroundColor: '#023047'
         }
 });
 class Dime extends React.Component {
@@ -74,36 +92,51 @@ class Dime extends React.Component {
             {"\n"}
       </Text>
     </View>
-<View style = {styles.containter2}>
+
+    <View style = {styles.container3}>
+        <Text>
+            <Text style = {styles.barBiography} >
+            {"\n"}
+            {barBio}
+            {"\n"}
+            </Text>
+          </Text>
+
+  </View>
+
+<View style = {styles.container2}>
 <Text style = {styles.barHours}>
             {"\n"} HOURS
           </Text>
             <Text style = {styles.barDays} >
-                THURSDAY
+            {barDays[0]}
             </Text>
             <Text style = {styles.barAddress} >
               {"\n"} 5PM - 2AM 
             </Text>
             <Text style = {styles.barDays} >
-                {"\n"} FRIDAY
+                {"\n"} {barDays[1]}
             </Text>
             <Text style = {styles.barAddress} >
               {"\n"} 5PM - 2AM
               </Text>
             <Text style = {styles.barDays} >
-                {"\n"} SATURDAY
+                {"\n"} {barDays[2]}
             </Text>
             <Text style = {styles.barAddress} >
             {"\n"}11AM - 3AM
             </Text>
             <Text style = {styles.barDays} >
-              {"\n"} SUNDAY 
+              {"\n"} {barDays[3]}
               </Text>
             <Text style = {styles.barAddress} >
             {"\n"}11AM - 6PM
             </Text>
 
   </View>
+
+
+  
   </View>
 
 
