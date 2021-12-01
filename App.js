@@ -30,8 +30,12 @@
         <BackgroundCarousel images={dime} />
         <ScrollView style={{position: "absolute", bottom: 0, height: "60%", width: "100%"}}>
         {
-    
-         <Dime />
+         
+
+            <Dime />
+
+            
+
         
         }
 
