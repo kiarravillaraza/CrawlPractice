@@ -136,24 +136,18 @@ class Dime extends React.Component {
           <Pressable 
           onPress={() => alert('Instagram')} >
           <Image
-          style = {{width: 126, height: 126, left: 10, marginTop: -3}}
+          style = {{width: 126, height: 126, left: 55, marginTop: -3}}
           source = {require('/Users/kiarravillaraza/CrawlPractice/src/img/instagram.png')} />
           </Pressable>
 
           <Pressable 
           onPress={() => alert('Facebook')} >
           <Image
-          style = {{width: 126, height: 126, left: 10, marginTop: -3}}
-          source = {require('/Users/kiarravillaraza/CrawlPractice/src/img/instagram.png')} />
+          style = {{width: 65, height: 65, left: 105, marginTop:25}}
+          source = {require('/Users/kiarravillaraza/CrawlPractice/src/img/facebook.png')} />
           </Pressable>
 
-          <Pressable 
-          onPress={() => alert('Facebook')} >
-          <Image
-          style = {{width: 126, height: 126, left: 10 , marginTop: -3}}
-          source = {require('/Users/kiarravillaraza/CrawlPractice/src/img/instagram.png')} />
-          </Pressable>
-    
+          
     </View>
 
 
