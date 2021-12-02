@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View, SafeAreaView, Button, Alert, Pressable, ScrollView} from 'react-native';
+import {StyleSheet, Text, View, SafeAreaView, Button, Alert, Pressable, Image, ScrollView} from 'react-native';
 import React from 'react';
 import { BackgroundCarousel } from './BackgroundCarousel';
 
@@ -73,6 +73,13 @@ const styles = StyleSheet.create({
         container3 :{
           flex: 1, 
           backgroundColor: 'black'
+        },
+        socials :{
+          width: '100%',
+          height: '10%',
+          flexDirection: 'row',
+          backgroundColor: '#81d9aa'
+
         }
 });
 class Dime extends React.Component {
@@ -111,13 +118,28 @@ class Dime extends React.Component {
 
 
   
-    <View style = {styles.container1}> 
+    <View style = {styles.socials}> 
           <Pressable 
-          onPress={() => alert('Button tapped')} >
-          <Text>
-            Click Me
-          </Text>
+          onPress={() => alert('Instagram')} >
+          <Image
+          style = {{width: 150, height: 150, left: -10, marginTop: -5}}
+          source = {require('/Users/kiarravillaraza/CrawlPractice/src/img/instagram.png')} />
           </Pressable>
+
+          <Pressable 
+          onPress={() => alert('Facebook')} >
+          <Image
+          style = {{width: 150, height: 150, left: -30, marginTop: -5}}
+          source = {require('/Users/kiarravillaraza/CrawlPractice/src/img/instagram.png')} />
+          </Pressable>
+
+          <Pressable 
+          onPress={() => alert('Facebook')} >
+          <Image
+          style = {{width: 150, height: 150, left: -50 , marginTop: -5}}
+          source = {require('/Users/kiarravillaraza/CrawlPractice/src/img/instagram.png')} />
+          </Pressable>
+    
     </View>
 
 

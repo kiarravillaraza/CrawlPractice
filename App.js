@@ -27,6 +27,7 @@
      return (
       
      <View style={styles.container}>
+
 {/* button press will trigger the view change (ex: images, bar info, etc) */}
         <BackgroundCarousel images={dime} />
         {/* <ScrollView style={{position: "absolute", bottom: 0, height: "60%", width: "100%"}}>
