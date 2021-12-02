@@ -31,6 +31,16 @@ const styles = StyleSheet.create({
         fontFamily: "Futura",
         letterSpacing: 3.5,
         },
+      barTimes: {
+          fontSize: 20,
+          color: "#ededed",
+          textAlign: "center",
+          bottom: 50,
+          fontWeight: "bold",
+          fontStyle: "italic",
+          fontFamily: "Futura",
+          letterSpacing: 3.5,
+        },
     barDays: {
         fontSize: 30,
         color: "#fff",
@@ -58,17 +68,18 @@ const styles = StyleSheet.create({
           fontSize: 35,
           color: "#ededed",
           textAlign: "center",
+          fontStyle: "italic",
           bottom: 50,
           fontFamily: "Futura",
           letterSpacing: 3.5,
           },
         container1: {
           flex: 1,
-          backgroundColor: '#219ebc'
+          backgroundColor: '#81d9aa'
         },
         container2 :{
           flex: 1, 
-          backgroundColor: '#023047'
+          backgroundColor: '#0f0f0f'
         },
         container3 :{
           flex: 1, 
@@ -76,11 +87,12 @@ const styles = StyleSheet.create({
         },
         socials :{
           width: '100%',
-          height: '10%',
+          height: '9%',
           flexDirection: 'row',
           backgroundColor: '#81d9aa'
 
-        }
+        },
+        
 });
 class Dime extends React.Component {
 
@@ -92,6 +104,7 @@ class Dime extends React.Component {
 
     <View style = {styles.container1}>
       <Text>
+      {"\n"}
       <Text style = {styles.barTitle}>
         {barName}
       </Text>
@@ -101,6 +114,8 @@ class Dime extends React.Component {
             {"\n"}
       </Text>
     </View>
+
+
 
     <View style = {styles.container2}>
         <Text>
@@ -117,26 +132,25 @@ class Dime extends React.Component {
     </View>
 
 
-  
     <View style = {styles.socials}> 
           <Pressable 
           onPress={() => alert('Instagram')} >
           <Image
-          style = {{width: 150, height: 150, left: -10, marginTop: -5}}
+          style = {{width: 126, height: 126, left: 10, marginTop: -3}}
           source = {require('/Users/kiarravillaraza/CrawlPractice/src/img/instagram.png')} />
           </Pressable>
 
           <Pressable 
           onPress={() => alert('Facebook')} >
           <Image
-          style = {{width: 150, height: 150, left: -30, marginTop: -5}}
+          style = {{width: 126, height: 126, left: 10, marginTop: -3}}
           source = {require('/Users/kiarravillaraza/CrawlPractice/src/img/instagram.png')} />
           </Pressable>
 
           <Pressable 
           onPress={() => alert('Facebook')} >
           <Image
-          style = {{width: 150, height: 150, left: -50 , marginTop: -5}}
+          style = {{width: 126, height: 126, left: 10 , marginTop: -3}}
           source = {require('/Users/kiarravillaraza/CrawlPractice/src/img/instagram.png')} />
           </Pressable>
     
@@ -150,25 +164,26 @@ class Dime extends React.Component {
             <Text style = {styles.barDays} >
             {barDays[0]}
             </Text>
-            <Text style = {styles.barAddress} >
+            <Text style = {styles.barTimes} >
               {"\n"} 5PM - 2AM 
             </Text>
             <Text style = {styles.barDays} >
                 {"\n"} {barDays[1]}
             </Text>
-            <Text style = {styles.barAddress} >
+            <Text style = {styles.barTimes} >
+           
               {"\n"} 5PM - 2AM
               </Text>
             <Text style = {styles.barDays} >
                 {"\n"} {barDays[2]}
             </Text>
-            <Text style = {styles.barAddress} >
+            <Text style = {styles.barTimes} >
             {"\n"}11AM - 3AM
             </Text>
             <Text style = {styles.barDays} >
               {"\n"} {barDays[3]}
               </Text>
-            <Text style = {styles.barAddress} >
+            <Text style = {styles.barTimes} >
             {"\n"} 11AM - 6PM
             </Text>
 
