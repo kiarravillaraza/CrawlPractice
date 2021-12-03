@@ -11,6 +11,7 @@
  import { Platform, Button, SafeAreaView, Alert, Image, ScrollView, StyleSheet, Text, View } from "react-native";
  import {BackgroundCarousel} from './BackgroundCarousel'
  import Dime from "./Dime";
+import Halligan from "./Halligan";
 import Replay from "./Replay";
 
 
@@ -22,8 +23,9 @@ import Replay from "./Replay";
      <View style={styles.container}>
 
 
-            {/* <Dime />            */}
-            <Replay />
+            <Dime />           
+            {/* <Replay /> */}
+            <Halligan />
 
     </View>
      );
