@@ -10,8 +10,7 @@
  import React, { Component } from "react";
  import { Platform, Button, SafeAreaView, Alert, Image, ScrollView, StyleSheet, Text, View } from "react-native";
  import {BackgroundCarousel} from './BackgroundCarousel'
- import Dime from "./Bars/Dime";
-import Replay from "./Bars/Replay";
+ import Dime from "./Dime";
 
 
 
@@ -23,7 +22,6 @@ import Replay from "./Bars/Replay";
 
 
             <Dime />
-            {/* <Replay /> */}
 
     </View>
      );
