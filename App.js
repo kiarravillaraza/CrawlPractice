@@ -21,7 +21,9 @@
      <View style={styles.container}>
 
 
-            <Dime />
+            {/* <Dime />           */}
+            <Replay />
+
 
     </View>
      );
