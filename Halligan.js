@@ -155,7 +155,6 @@ class Halligan extends React.Component {
             {"\n"}
             </Text>
           </Text>
-
     </View>
 
 
@@ -218,7 +217,6 @@ class Halligan extends React.Component {
             <Text style = {styles.barTimes} >
             {"\n"} 11AM - 2AM
             </Text>
-
   </View>
 
   
@@ -227,6 +225,7 @@ class Halligan extends React.Component {
   </View>
 
   </ScrollView> 
+  
   </View>
 
 
