@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View, SafeAreaView, Button, Alert, Pressable, Image, ScrollView} from 'react-native';
+import {StyleSheet, Text, View, SafeAreaView, Button, Alert, Pressable, Image, ScrollView, Linking} from 'react-native';
 import React from 'react';
 import { BackgroundCarousel } from './BackgroundCarousel';
 
@@ -77,21 +77,22 @@ const styles = StyleSheet.create({
           flex: 1,
           backgroundColor: '#81d9aa'
         },
-        container2 :{
+        container2: {
           flex: 1, 
           backgroundColor: '#0f0f0f'
         },
-        container3 :{
+        container3: {
           flex: 1, 
           backgroundColor: 'black'
         },
-        socials :{
+        socials: {
           width: '100%',
-          height: '9%',
+          height: '8%',
           flexDirection: 'row',
           backgroundColor: '#81d9aa'
 
         },
+      
         
 });
 class Dime extends React.Component {
@@ -134,24 +135,28 @@ class Dime extends React.Component {
 
     <View style = {styles.socials}> 
           <Pressable 
-          onPress={() => alert('Instagram')} >
+          onPress={() => Linking.openURL('https://www.instagram.com/thedimechi/')} >
           <Image
-          style = {{width: 130, height: 130, left: 55, marginTop: -5}}
+          style = {{width: 130, height: 130, left: 55, marginTop: 0}}
           source = {require('/Users/kiarravillaraza/CrawlPractice/src/img/instagram.png')} />
           </Pressable>
 
           <Pressable 
-          onPress={() => alert('Facebook')} >
+          onPress={() => Linking.openURL('https://www.facebook.com/thedimechi/')} >
           <Image
-          style = {{width: 65, height: 65, left: 105, marginTop:25}}
+          style = {{width: 65, height: 65, left: 105, marginTop:30}}
           source = {require('/Users/kiarravillaraza/CrawlPractice/src/img/facebook.png')} />
-          </Pressable>
-
-          
+          </Pressable> 
     </View>
 
 
 <View style = {styles.container3}>
+<Pressable 
+          onPress={() => Linking.openURL('https://thedimechi.com')} >
+    <Image
+          style = {{width: 250, height: 250, left: 70, marginTop: 70}}
+          source = {require('/Users/kiarravillaraza/CrawlPractice/src/img/dimeLogo.png')} />
+</Pressable>
 <Text style = {styles.barHours}>
             {"\n"} HOURS
           </Text>
@@ -183,7 +188,7 @@ class Dime extends React.Component {
 
   </View>
 
- 
+  
 
   
   </View>
