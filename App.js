@@ -10,8 +10,8 @@
  import React, { Component } from "react";
  import { Platform, Button, SafeAreaView, Alert, Image, ScrollView, StyleSheet, Text, View } from "react-native";
  import {BackgroundCarousel} from './BackgroundCarousel'
- import Dime from "./Dime";
-import Replay from "./Replay";
+ import Dime from "./Bars/Dime";
+import Replay from "./Bars/Replay";
 
 
  export default class App extends Component {

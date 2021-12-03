@@ -1,33 +1,32 @@
-import {StyleSheet, Text, View, SafeAreaView, Button, Alert, Pressable, Image, ScrollView, Linking} from 'react-native';
+import {Platform, StyleSheet, Text, View, SafeAreaView, Button, Alert, Pressable, Image, ScrollView, Linking} from 'react-native';
 import React from 'react';
-import { BackgroundCarousel } from './BackgroundCarousel';
+import { BackgroundCarousel } from '../BackgroundCarousel';
 
-var barName = "Replay";
-var barLocation = "2833 N Sheffield Ave, Chicago, IL 60657";
-var barBio = "Replay is your source for quality entertainment since 2012. \n Great cocktails, awesome pop-ups, and did we mention free games?"
-var barDays = [ " MONDAY", " THURSDAY", "FRIDAY" , "SATURDAY", "SUNDAY"]
+var barName = "The Dime";
+var barLocation = "2263 N Lincoln Ave, Chicago, IL 60614";
+var barBio = "The Dime is in the heart of Lincoln Park! \n A sports bar perfect for every occasion."
+var barDays = [" THURSDAY", "FRIDAY" , "SATURDAY", "SUNDAY"]
 
 
 
 const styles = StyleSheet.create({
     barTitle: {
-        padding: 35,
-        lineHeight:0, 
-        marginLeft: 20,
-        fontSize: 45,
-        color: "#fff",
-        textAlign: "center",
-        bottom: 50,
-        fontWeight: "bold",
-        fontFamily: "Futura",
-        letterSpacing: 3.5,
+    padding: 35,
+    lineHeight:0, 
+    margin: 20,
+    fontSize: 45,
+    color: "#fff",
+    textAlign: "center",
+    bottom: 50,
+    fontWeight: "bold",
+    fontFamily: "Futura",
+    letterSpacing: 3.5,
     },
     barAddress: {
         fontSize: 20,
         color: "#ededed",
-        bottom: 50,
         textAlign: "center",
-        padding: 35,
+        bottom: 50,
         fontWeight: "bold",
         fontFamily: "Futura",
         letterSpacing: 3.5,
@@ -75,7 +74,7 @@ const styles = StyleSheet.create({
           letterSpacing: 3.5,
           },
         container1: {
-          flex: 1,
+          flexGrow: 1,
           width: '100%',
           backgroundColor: '#81d9aa'
         },
@@ -97,32 +96,39 @@ const styles = StyleSheet.create({
 
         },
         container: {
-            flex:1,
-            justifyContent: "center",
-            backgroundColor: 'black',
-            alignItems: "center",
-          },
+          flex:1,
+          justifyContent: "center",
+          backgroundColor: 'black',
+          alignItems: "center",
+        },
+   
       
         
 });
 
-const replay = [
-    "https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/76702461_2791448444209752_8930288386313289728_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=mg0AsBtx1-oAX9gVtMR&_nc_ht=scontent-ort2-1.xx&oh=398b5993fdec522a79158cfb90db1bad&oe=61D0F32B",
-    "https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/80729916_2868131076541488_3183807661082673152_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=ACJAKZv32BsAX9i5dR1&tn=tPdjh7UKYw6oFUL6&_nc_ht=scontent-ort2-1.xx&oh=59f732bfa134ac930dc19e407696ea04&oe=61CED9C0",
-    "https://media.timeout.com/images/105803093/1372/772/image.jpg",
-    "https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/72566402_2695414433813154_3872120288170737664_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=qq44E8EpMIIAX9e1ben&_nc_oc=AQm33E9OFn8U--Bf7VhFcAnQ-dAgezFfcn4HqxuZR0cVIVEmP-nQVp2dK_dVc1bG40U&_nc_ht=scontent-ort2-1.xx&oh=1c25f455a0550cc45edda243556cc05d&oe=61CD6604",
-    "https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/82959556_2912261045461824_6653946309159944192_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=730e14&_nc_ohc=TMjH_R9-ziEAX-p3oTK&_nc_ht=scontent-ort2-1.xx&oh=00bfc5f338e24eb04be411cee67f663d&oe=61CF0FD2",
-];
+const dime = [
 
-class Replay extends React.Component {
+  "https://scontent-ort2-2.xx.fbcdn.net/v/t39.30808-6/256827177_675290333857410_1923687880662733746_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=9267fe&_nc_ohc=Q2Z2IEDrUfQAX-j6X92&_nc_oc=AQmnx8q1Kd6KunZEIf3cqiSCHiA0jfKVzx6I_AB6FGS8I2RGQ8IFTXzmx4XjY3gDqt4&_nc_ht=scontent-ort2-2.xx&oh=16ca92d1a008904282f7952da82418a6&oe=61AE4BA2",
+   "https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/78566939_158829685503480_2064189259874566144_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=e3f864&_nc_ohc=SGMX0In75jAAX-Z2BOl&_nc_ht=scontent-ort2-1.xx&oh=fc51a9b7d411ede02af6349b199f4328&oe=61C38364",
+   "https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/201156058_572739830779128_5055751502644027532_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=2c4854&_nc_ohc=fvAoMqkJHekAX9oWPTo&_nc_ht=scontent-ort2-1.xx&oh=102a04e145e82d4fcd5bf2f42ac8a91f&oe=61C1CD88",
+   "https://d1t295ks1d26ah.cloudfront.net/media/pictures/files/000/021/263/xlarge_desktop/77394087_158830698836712_6283762755795156992_o.jpg?1589578908",
+   "https://scontent-ort2-2.xx.fbcdn.net/v/t39.30808-6/258091832_676527673733676_8826771448272167123_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=9267fe&_nc_ohc=wtnCrkbFXIUAX_r7oGi&_nc_ht=scontent-ort2-2.xx&oh=b44199efd21a054363d908db1ae80496&oe=61AE39F9",
+
+ ];
+
+
+
+class Dime extends React.Component {
 
     render () {
         return (
-
+          
 <View style= {styles.container}>
-<BackgroundCarousel images={replay} />
+<BackgroundCarousel images={dime} />
+
 
 <ScrollView keyboardShouldPersistTaps="always" style={{position: "absolute", bottom: 0, height: "60%", width: "100%"}}> 
+
   <View style = {styles.container}>
 
 
@@ -132,7 +138,6 @@ class Replay extends React.Component {
       <Text style = {styles.barTitle}>
         {barName}
       </Text>
-
             <Text style = {styles.barAddress} >
                 {"\n"}{barLocation}
             </Text>
@@ -150,19 +155,23 @@ class Replay extends React.Component {
             {"\n"}
             </Text>
           </Text>
+
+
+  
+
     </View>
 
 
     <View style = {styles.socials}> 
           <Pressable 
-          onPress={() => Linking.openURL('https://www.instagram.com/replaylincolnpark/')} >
+          onPress={() => Linking.openURL('https://www.instagram.com/thedimechi/')} >
           <Image
           style = {{width: 130, height: 130, left: 55, marginTop: 0}}
           source = {require('/Users/kiarravillaraza/CrawlPractice/src/img/instagram.png')} />
           </Pressable>
 
           <Pressable 
-          onPress={() => Linking.openURL('https://www.facebook.com/replaylincolnpark')} >
+          onPress={() => Linking.openURL('https://www.facebook.com/thedimechi/')} >
           <Image
           style = {{width: 65, height: 65, left: 105, marginTop:30}}
           source = {require('/Users/kiarravillaraza/CrawlPractice/src/img/facebook.png')} />
@@ -172,39 +181,38 @@ class Replay extends React.Component {
 
 <View style = {styles.container3}>
 <Pressable 
-          onPress={() => Linking.openURL('https://www.replaylincolnpark.com')} >
+          onPress={() => Linking.openURL('https://www.facebook.com/thedimechi/')} >
     <Image
-          style = {{width: 300, height: 100, left: 50, marginTop: 60}}
-          source = {require('/Users/kiarravillaraza/CrawlPractice/src/img/replayLogo.png')} />
+          style = {{width: 250, height: 250, left: 70, marginTop: 70}}
+          source = {require('/Users/kiarravillaraza/CrawlPractice/src/img/dimeLogo.png')} />
 </Pressable>
 <Text style = {styles.barHours}>
             {"\n"}HOURS
           </Text>
             <Text style = {styles.barDays} >
-            {barDays[0]} -
-            {"\n"}{barDays[1]}
+            {barDays[0]}
             </Text>
             <Text style = {styles.barTimes} >
               {"\n"} 5PM - 2AM 
             </Text>
             <Text style = {styles.barDays} >
-                {"\n"} {barDays[2]}
+                {"\n"} {barDays[1]}
             </Text>
             <Text style = {styles.barTimes} >
            
-              {"\n"} 3PM - 2AM
+              {"\n"} 5PM - 2AM
               </Text>
             <Text style = {styles.barDays} >
-                {"\n"} {barDays[3]}
+                {"\n"} {barDays[2]}
             </Text>
             <Text style = {styles.barTimes} >
-            {"\n"} 12PM - 3AM
+            {"\n"}11AM - 3AM
             </Text>
             <Text style = {styles.barDays} >
-              {"\n"} {barDays[4]}
+              {"\n"} {barDays[3]}
               </Text>
             <Text style = {styles.barTimes} >
-            {"\n"}  12PM - 2AM
+            {"\n"} 11AM - 6PM
             </Text>
 
   </View>
@@ -214,11 +222,12 @@ class Replay extends React.Component {
   
   </View>
 
-  </ScrollView>
+  </ScrollView> 
   </View>
+
 
         );
 }
 }
 
-export default Replay;
+export default Dime;
