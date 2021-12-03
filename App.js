@@ -14,6 +14,7 @@
 import Replay from "./Bars/Replay";
 
 
+
  export default class App extends Component {
    render() {
      return (
@@ -21,8 +22,8 @@ import Replay from "./Bars/Replay";
      <View style={styles.container}>
 
 
-            {/* <Dime /> */}
-            <Replay />
+            <Dime />
+            {/* <Replay /> */}
 
     </View>
      );
