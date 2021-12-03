@@ -66,7 +66,7 @@ const styles = StyleSheet.create({
         barBiography: {
           padding: 35,
           margin: 20,
-          fontSize: 35,
+          fontSize: 33,
           color: "#ededed",
           textAlign: "center",
           fontStyle: "italic",

@@ -23,7 +23,7 @@ import Replay from "./Replay";
      <View style={styles.container}>
 
 
-            <Dime />           
+            {/* <Dime />            */}
             {/* <Replay /> */}
             <Halligan />
 
