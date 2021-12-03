@@ -107,10 +107,12 @@ const styles = StyleSheet.create({
 });
 
 const replay = [
-
-    "https://popmenucloud.com/cdn-cgi/image/width=1920,height=1920,format=auto,fit=scale-down/wglnmukv/cd209d7d-3b7c-4c05-b83d-c41c7c503046.jpg"
- 
-  ];
+    "https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/76702461_2791448444209752_8930288386313289728_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=mg0AsBtx1-oAX9gVtMR&_nc_ht=scontent-ort2-1.xx&oh=398b5993fdec522a79158cfb90db1bad&oe=61D0F32B",
+    "https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/80729916_2868131076541488_3183807661082673152_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=ACJAKZv32BsAX9i5dR1&tn=tPdjh7UKYw6oFUL6&_nc_ht=scontent-ort2-1.xx&oh=59f732bfa134ac930dc19e407696ea04&oe=61CED9C0",
+    "https://media.timeout.com/images/105803093/1372/772/image.jpg",
+    "https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/72566402_2695414433813154_3872120288170737664_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=qq44E8EpMIIAX9e1ben&_nc_oc=AQm33E9OFn8U--Bf7VhFcAnQ-dAgezFfcn4HqxuZR0cVIVEmP-nQVp2dK_dVc1bG40U&_nc_ht=scontent-ort2-1.xx&oh=1c25f455a0550cc45edda243556cc05d&oe=61CD6604",
+    "https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/82959556_2912261045461824_6653946309159944192_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=730e14&_nc_ohc=TMjH_R9-ziEAX-p3oTK&_nc_ht=scontent-ort2-1.xx&oh=00bfc5f338e24eb04be411cee67f663d&oe=61CF0FD2",
+];
 
 class Replay extends React.Component {
 
