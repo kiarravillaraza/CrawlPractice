@@ -1,32 +1,33 @@
-import {Platform, StyleSheet, Text, View, SafeAreaView, Button, Alert, Pressable, Image, ScrollView, Linking} from 'react-native';
+import {StyleSheet, Text, View, SafeAreaView, Button, Alert, Pressable, Image, ScrollView, Linking} from 'react-native';
 import React from 'react';
 import { BackgroundCarousel } from './BackgroundCarousel';
 
-var barName = "The Dime";
-var barLocation = "2263 N Lincoln Ave, Chicago, IL 60614";
-var barBio = "The Dime is in the heart of Lincoln Park! \n A sports bar perfect for every occasion."
-var barDays = [" THURSDAY", "FRIDAY" , "SATURDAY", "SUNDAY"]
+var barName = "Replay";
+var barLocation = "2833 N Sheffield Ave, Chicago, IL 60657";
+var barBio = "Replay is your source for quality entertainment since 2012. \n Great cocktails, awesome pop-ups, and did we mention free games?"
+var barDays = [ " MONDAY", " THURSDAY", "FRIDAY" , "SATURDAY", "SUNDAY"]
 
 
 
 const styles = StyleSheet.create({
     barTitle: {
-    padding: 35,
-    lineHeight:0, 
-    margin: 20,
-    fontSize: 45,
-    color: "#fff",
-    textAlign: "center",
-    bottom: 50,
-    fontWeight: "bold",
-    fontFamily: "Futura",
-    letterSpacing: 3.5,
+        padding: 35,
+        lineHeight:0, 
+        marginLeft: 20,
+        fontSize: 45,
+        color: "#fff",
+        textAlign: "center",
+        bottom: 50,
+        fontWeight: "bold",
+        fontFamily: "Futura",
+        letterSpacing: 3.5,
     },
     barAddress: {
         fontSize: 20,
         color: "#ededed",
-        textAlign: "center",
         bottom: 50,
+        textAlign: "center",
+        padding: 35,
         fontWeight: "bold",
         fontFamily: "Futura",
         letterSpacing: 3.5,
@@ -74,7 +75,7 @@ const styles = StyleSheet.create({
           letterSpacing: 3.5,
           },
         container1: {
-          flexGrow: 1,
+          flex: 1,
           width: '100%',
           backgroundColor: '#81d9aa'
         },
@@ -96,39 +97,30 @@ const styles = StyleSheet.create({
 
         },
         container: {
-          flex:1,
-          justifyContent: "center",
-          backgroundColor: 'black',
-          alignItems: "center",
-        },
-   
+            flex:1,
+            justifyContent: "center",
+            backgroundColor: 'black',
+            alignItems: "center",
+          },
       
         
 });
 
-const dime = [
+const replay = [
 
-  "https://scontent-ort2-2.xx.fbcdn.net/v/t39.30808-6/256827177_675290333857410_1923687880662733746_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=9267fe&_nc_ohc=Q2Z2IEDrUfQAX-j6X92&_nc_oc=AQmnx8q1Kd6KunZEIf3cqiSCHiA0jfKVzx6I_AB6FGS8I2RGQ8IFTXzmx4XjY3gDqt4&_nc_ht=scontent-ort2-2.xx&oh=16ca92d1a008904282f7952da82418a6&oe=61AE4BA2",
-   "https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/78566939_158829685503480_2064189259874566144_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=e3f864&_nc_ohc=SGMX0In75jAAX-Z2BOl&_nc_ht=scontent-ort2-1.xx&oh=fc51a9b7d411ede02af6349b199f4328&oe=61C38364",
-   "https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/201156058_572739830779128_5055751502644027532_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=2c4854&_nc_ohc=fvAoMqkJHekAX9oWPTo&_nc_ht=scontent-ort2-1.xx&oh=102a04e145e82d4fcd5bf2f42ac8a91f&oe=61C1CD88",
-   "https://d1t295ks1d26ah.cloudfront.net/media/pictures/files/000/021/263/xlarge_desktop/77394087_158830698836712_6283762755795156992_o.jpg?1589578908",
-   "https://scontent-ort2-2.xx.fbcdn.net/v/t39.30808-6/258091832_676527673733676_8826771448272167123_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=9267fe&_nc_ohc=wtnCrkbFXIUAX_r7oGi&_nc_ht=scontent-ort2-2.xx&oh=b44199efd21a054363d908db1ae80496&oe=61AE39F9",
+    "https://popmenucloud.com/cdn-cgi/image/width=1920,height=1920,format=auto,fit=scale-down/wglnmukv/cd209d7d-3b7c-4c05-b83d-c41c7c503046.jpg"
+ 
+  ];
 
- ];
-
-
-
-class Dime extends React.Component {
+class Replay extends React.Component {
 
     render () {
         return (
-          
-<View style= {styles.container}>
-<BackgroundCarousel images={dime} />
 
+<View style= {styles.container}>
+<BackgroundCarousel images={replay} />
 
 <ScrollView keyboardShouldPersistTaps="always" style={{position: "absolute", bottom: 0, height: "60%", width: "100%"}}> 
-
   <View style = {styles.container}>
 
 
@@ -138,6 +130,7 @@ class Dime extends React.Component {
       <Text style = {styles.barTitle}>
         {barName}
       </Text>
+
             <Text style = {styles.barAddress} >
                 {"\n"}{barLocation}
             </Text>
@@ -155,23 +148,19 @@ class Dime extends React.Component {
             {"\n"}
             </Text>
           </Text>
-
-
-  
-
     </View>
 
 
     <View style = {styles.socials}> 
           <Pressable 
-          onPress={() => Linking.openURL('https://www.instagram.com/thedimechi/')} >
+          onPress={() => Linking.openURL('https://www.instagram.com/replaylincolnpark/')} >
           <Image
           style = {{width: 130, height: 130, left: 55, marginTop: 0}}
           source = {require('/Users/kiarravillaraza/CrawlPractice/src/img/instagram.png')} />
           </Pressable>
 
           <Pressable 
-          onPress={() => Linking.openURL('https://www.facebook.com/thedimechi/')} >
+          onPress={() => Linking.openURL('https://www.facebook.com/replaylincolnpark')} >
           <Image
           style = {{width: 65, height: 65, left: 105, marginTop:30}}
           source = {require('/Users/kiarravillaraza/CrawlPractice/src/img/facebook.png')} />
@@ -181,38 +170,39 @@ class Dime extends React.Component {
 
 <View style = {styles.container3}>
 <Pressable 
-          onPress={() => Linking.openURL('https://www.facebook.com/thedimechi/')} >
+          onPress={() => Linking.openURL('https://www.replaylincolnpark.com')} >
     <Image
-          style = {{width: 250, height: 250, left: 70, marginTop: 70}}
-          source = {require('/Users/kiarravillaraza/CrawlPractice/src/img/dimeLogo.png')} />
+          style = {{width: 300, height: 100, left: 50, marginTop: 60}}
+          source = {require('/Users/kiarravillaraza/CrawlPractice/src/img/replayLogo.png')} />
 </Pressable>
 <Text style = {styles.barHours}>
             {"\n"}HOURS
           </Text>
             <Text style = {styles.barDays} >
-            {barDays[0]}
+            {barDays[0]} -
+            {"\n"}{barDays[1]}
             </Text>
             <Text style = {styles.barTimes} >
               {"\n"} 5PM - 2AM 
             </Text>
             <Text style = {styles.barDays} >
-                {"\n"} {barDays[1]}
-            </Text>
-            <Text style = {styles.barTimes} >
-           
-              {"\n"} 5PM - 2AM
-              </Text>
-            <Text style = {styles.barDays} >
                 {"\n"} {barDays[2]}
             </Text>
             <Text style = {styles.barTimes} >
-            {"\n"}11AM - 3AM
+           
+              {"\n"} 3PM - 2AM
+              </Text>
+            <Text style = {styles.barDays} >
+                {"\n"} {barDays[3]}
+            </Text>
+            <Text style = {styles.barTimes} >
+            {"\n"} 12PM - 3AM
             </Text>
             <Text style = {styles.barDays} >
-              {"\n"} {barDays[3]}
+              {"\n"} {barDays[4]}
               </Text>
             <Text style = {styles.barTimes} >
-            {"\n"} 11AM - 6PM
+            {"\n"}  12PM - 2AM
             </Text>
 
   </View>
@@ -222,12 +212,11 @@ class Dime extends React.Component {
   
   </View>
 
-  </ScrollView> 
+  </ScrollView>
   </View>
-
 
         );
 }
 }
 
-export default Dime;
+export default Replay;
