@@ -1,6 +1,6 @@
 import {StyleSheet, Text, View, SafeAreaView, Button, Alert, Pressable, Image, ScrollView, Linking} from 'react-native';
 import React from 'react';
-import { BackgroundCarousel } from '../BackgroundCarousel';
+import { BackgroundCarousel } from './BackgroundCarousel';
 
 var barName = "Replay";
 var barLocation = "2833 N Sheffield Ave, Chicago, IL 60657";
