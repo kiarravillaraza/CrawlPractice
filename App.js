@@ -12,6 +12,7 @@
  import {BackgroundCarousel} from './BackgroundCarousel'
  import Dime from "./Dime";
 import Halligan from "./Halligan";
+import HappyCamper from "./HappyCamper";
 import Replay from "./Replay";
 
 
@@ -27,7 +28,6 @@ import Replay from "./Replay";
             {/* <Replay /> */}
             {/* <Halligan /> */}
             <HappyCamper />
-
 
     </View>
      );

@@ -90,7 +90,7 @@ const styles = StyleSheet.create({
         },
         socials: {
           width: '100%',
-          height: '7%',
+          height: '6%',
           flexDirection: 'row',
           backgroundColor: '#81d9aa'
 
@@ -106,15 +106,14 @@ const styles = StyleSheet.create({
         
 });
 
-const halligan = [
+const happycamper = [
+"https://images.otstatic.com/prod/28117442/2/huge.jpg",
+"https://www.chicagotribune.com/resizer/9zBitcXuYWji-eyuvl9O0bJV160=/800x533/top/cloudfront-us-east-1.images.arcpublishing.com/tronc/5LVIDUNDMFHB5A4S22LMPKAOPQ.jpg",
+"https://s3-media0.fl.yelpcdn.com/bphoto/VaSEwB0xSKPNp1Yjx7eznA/o.jpg",
+"https://s3-media0.fl.yelpcdn.com/bphoto/3U4MyNhyXmMldRTQ4EjdSQ/o.jpg",
+"https://cdn3.localdatacdn.com/il/chicago/5262042/original/PVuNz0cBdo.jpg"
 
-    "https://scontent-ort2-1.xx.fbcdn.net/v/t31.18172-8/1265409_597327190308488_1288255192_o.jpg?_nc_cat=102&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=Nt7rxpnv5wsAX8L7CIt&_nc_ht=scontent-ort2-1.xx&oh=3086fa8ff888d036c75969e99b3602cf&oe=61D11DEB",
-    "https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/75486107_3388615897846256_7169672044894748672_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=9267fe&_nc_ohc=vLV1E9nWinIAX-Jh9ca&_nc_ht=scontent-ort2-1.xx&oh=f636be04edc297e3b02d85857de9db15&oe=61CED8AE",
-"https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/72402878_3271638049544042_7892682505881387008_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=9267fe&_nc_ohc=TRajjZHNxVwAX9P3dQs&_nc_ht=scontent-ort2-1.xx&oh=62d78785954d0c916fd5ef7eb4e9766c&oe=61D07E9E",
-"https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/81688012_3544554532252391_7030694062906671104_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=9267fe&_nc_ohc=RY4lX3edBe8AX8uDZxj&_nc_ht=scontent-ort2-1.xx&oh=29efa429d73166f12e7f36a6e0518d57&oe=61D24AB6",
-   "https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/192524711_5802701269771028_2585529950976560740_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=a26aad&_nc_ohc=hwYH41QLrpYAX_UPYEM&_nc_ht=scontent-ort2-1.xx&oh=39e198be9186f3efc5018cc9a0c1ae63&oe=61CDB009"
-
- ];
+];
 
 
 
@@ -124,7 +123,7 @@ class HappyCamper extends React.Component {
         return (
           
 <View style= {styles.container}>
-<BackgroundCarousel images={halligan} />
+<BackgroundCarousel images={happycamper} />
 
 
 <ScrollView keyboardShouldPersistTaps="always" style={{position: "absolute", bottom: 0, height: "60%", width: "100%"}}> 
@@ -160,14 +159,14 @@ class HappyCamper extends React.Component {
 
     <View style = {styles.socials}> 
           <Pressable 
-          onPress={() => Linking.openURL('https://www.instagram.com/halliganbar/')} >
+          onPress={() => Linking.openURL('https://www.instagram.com/happycamperchicago/')} >
           <Image
           style = {{width: 130, height: 130, left: 55, marginTop: 0}}
           source = {require('/Users/kiarravillaraza/CrawlPractice/src/img/instagram.png')} />
           </Pressable>
 
           <Pressable 
-          onPress={() => Linking.openURL('https://www.facebook.com/halliganbarchicago/')} >
+          onPress={() => Linking.openURL('https://www.facebook.com/happycamperwrigleyville/')} >
           <Image
           style = {{width: 65, height: 65, left: 105, marginTop:30}}
           source = {require('/Users/kiarravillaraza/CrawlPractice/src/img/facebook.png')} />
@@ -179,7 +178,7 @@ class HappyCamper extends React.Component {
 <Pressable 
           onPress={() => Linking.openURL('http://happycamper.pizza/wrigley')} >
     <Image
-          style = {{width: 275, height: 275, left: 60, marginTop: 70}}
+          style = {{width: 210, height: 110, left: 85, marginTop: 70}}
           source = {require('/Users/kiarravillaraza/CrawlPractice/src/img/happycamperLogo.gif')} />
 </Pressable>
 <Text style = {styles.barHours}>
