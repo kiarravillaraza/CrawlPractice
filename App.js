@@ -11,6 +11,7 @@
  import { Platform, Button, SafeAreaView, Alert, Image, ScrollView, StyleSheet, Text, View } from "react-native";
  import {BackgroundCarousel} from './BackgroundCarousel'
  import Dime from "./Dime";
+import Federales from "./Federales";
 import GuthriesTavern from "./GuthriesTavern";
 import Halligan from "./Halligan";
 import HappyCamper from "./HappyCamper";
@@ -35,7 +36,8 @@ import UtopianTailgate from "./UtopianTailgate";
             {/* <Sluggers /> */}
             {/* <GuthriesTavern /> */}
 
-              <UtopianTailgate />
+              {/* <UtopianTailgate /> */}
+              <Federales />
 
     </View>
      );
