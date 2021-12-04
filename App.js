@@ -27,12 +27,14 @@ import UtopianTailgate from "./UtopianTailgate";
      <View style={styles.container}>
 
 
-            {/* <Dime />            */}
+            {/* <Dime /> */}
             {/* <Replay /> */}
             {/* <Halligan /> */}
+
             {/* <HappyCamper /> */}
-                {/* <Sluggers /> */}
-                {/* <GuthriesTavern /> */}
+            {/* <Sluggers /> */}
+            {/* <GuthriesTavern /> */}
+
               <UtopianTailgate />
 
     </View>
