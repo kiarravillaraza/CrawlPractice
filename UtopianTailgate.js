@@ -2,10 +2,10 @@ import {Platform, StyleSheet, Text, View, SafeAreaView, Button, Alert, Pressable
 import React from 'react';
 import { BackgroundCarousel } from './BackgroundCarousel';
 
-var barName = "Halligan Bar";
-var barLocation = "2274 N Lincoln Ave, Chicago, IL 60614";
-var barBio = "Halligan Bar is located in the heart of Lincoln Park. \n A classic Irish bar known for its great beer selection & fun atmosphere."
-var barDays = ["MONDAY", "WEDNESDAY", " THURSDAY", "FRIDAY" , "SATURDAY", "SUNDAY"]
+var barName = "Utopian Tailagate";
+var barLocation = "1608 N Wells St, Chicago, IL 60614";
+var barBio = "The Tailgate Party that lasts all year long. \n Perched high atop Piper's Alley, above world-famous comedy enclave The Second City, Utopian Tailgate is Chicago's newest never-ending rooftop partyscape."
+var barDays = [ " THURSDAY", "FRIDAY" , "SATURDAY", "SUNDAY"]
 
 
 
@@ -90,7 +90,7 @@ const styles = StyleSheet.create({
         },
         socials: {
           width: '100%',
-          height: '7%',
+          height: '6%',
           flexDirection: 'row',
           backgroundColor: '#81d9aa'
 
@@ -107,14 +107,13 @@ const styles = StyleSheet.create({
 });
 
 const utopian = [
+"https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/186564204_1151988261984497_4821527613847711828_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=9267fe&_nc_ohc=un3NJn2zzlcAX9mcyVo&_nc_ht=scontent-ort2-1.xx&oh=3a5de757399e1b52b4c1a50d73832d3b&oe=61D23303",
+"https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/101299524_899946000522059_7547170047823708160_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=9267fe&_nc_ohc=X5rNbnK7eJ8AX90vtmO&tn=tPdjh7UKYw6oFUL6&_nc_ht=scontent-ort2-1.xx&oh=0be6e9bc70f8bcb65f5cc0c760f5a311&oe=61D011AE",
+"https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/86738715_823351574848169_534710556335013888_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=9267fe&_nc_ohc=kgGYEIfhFFUAX-rqbGW&_nc_oc=AQk5dbUM45aflG_fLy68IhNV1VDMk8n9PojQT2qLGfwaG8YcKRK3ZYOQPykmz0ga4ss&_nc_ht=scontent-ort2-1.xx&oh=7d466ef5a21d8a1969d4526825958de3&oe=61D22D73",
+"https://assets3.thrillist.com/v1/image/2975414/1584x1056/crop;webp=auto;jpeg_quality=60;progressive.jpg",
+"https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/160034746_1106228256560498_2557919106286750310_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=2hqZxkVBW1oAX8nZ5JK&_nc_ht=scontent-ort2-1.xx&oh=e6d6fe10a848105f790f096ed6068799&oe=61D259B8"
 
-    "https://scontent-ort2-1.xx.fbcdn.net/v/t31.18172-8/1265409_597327190308488_1288255192_o.jpg?_nc_cat=102&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=Nt7rxpnv5wsAX8L7CIt&_nc_ht=scontent-ort2-1.xx&oh=3086fa8ff888d036c75969e99b3602cf&oe=61D11DEB",
-    "https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/75486107_3388615897846256_7169672044894748672_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=9267fe&_nc_ohc=vLV1E9nWinIAX-Jh9ca&_nc_ht=scontent-ort2-1.xx&oh=f636be04edc297e3b02d85857de9db15&oe=61CED8AE",
-"https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/72402878_3271638049544042_7892682505881387008_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=9267fe&_nc_ohc=TRajjZHNxVwAX9P3dQs&_nc_ht=scontent-ort2-1.xx&oh=62d78785954d0c916fd5ef7eb4e9766c&oe=61D07E9E",
-"https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/81688012_3544554532252391_7030694062906671104_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=9267fe&_nc_ohc=RY4lX3edBe8AX8uDZxj&_nc_ht=scontent-ort2-1.xx&oh=29efa429d73166f12e7f36a6e0518d57&oe=61D24AB6",
-   "https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/192524711_5802701269771028_2585529950976560740_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=a26aad&_nc_ohc=hwYH41QLrpYAX_UPYEM&_nc_ht=scontent-ort2-1.xx&oh=39e198be9186f3efc5018cc9a0c1ae63&oe=61CDB009"
-
- ];
+];
 
 
 
@@ -160,14 +159,14 @@ class UtopianTailgate extends React.Component {
 
     <View style = {styles.socials}> 
           <Pressable 
-          onPress={() => Linking.openURL('https://www.instagram.com/halliganbar/')} >
+          onPress={() => Linking.openURL('https://www.instagram.com/utopiantailgate/')} >
           <Image
           style = {{width: 130, height: 130, left: 55, marginTop: 0}}
           source = {require('/Users/kiarravillaraza/CrawlPractice/src/img/instagram.png')} />
           </Pressable>
 
           <Pressable 
-          onPress={() => Linking.openURL('https://www.facebook.com/halliganbarchicago/')} >
+          onPress={() => Linking.openURL('https://www.facebook.com/utopiantailgate/')} >
           <Image
           style = {{width: 65, height: 65, left: 105, marginTop:30}}
           source = {require('/Users/kiarravillaraza/CrawlPractice/src/img/facebook.png')} />
@@ -177,46 +176,40 @@ class UtopianTailgate extends React.Component {
 
 <View style = {styles.container3}>
 <Pressable 
-          onPress={() => Linking.openURL('https://halliganbarchicago.wordpress.com')} >
+          onPress={() => Linking.openURL('https://www.utopiantailgate.com')} >
     <Image
-          style = {{width: 275, height: 275, left: 60, marginTop: 70}}
-          source = {require('/Users/kiarravillaraza/CrawlPractice/src/img/halliganLogo.png')} />
+          style = {{width: 200, height: 200, left: 95, marginTop: 70}}
+          source = {require('/Users/kiarravillaraza/CrawlPractice/src/img/utopiantailgateLogo.png')} />
 </Pressable>
 <Text style = {styles.barHours}>
             {"\n"}HOURS
           </Text>
             <Text style = {styles.barDays} >
-            {barDays[0]} -
-            {"\n"}{barDays[1]} 
+            {"\n"}{barDays[0]} 
             </Text>
             <Text style = {styles.barTimes} >
-              {"\n"} 5PM - 2AM 
+              {"\n"} 4PM - 11PM 
             </Text>
             <Text style = {styles.barDays} >
-                {"\n"}{barDays[2]}
+                {"\n"} {barDays[1]}
             </Text>
             <Text style = {styles.barTimes} >
            
-              {"\n"} 12PM - 2AM
+              {"\n"} 2PM - 2AM
               </Text>
             <Text style = {styles.barDays} >
-                {"\n"} {barDays[3]}
+                {"\n"} {barDays[2]}
             </Text>
-            <Text style = {styles.barTimes} >
-            {"\n"} 12PM - 2AM
-            </Text>
-            <Text style = {styles.barDays} >
-              {"\n"} {barDays[4]}
-              </Text>
             <Text style = {styles.barTimes} >
             {"\n"} 11AM - 3AM
             </Text>
             <Text style = {styles.barDays} >
-                {"\n"} {barDays[5]}
-            </Text>
+              {"\n"} {barDays[3]}
+              </Text>
             <Text style = {styles.barTimes} >
-            {"\n"} 11AM - 2AM
+            {"\n"} 11AM - 7PM
             </Text>
+
   </View>
 
   

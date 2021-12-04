@@ -16,6 +16,7 @@ import Halligan from "./Halligan";
 import HappyCamper from "./HappyCamper";
 import Replay from "./Replay";
 import Sluggers from "./Sluggers";
+import UtopianTailgate from "./UtopianTailgate";
 
 
 
@@ -31,7 +32,8 @@ import Sluggers from "./Sluggers";
             {/* <Halligan /> */}
             {/* <HappyCamper /> */}
                 {/* <Sluggers /> */}
-                <GuthriesTavern />
+                {/* <GuthriesTavern /> */}
+              <UtopianTailgate />
 
     </View>
      );
