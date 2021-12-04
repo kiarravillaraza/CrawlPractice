@@ -2,12 +2,12 @@ import {Platform, StyleSheet, Text, View, SafeAreaView, Button, Alert, Pressable
 import React from 'react';
 import { BackgroundCarousel } from './BackgroundCarousel';
 
-var barName = "Sluggers World Class Sports Bar";
-var barLocation = "3540 N Clark St, Chicago, IL 60657";
-var barBio = "Since 1985 Sluggers World Class Sports Bar and Grill has been giving the Wrigleyville area a place to go for much more than just a drink. \n With massive HD big screens and over 30 TV's to see all of your favorite sports teams in glorious HD, you'll never miss a minute of any sports action! "
-var barDays = ["MONDAY", " THURSDAY", "FRIDAY" , "SUNDAY"]
+var barName = "Guthries Tavern";
+var barLocation = "1300 W Addison St, Chicago, IL 60613";
+var barBio = "Originally the tavern location was a corner grocery store dating back to 1900. \n  After prohibition ended in 1933, the Moretti family turned the grocery into a corner tap."
+var barDays = ["MONDAY", "FRIDAY" , "SATURDAY", "SUNDAY"]
 
- 
+
 
 const styles = StyleSheet.create({
     barTitle: {
@@ -106,24 +106,25 @@ const styles = StyleSheet.create({
         
 });
 
-const sluggers = [
-"https://www.chicagotribune.com/resizer/By0CC6p-bIlhwczuyTBflXtp_bw=/800x449/top/www.trbimg.com/img-59fc7c4a/turbine/ct-1509719108-8tpy4rzvrx-snap-image",
-"https://media.gettyimages.com/photos/chicago-fans-gather-at-sluggers-bar-to-watch-the-chicago-cubs-take-on-picture-id620780276?k=20&m=620780276&s=612x612&w=0&h=xG0oEz7WlToMYoQPF_9JiVZUNn449fbwDItTRkiZ3pk=",
-"https://scontent-ort2-1.xx.fbcdn.net/v/t1.18169-9/525928_10150690958366850_301792894_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=Iazl8tjkx1QAX8plk_k&_nc_ht=scontent-ort2-1.xx&oh=7654aab7735f0678184f470cf86fd574&oe=61D2E97D",
-"https://scontent-ort2-1.xx.fbcdn.net/v/t1.18169-9/149704_10150690955491850_1640271750_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=MYGIaUBlq6QAX-NjvMU&_nc_ht=scontent-ort2-1.xx&oh=fcc86d6cded287e30d936f960e81823e&oe=61D08BE6",
-"https://www.gayot.com/images/reviews/sluggers.jpg",
+const halligan = [
+
+    "https://scontent-ort2-1.xx.fbcdn.net/v/t31.18172-8/1265409_597327190308488_1288255192_o.jpg?_nc_cat=102&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=Nt7rxpnv5wsAX8L7CIt&_nc_ht=scontent-ort2-1.xx&oh=3086fa8ff888d036c75969e99b3602cf&oe=61D11DEB",
+    "https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/75486107_3388615897846256_7169672044894748672_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=9267fe&_nc_ohc=vLV1E9nWinIAX-Jh9ca&_nc_ht=scontent-ort2-1.xx&oh=f636be04edc297e3b02d85857de9db15&oe=61CED8AE",
+"https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/72402878_3271638049544042_7892682505881387008_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=9267fe&_nc_ohc=TRajjZHNxVwAX9P3dQs&_nc_ht=scontent-ort2-1.xx&oh=62d78785954d0c916fd5ef7eb4e9766c&oe=61D07E9E",
+"https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/81688012_3544554532252391_7030694062906671104_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=9267fe&_nc_ohc=RY4lX3edBe8AX8uDZxj&_nc_ht=scontent-ort2-1.xx&oh=29efa429d73166f12e7f36a6e0518d57&oe=61D24AB6",
+   "https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/192524711_5802701269771028_2585529950976560740_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=a26aad&_nc_ohc=hwYH41QLrpYAX_UPYEM&_nc_ht=scontent-ort2-1.xx&oh=39e198be9186f3efc5018cc9a0c1ae63&oe=61CDB009"
 
  ];
 
 
 
-class Sluggers extends React.Component {
+class GuthriesTavern extends React.Component {
 
     render () {
         return (
           
 <View style= {styles.container}>
-<BackgroundCarousel images={sluggers} />
+<BackgroundCarousel images={halligan} />
 
 
 <ScrollView keyboardShouldPersistTaps="always" style={{position: "absolute", bottom: 0, height: "60%", width: "100%"}}> 
@@ -159,14 +160,14 @@ class Sluggers extends React.Component {
 
     <View style = {styles.socials}> 
           <Pressable 
-          onPress={() => Linking.openURL('https://www.instagram.com/sluggersbar/')} >
+          onPress={() => Linking.openURL('https://www.instagram.com/halliganbar/')} >
           <Image
           style = {{width: 130, height: 130, left: 55, marginTop: 0}}
           source = {require('/Users/kiarravillaraza/CrawlPractice/src/img/instagram.png')} />
           </Pressable>
 
           <Pressable 
-          onPress={() => Linking.openURL('https://www.facebook.com/SluggersBar/')} >
+          onPress={() => Linking.openURL('https://www.facebook.com/halliganbarchicago/')} >
           <Image
           style = {{width: 65, height: 65, left: 105, marginTop:30}}
           source = {require('/Users/kiarravillaraza/CrawlPractice/src/img/facebook.png')} />
@@ -176,20 +177,20 @@ class Sluggers extends React.Component {
 
 <View style = {styles.container3}>
 <Pressable 
-          onPress={() => Linking.openURL('http://www.sluggersbar.com')} >
+          onPress={() => Linking.openURL('https://www.guthriestavern.com')} >
     <Image
-          style = {{width: 375, height: 100, left: 10, marginTop: 70}}
-          source = {require('/Users/kiarravillaraza/CrawlPractice/src/img/sluggersLogo.png')} />
+          style = {{width: 275, height: 275, left: 60, marginTop: 70}}
+          source = {require('/Users/kiarravillaraza/CrawlPractice/src/img/halliganLogo.png')} />
 </Pressable>
 <Text style = {styles.barHours}>
-            {"\n"}HOURS
+{"\n"}HOURS
           </Text>
             <Text style = {styles.barDays} >
             {barDays[0]} -
             {"\n"}{barDays[1]} 
             </Text>
             <Text style = {styles.barTimes} >
-              {"\n"} 4PM - 10:30PM 
+              {"\n"} 3PM - 2AM 
             </Text>
             <Text style = {styles.barDays} >
             {"\n"}
@@ -197,7 +198,7 @@ class Sluggers extends React.Component {
             {"\n"}{barDays[3]} 
             </Text>
             <Text style = {styles.barTimes} >
-              {"\n"} 11AM - 11PM 
+              {"\n"} 12PM - 3AM 
             </Text>
   </View>
 
@@ -215,4 +216,4 @@ class Sluggers extends React.Component {
 }
 }
 
-export default Sluggers;
+export default GuthriesTavern;

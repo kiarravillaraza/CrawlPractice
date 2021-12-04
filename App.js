@@ -14,6 +14,7 @@
 import Halligan from "./Halligan";
 import HappyCamper from "./HappyCamper";
 import Replay from "./Replay";
+import Sluggers from "./Sluggers";
 
 
 
@@ -28,8 +29,7 @@ import Replay from "./Replay";
             {/* <Replay /> */}
             {/* <Halligan /> */}
             {/* <HappyCamper /> */}
-            <Sluggers />
-
+                <Sluggers />
 
     </View>
      );
