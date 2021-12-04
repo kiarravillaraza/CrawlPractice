@@ -106,7 +106,7 @@ const styles = StyleSheet.create({
         
 });
 
-const utopian = [
+const federales = [
 "https://popmenucloud.com/anfshomu/cee25714-1b47-47dd-b4f9-7dc41811578f.jpg",
 "https://hhrevolution.com/wp-content/uploads/2019/07/Federales-2-580x400.jpeg",
 "https://s3-media0.fl.yelpcdn.com/bphoto/BmxXRxkPs8QKrcjkpCX4zg/o.jpg",
@@ -118,13 +118,13 @@ const utopian = [
 
 
 
-class UtopianTailgate extends React.Component {
+class Federales extends React.Component {
 
     render () {
         return (
           
 <View style= {styles.container}>
-<BackgroundCarousel images={utopian} />
+<BackgroundCarousel images={federales} />
 
 
 <ScrollView keyboardShouldPersistTaps="always" style={{position: "absolute", bottom: 0, height: "60%", width: "100%"}}> 
@@ -228,4 +228,4 @@ class UtopianTailgate extends React.Component {
 }
 }
 
-export default UtopianTailgate;
+export default Federales;
