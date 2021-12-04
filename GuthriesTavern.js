@@ -107,13 +107,11 @@ const styles = StyleSheet.create({
 });
 
 const halligan = [
-
-    "https://scontent-ort2-1.xx.fbcdn.net/v/t31.18172-8/1265409_597327190308488_1288255192_o.jpg?_nc_cat=102&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=Nt7rxpnv5wsAX8L7CIt&_nc_ht=scontent-ort2-1.xx&oh=3086fa8ff888d036c75969e99b3602cf&oe=61D11DEB",
-    "https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/75486107_3388615897846256_7169672044894748672_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=9267fe&_nc_ohc=vLV1E9nWinIAX-Jh9ca&_nc_ht=scontent-ort2-1.xx&oh=f636be04edc297e3b02d85857de9db15&oe=61CED8AE",
-"https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/72402878_3271638049544042_7892682505881387008_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=9267fe&_nc_ohc=TRajjZHNxVwAX9P3dQs&_nc_ht=scontent-ort2-1.xx&oh=62d78785954d0c916fd5ef7eb4e9766c&oe=61D07E9E",
-"https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/81688012_3544554532252391_7030694062906671104_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=9267fe&_nc_ohc=RY4lX3edBe8AX8uDZxj&_nc_ht=scontent-ort2-1.xx&oh=29efa429d73166f12e7f36a6e0518d57&oe=61D24AB6",
-   "https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/192524711_5802701269771028_2585529950976560740_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=a26aad&_nc_ohc=hwYH41QLrpYAX_UPYEM&_nc_ht=scontent-ort2-1.xx&oh=39e198be9186f3efc5018cc9a0c1ae63&oe=61CDB009"
-
+    "https://cdn.vox-cdn.com/thumbor/IC1H11puuwCPO9SXnOcp0EGehkE=/0x0:1904x1141/1520x1013/filters:focal(621x127:925x431):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/67086133/s.0.png",
+    "https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1920,f_auto,q_auto/1295286/20130726-DSC_6093_cybe1v.jpg",
+"https://s.yimg.com/ny/api/res/1.2/0N8gw9zbtkVnNs8RTmot2A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTcwNTtoPTQ3MA--/https://s.yimg.com/uu/api/res/1.2/wGy7Uxb.5WXcwHnCLQ974Q--~B/aD0xMzY1O3c9MjA0ODthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en-us/chicago_tribune_local_801/395706ecd66ef693d658f319e82c7bad",
+"https://cdn.usarestaurants.info/assets/uploads/c7413c277ef5f8f6d4c28cf5eaf4335d_-united-states-illinois-cook-county-chicago-295459-guthries-tavernhtm.jpg",
+"https://cdn.vox-cdn.com/thumbor/bjCbMzrGT1EXsmXGLhWclFY13Sw=/0x0:1272x1532/1200x800/filters:focal(419x879:621x1081)/cdn.vox-cdn.com/uploads/chorus_image/image/67084585/6_11_podgo_guthries_3x.0.jpg"
  ];
 
 
@@ -160,18 +158,13 @@ class GuthriesTavern extends React.Component {
 
     <View style = {styles.socials}> 
           <Pressable 
-          onPress={() => Linking.openURL('https://www.instagram.com/halliganbar/')} >
+          onPress={() => Linking.openURL('https://www.instagram.com/official_guthries_tavern/')} >
           <Image
-          style = {{width: 130, height: 130, left: 55, marginTop: 0}}
+          style = {{width: 130, height: 130, left: 123, marginTop: 0}}
           source = {require('/Users/kiarravillaraza/CrawlPractice/src/img/instagram.png')} />
           </Pressable>
 
-          <Pressable 
-          onPress={() => Linking.openURL('https://www.facebook.com/halliganbarchicago/')} >
-          <Image
-          style = {{width: 65, height: 65, left: 105, marginTop:30}}
-          source = {require('/Users/kiarravillaraza/CrawlPractice/src/img/facebook.png')} />
-          </Pressable> 
+         
     </View>
 
 
@@ -179,8 +172,8 @@ class GuthriesTavern extends React.Component {
 <Pressable 
           onPress={() => Linking.openURL('https://www.guthriestavern.com')} >
     <Image
-          style = {{width: 275, height: 275, left: 60, marginTop: 70}}
-          source = {require('/Users/kiarravillaraza/CrawlPractice/src/img/halliganLogo.png')} />
+          style = {{width: 200, height: 250, left: 95, marginTop: 70}}
+          source = {require('/Users/kiarravillaraza/CrawlPractice/src/img/guthriestavernLogo.jpeg')} />
 </Pressable>
 <Text style = {styles.barHours}>
 {"\n"}HOURS

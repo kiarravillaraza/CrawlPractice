@@ -11,6 +11,7 @@
  import { Platform, Button, SafeAreaView, Alert, Image, ScrollView, StyleSheet, Text, View } from "react-native";
  import {BackgroundCarousel} from './BackgroundCarousel'
  import Dime from "./Dime";
+import GuthriesTavern from "./GuthriesTavern";
 import Halligan from "./Halligan";
 import HappyCamper from "./HappyCamper";
 import Replay from "./Replay";
@@ -29,7 +30,8 @@ import Sluggers from "./Sluggers";
             {/* <Replay /> */}
             {/* <Halligan /> */}
             {/* <HappyCamper /> */}
-                <Sluggers />
+                {/* <Sluggers /> */}
+                <GuthriesTavern />
 
     </View>
      );
