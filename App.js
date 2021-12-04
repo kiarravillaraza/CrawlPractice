@@ -36,8 +36,8 @@ import UtopianTailgate from "./UtopianTailgate";
             {/* <Sluggers /> */}
             {/* <GuthriesTavern /> */}
 
-              <UtopianTailgate />
-            {/* <Federales /> */}
+              {/* <UtopianTailgate /> */}
+            <Federales />
 
     </View>
      );

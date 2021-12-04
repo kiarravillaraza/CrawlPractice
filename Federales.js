@@ -2,10 +2,10 @@ import {Platform, StyleSheet, Text, View, SafeAreaView, Button, Alert, Pressable
 import React from 'react';
 import { BackgroundCarousel } from './BackgroundCarousel';
 
-var barName = "Utopian Tailagate";
-var barLocation = "1608 N Wells St, Chicago, IL 60614";
-var barBio = "The Tailgate Party that lasts all year long. \n Perched high atop Piper's Alley, above world-famous comedy enclave The Second City, Utopian Tailgate is Chicago's newest never-ending rooftop partyscape."
-var barDays = [ " THURSDAY", "FRIDAY" , "SATURDAY", "SUNDAY"]
+var barName = "Federales";
+var barLocation = "180 N Morgan St, Chicago, IL 60607";
+var barBio = "Federales is a lofty, open-air tequila and taco concept with an energetic atmosphere. \n Centered around authentic drinks, creative tacos, and an urban industrial vibe, it's the go-to bar for guests looking to have a great time and memorable experience."
+var barDays = [ "MONDAY", " THURSDAY", "FRIDAY" , "SATURDAY", "SUNDAY"]
 
 
 
@@ -107,11 +107,12 @@ const styles = StyleSheet.create({
 });
 
 const utopian = [
-"https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/186564204_1151988261984497_4821527613847711828_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=9267fe&_nc_ohc=un3NJn2zzlcAX9mcyVo&_nc_ht=scontent-ort2-1.xx&oh=3a5de757399e1b52b4c1a50d73832d3b&oe=61D23303",
-"https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/101299524_899946000522059_7547170047823708160_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=9267fe&_nc_ohc=X5rNbnK7eJ8AX90vtmO&tn=tPdjh7UKYw6oFUL6&_nc_ht=scontent-ort2-1.xx&oh=0be6e9bc70f8bcb65f5cc0c760f5a311&oe=61D011AE",
-"https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/86738715_823351574848169_534710556335013888_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=9267fe&_nc_ohc=kgGYEIfhFFUAX-rqbGW&_nc_oc=AQk5dbUM45aflG_fLy68IhNV1VDMk8n9PojQT2qLGfwaG8YcKRK3ZYOQPykmz0ga4ss&_nc_ht=scontent-ort2-1.xx&oh=7d466ef5a21d8a1969d4526825958de3&oe=61D22D73",
-"https://assets3.thrillist.com/v1/image/2975414/1584x1056/crop;webp=auto;jpeg_quality=60;progressive.jpg",
-"https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/160034746_1106228256560498_2557919106286750310_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=2hqZxkVBW1oAX8nZ5JK&_nc_ht=scontent-ort2-1.xx&oh=e6d6fe10a848105f790f096ed6068799&oe=61D259B8"
+"https://popmenucloud.com/anfshomu/cee25714-1b47-47dd-b4f9-7dc41811578f.jpg",
+"https://hhrevolution.com/wp-content/uploads/2019/07/Federales-2-580x400.jpeg",
+"https://s3-media0.fl.yelpcdn.com/bphoto/BmxXRxkPs8QKrcjkpCX4zg/o.jpg",
+"https://s3-media0.fl.yelpcdn.com/bphoto/tCMsM_BEEcicl_xdJ2fREA/o.jpg",
+"https://popmenucloud.com/cdn-cgi/image/width=1536,height=1536,fit=scale-down,format=auto,quality=60/anfshomu/e9eed4d2-549c-4e5c-b10f-23fc07cc4546.jpg"
+
 
 ];
 
@@ -159,14 +160,14 @@ class UtopianTailgate extends React.Component {
 
     <View style = {styles.socials}> 
           <Pressable 
-          onPress={() => Linking.openURL('https://www.instagram.com/utopiantailgate/')} >
+          onPress={() => Linking.openURL('https://www.instagram.com/federaleschicago/')} >
           <Image
           style = {{width: 130, height: 130, left: 55, marginTop: 0}}
           source = {require('/Users/kiarravillaraza/CrawlPractice/src/img/instagram.png')} />
           </Pressable>
 
           <Pressable 
-          onPress={() => Linking.openURL('https://www.facebook.com/utopiantailgate/')} >
+          onPress={() => Linking.openURL('https://www.facebook.com/federaleschicago/')} >
           <Image
           style = {{width: 65, height: 65, left: 105, marginTop:30}}
           source = {require('/Users/kiarravillaraza/CrawlPractice/src/img/facebook.png')} />
@@ -176,38 +177,39 @@ class UtopianTailgate extends React.Component {
 
 <View style = {styles.container3}>
 <Pressable 
-          onPress={() => Linking.openURL('https://www.utopiantailgate.com')} >
+          onPress={() => Linking.openURL('https://www.federaleschicago.com')} >
     <Image
-          style = {{width: 200, height: 200, left: 95, marginTop: 70}}
-          source = {require('/Users/kiarravillaraza/CrawlPractice/src/img/utopiantailgateLogo.png')} />
+          style = {{width: 300, height: 300, left: 45, marginTop: 70}}
+          source = {require('/Users/kiarravillaraza/CrawlPractice/src/img/federalesLogo.png')} />
 </Pressable>
 <Text style = {styles.barHours}>
             {"\n"}HOURS
           </Text>
-            <Text style = {styles.barDays} >
-            {barDays[0]} 
+          <Text style = {styles.barDays} >
+            {barDays[0]} -
+            {"\n"}{barDays[1]} 
             </Text>
             <Text style = {styles.barTimes} >
-              {"\n"} 4PM - 11PM 
+              {"\n"} 4PM - 2AM 
             </Text>
             <Text style = {styles.barDays} >
-                {"\n"} {barDays[1]}
+                {"\n"} {barDays[2]}
             </Text>
             <Text style = {styles.barTimes} >
            
-              {"\n"} 2PM - 2AM
+              {"\n"} 11PM - 2AM
               </Text>
             <Text style = {styles.barDays} >
-                {"\n"} {barDays[2]}
+                {"\n"} {barDays[3]}
             </Text>
             <Text style = {styles.barTimes} >
             {"\n"} 11AM - 3AM
             </Text>
             <Text style = {styles.barDays} >
-              {"\n"} {barDays[3]}
+              {"\n"} {barDays[4]}
               </Text>
             <Text style = {styles.barTimes} >
-            {"\n"} 11AM - 7PM
+            {"\n"} 11AM - 10PM
             </Text>
 
   </View>
