@@ -25,7 +25,9 @@ import Replay from "./Replay";
 
             {/* <Dime />            */}
             {/* <Replay /> */}
-            <Halligan />
+            {/* <Halligan /> */}
+            <HappyCamper />
+
 
     </View>
      );
