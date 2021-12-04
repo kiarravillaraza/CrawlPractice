@@ -185,7 +185,7 @@ class UtopianTailgate extends React.Component {
             {"\n"}HOURS
           </Text>
             <Text style = {styles.barDays} >
-            {"\n"}{barDays[0]} 
+            {barDays[0]} 
             </Text>
             <Text style = {styles.barTimes} >
               {"\n"} 4PM - 11PM 
