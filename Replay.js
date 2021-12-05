@@ -158,14 +158,14 @@ class Replay extends React.Component {
           onPress={() => Linking.openURL('https://www.instagram.com/replaylincolnpark/')} >
           <Image
           style = {{width: 130, height: 130, left: 55, marginTop: 0}}
-          source = {require('/Users/kiarravillaraza/CrawlPractice/src/img/instagram.png')} />
+          source = {require('./src/img/instagram.png')} />
           </Pressable>
 
           <Pressable 
           onPress={() => Linking.openURL('https://www.facebook.com/replaylincolnpark')} >
           <Image
           style = {{width: 65, height: 65, left: 105, marginTop:30}}
-          source = {require('/Users/kiarravillaraza/CrawlPractice/src/img/facebook.png')} />
+          source = {require('./src/img/facebook.png')} />
           </Pressable> 
     </View>
 
@@ -175,7 +175,7 @@ class Replay extends React.Component {
           onPress={() => Linking.openURL('https://www.replaylincolnpark.com')} >
     <Image
           style = {{width: 300, height: 100, left: 50, marginTop: 60}}
-          source = {require('/Users/kiarravillaraza/CrawlPractice/src/img/replayLogo.png')} />
+          source = {require('./src/img/replayLogo.png')} />
 </Pressable>
 <Text style = {styles.barHours}>
             {"\n"}HOURS

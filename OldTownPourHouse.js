@@ -162,14 +162,14 @@ class OldTownPourHouse extends React.Component {
           onPress={() => Linking.openURL('https://www.instagram.com/otpourhouse/')} >
           <Image
           style = {{width: 130, height: 130, left: 55, marginTop: 0}}
-          source = {require('/Users/kiarravillaraza/CrawlPractice/src/img/instagram.png')} />
+          source = {require('./src/img/instagram.png')} />
           </Pressable>
 
           <Pressable 
           onPress={() => Linking.openURL('https://www.facebook.com/otpourhouse/')} >
           <Image
           style = {{width: 65, height: 65, left: 105, marginTop:30}}
-          source = {require('/Users/kiarravillaraza/CrawlPractice/src/img/facebook.png')} />
+          source = {require('./src/img/facebook.png')} />
           </Pressable> 
     </View>
 
@@ -179,7 +179,7 @@ class OldTownPourHouse extends React.Component {
           onPress={() => Linking.openURL('https://www.oldtownpourhouse.com/chicago/')} >
     <Image
           style = {{width: 270, height: 175, left: 60, marginTop: 70}}
-          source = {require('/Users/kiarravillaraza/CrawlPractice/src/img/oldtownpourhouseLogo.png')} />
+          source = {require('./src/img/oldtownpourhouseLogo.png')} />
 </Pressable>
 <Text style = {styles.barHours}>
             {"\n"}HOURS

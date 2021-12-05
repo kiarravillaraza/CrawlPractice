@@ -162,14 +162,14 @@ class Sluggers extends React.Component {
           onPress={() => Linking.openURL('https://www.instagram.com/sluggersbar/')} >
           <Image
           style = {{width: 130, height: 130, left: 55, marginTop: 0}}
-          source = {require('/Users/kiarravillaraza/CrawlPractice/src/img/instagram.png')} />
+          source = {require('./src/img/instagram.png')} />
           </Pressable>
 
           <Pressable 
           onPress={() => Linking.openURL('https://www.facebook.com/SluggersBar/')} >
           <Image
           style = {{width: 65, height: 65, left: 105, marginTop:30}}
-          source = {require('/Users/kiarravillaraza/CrawlPractice/src/img/facebook.png')} />
+          source = {require('./src/img/facebook.png')} />
           </Pressable> 
     </View>
 
@@ -179,7 +179,7 @@ class Sluggers extends React.Component {
           onPress={() => Linking.openURL('http://www.sluggersbar.com')} >
     <Image
           style = {{width: 375, height: 100, left: 10, marginTop: 70}}
-          source = {require('/Users/kiarravillaraza/CrawlPractice/src/img/sluggersLogo.png')} />
+          source = {require('./src/img/sluggersLogo.png')} />
 </Pressable>
 <Text style = {styles.barHours}>
             {"\n"}HOURS

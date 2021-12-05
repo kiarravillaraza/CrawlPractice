@@ -161,7 +161,7 @@ class GuthriesTavern extends React.Component {
           onPress={() => Linking.openURL('https://www.instagram.com/official_guthries_tavern/')} >
           <Image
           style = {{width: 130, height: 130, left: 123, marginTop: 0}}
-          source = {require('/Users/kiarravillaraza/CrawlPractice/src/img/instagram.png')} />
+          source = {require('./src/img/instagram.png')} />
           </Pressable>
 
          
@@ -173,7 +173,7 @@ class GuthriesTavern extends React.Component {
           onPress={() => Linking.openURL('https://www.guthriestavern.com')} >
     <Image
           style = {{width: 200, height: 250, left: 95, marginTop: 70}}
-          source = {require('/Users/kiarravillaraza/CrawlPractice/src/img/guthriestavernLogo.jpeg')} />
+          source = {require('./src/img/guthriestavernLogo.jpeg')} />
 </Pressable>
 <Text style = {styles.barHours}>
 {"\n"}HOURS
