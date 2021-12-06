@@ -2,7 +2,7 @@ import {Platform, StyleSheet, Text, View, SafeAreaView, Button, Alert, Pressable
 import React from 'react';
 import { BackgroundCarousel } from './BackgroundCarousel';
 
-var barName = "Utopian Tailagate";
+var barName = "Utopian Tailgate";
 var barLocation = "1608 N Wells St, Chicago, IL 60614";
 var barBio = "The Tailgate Party that lasts all year long. \n Perched high atop Piper's Alley, above world-famous comedy enclave The Second City, Utopian Tailgate is Chicago's newest never-ending rooftop partyscape."
 var barDays = [ " THURSDAY", "FRIDAY" , "SATURDAY", "SUNDAY"]

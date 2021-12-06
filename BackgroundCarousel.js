@@ -57,7 +57,7 @@ class BackgroundCarousel extends React.Component {
 
            
       
-            < View style ={{position: "absolute", bottom: 506, height: "40%", width: "100%"}}>
+            < View style ={{position: "absolute", bottom: 450, height: "41%", width: "100%"}}>
                     <ScrollView 
                     horizontal 
                     pagingEnabled 
