@@ -22,6 +22,9 @@
  import Replay from "./Replay";
  import Sluggers from "./Sluggers";
  import UtopianTailgate from "./UtopianTailgate";
+ import LincolnPark from './LincolnPark';
+ import OldTown from './OldTown';
+ import Wrigleyville from './Wrigleyville';
 
 
  const Stack = createNativeStackNavigator();
@@ -33,7 +36,7 @@
       <Text>Neighborhood List</Text>
       <Button
         title="Go to Lincoln Park"
-        onPress={() => navigation.navigate('Lincoln Park')}
+        onPress={() => navigation.navigate('LincolnPark')}
       />
 
       <Button
@@ -52,6 +55,7 @@
 function LincolnParkScreen({ navigation }) {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <LincolnPark />
       <Text>Lincoln Park Screen</Text>
       <Button
         title="Go to Dime"
@@ -72,6 +76,7 @@ function LincolnParkScreen({ navigation }) {
 function OldTownScreen({ navigation }) {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <OldTown />
       <Text>Old Town Screen</Text>
       <Button
         title="Go to Federales"
@@ -92,6 +97,7 @@ function OldTownScreen({ navigation }) {
 function WrigleyvilleScreen({ navigation }) {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Wrigleyville />
       <Text>Wrigleyville Screen</Text>
       <Button
         title="Go to Guthries Tavern"
@@ -192,7 +198,7 @@ function App() {
         />
 
         <Stack.Screen 
-          name="Lincoln Park" 
+          name="LincolnPark" 
           component={LincolnParkScreen} 
         />
 
