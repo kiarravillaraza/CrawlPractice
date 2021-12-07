@@ -643,9 +643,9 @@ function SluggersScreen() {
 function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Warning">
+      <Stack.Navigator initialRouteName="Terms of Agreement">
         <Stack.Screen
-          name="Warning"
+          name="Terms of Agreement"
           component={WarningScreen}
         />
         {/* <Stack.Screen
