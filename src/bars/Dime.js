@@ -8,10 +8,6 @@ var barBio = "The Dime is in the heart of Lincoln Park! \n A sports bar perfect 
 var barDays = [" THURSDAY", "FRIDAY" , "SATURDAY", "SUNDAY"]
 
  
- 
-
-// console.log(duplicateItem)
-
 
 const styles = StyleSheet.create({
     barTitle: {
