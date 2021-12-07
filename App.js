@@ -332,10 +332,10 @@
 
       <View style = {{width: '100%', height: '18%', backgroundColor: '#81d9aa', marginTop:50}}> 
           <Pressable 
-          onPress={() => navigation.navigate('Wrigleyville')}>
-          {/* <Image
-          style = {{width: 130, height: 130, left: 55, marginTop: 0}}
-          source = {require('./src/img/instagram.png')} /> */}
+          onPress={() => {navigation.navigate('NeighborhoodList')}}>
+          <Image
+          style = {{width: 65, height: 65, left: 35, marginTop: 5}}
+          source = {require('./src/img/homeIcon.png')} />
           </Pressable>
 
           <Pressable 
@@ -354,21 +354,54 @@
 function LincolnParkScreen({ navigation }) {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      {/*<LincolnPark />*/}
-      <Text>Lincoln Park Screen</Text>
-      <Button
-        title="Go to Dime"
-        onPress={() => navigation.navigate('The Dime')}
-      />
-      <Button
-        title="Go to Halligan"
-        onPress={() => navigation.navigate('Halligan Bar')}
-      />
-      <Button
-        title="Go to Replay"
-        onPress={() => navigation.navigate('Replay')}
-      />
+    <BackgroundCarousel images={neighborhoods} />
+
+    <View style = {{width: '85%', height: '8%', backgroundColor: '#81d9aa', marginTop: 385}}>
+    <Pressable
+    onPress={() => navigation.navigate('The Dime')}>
+      <Text style = {{fontFamily: 'Futura', fontSize: 35, left: 90, marginTop: 5}}>
+      The Dime
+      </Text>
+    </Pressable>
     </View>
+
+    <View style = {{width: '85%', height: '8%', backgroundColor: '#81d9aa', marginTop: 50}}>
+    <Pressable
+    onPress={() => navigation.navigate('Replay')}>
+      <Text style = {{fontFamily: 'Futura', fontSize: 35, left: 110, marginTop: 5}}>
+      Replay 
+      </Text>
+    </Pressable>
+    </View>
+
+    <View style = {{width: '85%', height: '8%', backgroundColor: '#81d9aa', marginTop: 50}}>
+    <Pressable
+    onPress={() => navigation.navigate('Halligan Bar')}>
+      <Text style = {{fontFamily: 'Futura', fontSize: 35, left: 65, marginTop: 5}}>
+      Halligan Bar
+      </Text>
+    </Pressable>
+    </View>
+
+    <View style = {{width: '100%', height: '18%', backgroundColor: '#81d9aa', marginTop:50}}> 
+        <Pressable 
+        onPress={() => {navigation.navigate('NeighborhoodList')}}>
+        <Image
+        style = {{width: 65, height: 65, left: 35, marginTop: 5}}
+        source = {require('./src/img/homeIcon.png')} />
+        </Pressable>
+
+        <Pressable 
+        onPress={() => Linking.openURL('https://www.facebook.com/thedimechi/')} >
+        {/* <Image
+        style = {{width: 65, height: 65, left: 105, marginTop:30}}
+        source = {require('./src/img/facebook.png')} /> */}
+        </Pressable> 
+  </View>
+
+
+  </View>
+    
   );
 }
 
