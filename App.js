@@ -58,12 +58,236 @@
       <Button
         color= 'white'
         title="YES"
-        onPress={() => navigation.navigate('NeighborhoodList')}
+        onPress={() => navigation.navigate('Quiz')}
       />
       </View>
     </View>
   );
  }
+ function quizScreen({ navigation }) {
+  return (
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text>On which day will this Bar Crawl take place?</Text>
+      <Button
+        title="Friday"
+        onPress={() => navigation.navigate('Friday')}
+      />
+      <Button
+        title="Saturday"
+        onPress={() => navigation.navigate('Saturday')}
+      />
+      <Button
+        title="Sunday"
+        onPress={() => navigation.navigate('Sunday')}
+      />
+      </View>
+  );
+}
+function fridayScreen({ navigation }) {
+  return (
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text>How many long will this crawl be for?</Text>
+      <Button
+        title="1 hour"
+        onPress={() => navigation.navigate('1 Hour')}
+      />
+      <Button
+        title="2 hours"
+        onPress={() => navigation.navigate('2 Hours')}
+      />
+      <Button
+        title="3 hours"
+        onPress={() => navigation.navigate('3 Hours')}
+      />
+      </View>
+  );
+}
+function saturdayScreen({ navigation }) {
+  return (
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text>How many long will this crawl be for?</Text>
+      <Button
+        title="1 hour"
+        onPress={() => navigation.navigate('1 Hour')}
+      />
+      <Button
+        title="2 hours"
+        onPress={() => navigation.navigate('2 Hours')}
+      />
+      <Button
+        title="3 hours"
+        onPress={() => navigation.navigate('3 Hours')}
+      />
+      </View>
+  );
+}
+function sundayScreen({ navigation }) {
+  return (
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text>How many long will this crawl be for?</Text>
+      <Button
+        title="1 hour"
+        onPress={() => navigation.navigate('1 Hour')}
+      />
+      <Button
+        title="2 hours"
+        onPress={() => navigation.navigate('2 Hours')}
+      />
+      <Button
+        title="3 hours"
+        onPress={() => navigation.navigate('3 Hours')}
+      />
+      </View>
+  );
+}
+function onehourScreen({ navigation }) {
+  return (
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text>Select your neighborhoods?</Text>
+      <Button
+        title="Lincoln Park"
+        onPress={() => count =+ 1}
+      />
+      <Button
+        title="Oldtown"
+        onPress={() => count2 =+ 1}
+      />
+      <Button
+        title="Wrigleyville"
+        onPress={() => count3 =+ 1}
+      />
+      <Button
+        title="Next"
+        onPress={() => navigation.navigate('Bar Count')}
+      />
+      </View>
+  );
+}
+function twohoursScreen({ navigation }) {
+  return (
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text>Select your neighborhoods?</Text>
+      <Button
+        title="Lincoln Park"
+        onPress={() => count =+ 1}
+      />
+      <Button
+        title="Oldtown"
+        onPress={() => count2 =+ 1}
+      />
+      <Button
+        title="Wrigleyville"
+        onPress={() => count3 =+ 1}
+      />
+      <Button
+        title="Next"
+        onPress={() => navigation.navigate('Bar Count')}
+      />
+      </View>
+  );
+}
+function threehoursScreen({ navigation }) {
+  return (
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text>Select your neighborhoods?</Text>
+      <Button
+        title="Lincoln Park"
+        onPress={() => count =+ 1}
+      />
+      <Button
+        title="Oldtown"
+        onPress={() => count2 =+ 1}
+      />
+      <Button
+        title="Wrigleyville"
+        onPress={() => count3 =+ 1}
+      />
+      <Button
+        title="Next"
+        onPress={() => navigation.navigate('Bar Count')}
+      />
+      </View>
+  );
+}
+function barcountScreen({ navigation }) {
+  return (
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text>How many bars will this crawl have?</Text>
+      <Button
+        title="3"
+        onPress={() => navigation.navigate('3 Bars') }
+      />
+      <Button
+        title="6"
+        onPress={() => navigation.navigate('6 Bars')}
+      />
+      <Button
+        title="9"
+        onPress={() => navigation.navigate('9 Bars')}
+      />
+      </View>
+  );
+}
+function barScreen({ navigation }) {
+  return (
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text>Select your Bars</Text>
+      <Button
+        title="Dime"
+        onPress={() => count =+ 1}
+      />
+      <Button
+        title="Halligan"
+        onPress={() => count2 =+ 1}
+      />
+      <Button
+        title="Replay"
+        onPress={() => count3 =+ 1}
+      />
+      <Button
+        title="Federales"
+        onPress={() => count4 =+ 1}
+      />
+      <Button
+        title="Old Town Pour House"
+        onPress={() => count5 =+ 1}
+      />
+      <Button
+        title="Utopian Tailgate"
+        onPress={() => count6 =+ 1}
+      />
+      <Button
+        title="Guthries Tavern"
+        onPress={() => count7 =+ 1}
+      />
+      <Button
+        title="Happy Camper"
+        onPress={() => count8 =+ 1}
+      />
+      <Button
+        title="Sluggers"
+        onPress={() => count9 =+ 1}
+      />
+      <Button
+        title="Finish"
+        onPress={() => navigation.navigate('Results')}
+      />
+    </View>
+  );
+}
+function resultScreen({ navigation }) {
+  return (
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text>Results:</Text>
+      <Text></Text>
+      <Button
+        title="Go to Neighborhoods"
+        onPress={() => navigation.navigate('NeighborhoodList')}
+      />
+    </View>
+  );
+}
+ 
 
 
  function NeighborhoodScreen({ navigation }) {
@@ -230,6 +454,59 @@ function App() {
         <Stack.Screen
           name="Warning"
           component={WarningScreen}
+        />
+        <Stack.Screen
+          name="Quiz"
+          component={quizScreen}
+        />
+        <Stack.Screen
+          name="Friday"
+          component={fridayScreen}
+        />
+        <Stack.Screen
+          name="Saturday"
+          component={saturdayScreen}
+        />
+        <Stack.Screen
+          name="Sunday"
+          component={sundayScreen}
+        />
+        <Stack.Screen
+          name="1 Hour"
+          component={onehourScreen}
+        />
+        <Stack.Screen
+          name="2 Hours"
+          component={twohoursScreen}
+        />
+        <Stack.Screen
+          name="3 Hours"
+          component={threehoursScreen}
+        />
+        <Stack.Screen
+          name="3 Bars"
+          component={barScreen}
+        />
+        <Stack.Screen
+          name="6 Bars"
+          component={barScreen}
+          
+        />
+        <Stack.Screen
+          name="9 Bars"
+          component={barScreen}
+        />
+        <Stack.Screen
+          name="Bar Count"
+          component={barcountScreen}
+        />
+        <Stack.Screen
+          name="Bars"
+          component={barScreen}
+        />
+        <Stack.Screen
+          name="Results"
+          component={resultScreen}
         />
 
         <Stack.Screen
