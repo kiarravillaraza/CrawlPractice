@@ -348,7 +348,7 @@ function GenerateScreen({ navigation }) {
   var myArray = [
     "The Dime",
     "Halligan Bar",
-    "Sluggers World Class Sports Bar",
+    "Sluggers",
     "Replay",
     "Utopian Tailgate",
     "Guthries Tavern",
