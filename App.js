@@ -25,7 +25,7 @@
  import LincolnPark from './src/neighborhoods/LincolnPark';
  import OldTown from './src/neighborhoods/OldTown';
  import Wrigleyville from './src/neighborhoods/Wrigleyville';
- import Generate from './GenerateScreen';
+ //import Generate from './GenerateScreen';
 
 
  const Stack = createNativeStackNavigator();
@@ -145,14 +145,14 @@ const oldtown = [
         </Pressable>
 
         <Pressable 
-        onPress={() => {navigation.navigate('Generate')}}>
+        onPress={() => {navigation.navigate('NeighborhoodList')}}>
         <Image
         style = {{width: 60, height: 60, left: 105, marginTop:10}}
         source = {require('./src/img/generateIcon.png')} />
         </Pressable> 
         
         <Pressable 
-        onPress={() => {navigation.navigate('NeighborhoodList')}}>
+        onPress={() => {navigation.navigate('Generate')}}>
         <Image
         style = {{width: 50, height: 50, left: 185, marginTop:10}}
         source = {require('./src/img/quizIcon.png')} />
@@ -212,7 +212,7 @@ function LincolnParkScreen({ navigation }) {
         </Pressable> 
         
         <Pressable 
-        onPress={() => {navigation.navigate('NeighborhoodList')}}>
+        onPress={() => {navigation.navigate('Generate')}}>
         <Image
         style = {{width: 50, height: 50, left: 185, marginTop:10}}
         source = {require('./src/img/quizIcon.png')} />
@@ -273,7 +273,7 @@ function OldTownScreen({ navigation }) {
       </Pressable> 
       
       <Pressable 
-      onPress={() => {navigation.navigate('NeighborhoodList')}}>
+      onPress={() => {navigation.navigate('Generate')}}>
       <Image
       style = {{width: 50, height: 50, left: 185, marginTop:10}}
       source = {require('./src/img/quizIcon.png')} />
@@ -332,7 +332,7 @@ function WrigleyvilleScreen({ navigation }) {
         </Pressable> 
         
         <Pressable 
-        onPress={() => {navigation.navigate('NeighborhoodList')}}>
+        onPress={() => {navigation.navigate('Generate')}}>
         <Image
         style = {{width: 50, height: 50, left: 185, marginTop:10}}
         source = {require('./src/img/quizIcon.png')} />
@@ -344,11 +344,85 @@ function WrigleyvilleScreen({ navigation }) {
 }
 
 
+function GenerateScreen({ navigation }) {
+  var myArray = [
+    "The Dime",
+    "Halligan Bar",
+    "Sluggers World Class Sports Bar",
+    "Replay",
+    "Utopian Tailgate",
+    "Guthries Tavern",
+    "Federales",
+    "Happy Camper",
+    "Old Town Pour House"
+  ];
+   
+  var duplicateItem = [];
+   
+  for (let i = 0; i < 100; i++) {
+    var randomItem = myArray[Math.floor(Math.random()*myArray.length)]
+    if (!duplicateItem.includes(randomItem)) {
+        if(duplicateItem.length != 5){
+        duplicateItem.push(randomItem)
+        }
+    }
+  }
 
-function GenerateScreen () {
   return (
-    <View style={styles.container}>
-            <Generate />
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'black' }}>
+
+      <View style = {{width: '85%', height: '8%', backgroundColor: '#C8D586', marginTop: 165}}>
+        <Text style = {{fontFamily: 'Futura', color:'white', fontSize: 25, textAlign: 'center', marginTop: 10}}>
+          {duplicateItem[0]}
+        </Text>
+      </View>
+
+      <View style = {{width: '85%', height: '8%', backgroundColor: '#BCFF70', marginTop: 50}}>
+        <Text style = {{fontFamily: 'Futura', color:'white', fontSize: 25, textAlign: 'center', marginTop: 10}}>
+          {duplicateItem[1]}
+        </Text>
+      </View>
+
+      <View style = {{width: '85%', height: '8%', backgroundColor: '#81D9AA', marginTop: 50}}>
+        <Text style = {{fontFamily: 'Futura', color:'white', fontSize: 25, textAlign: 'center', marginTop: 10}}>
+          {duplicateItem[2]}
+        </Text>
+      </View>
+
+      <View style = {{width: '85%', height: '8%', backgroundColor: '#01BBCC', marginTop: 50}}>
+        <Text style = {{fontFamily: 'Futura', color:'white', fontSize: 25, textAlign: 'center', marginTop: 10}}>
+          {duplicateItem[3]}
+        </Text>
+      </View>
+
+      <View style = {{width: '85%', height: '8%', backgroundColor: '#219EBC', marginTop: 50}}>
+        <Text style = {{fontFamily: 'Futura', color:'white', fontSize: 25, textAlign: 'center', marginTop: 10}}>
+          {duplicateItem[4]}
+        </Text>
+      </View>
+
+      <View style = {styles.bottomBar}> 
+        <Pressable 
+        onPress={() => {navigation.navigate('NeighborhoodList')}}>
+        <Image
+        style = {{width: 65, height: 65, left: 30, marginTop: 5}}
+        source = {require('./src/img/homeIcon.png')} />
+        </Pressable>
+
+        <Pressable 
+        onPress={() => {navigation.navigate('NeighborhoodList')}}>
+        <Image
+        style = {{width: 60, height: 60, left: 105, marginTop:10}}
+        source = {require('./src/img/generateIcon.png')} />
+        </Pressable> 
+
+        <Pressable 
+        onPress={() => {navigation.navigate('Generate')}}>
+        <Image
+        style = {{width: 50, height: 50, left: 185, marginTop:10}}
+        source = {require('./src/img/quizIcon.png')} />
+        </Pressable> 
+      </View>
     </View>
   );
 }
@@ -469,6 +543,7 @@ function App() {
         <Stack.Screen
           name="Generate"
           component={GenerateScreen}
+          options={{ title: 'Your Crawl' }}
         />
 
         <Stack.Screen 
