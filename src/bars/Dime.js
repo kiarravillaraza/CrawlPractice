@@ -1,11 +1,11 @@
 import {Platform, StyleSheet, Text, View, SafeAreaView, Button, Alert, Pressable, Image, ScrollView, Linking} from 'react-native';
 import React from 'react';
-import { BackgroundCarousel } from './BackgroundCarousel';
+import { BackgroundCarousel } from '../../BackgroundCarousel';
 
-var barName = "Happy Camper";
-var barLocation = "3458 N Clark St, Chicago, IL 60657";
-var barBio = "Happy Camper came to fill a pizza-void. \n Happy Camper also came to have a damn good time. \n If you ask them, the experts, there's not a better combination of pizza, booze, vibes, and happiness in the whole universe than what you'll get here."
-var barDays = ["MONDAY", "WEDNESDAY", " THURSDAY", "FRIDAY" , "SATURDAY", "SUNDAY"]
+var barName = "The Dime";
+var barLocation = "2263 N Lincoln Ave, Chicago, IL 60614";
+var barBio = "The Dime is in the heart of Lincoln Park! \n A sports bar perfect for every occasion."
+var barDays = [" THURSDAY", "FRIDAY" , "SATURDAY", "SUNDAY"]
 
 
 
@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
         barBiography: {
           padding: 35,
           margin: 20,
-          fontSize: 33,
+          fontSize: 35,
           color: "#ededed",
           textAlign: "center",
           fontStyle: "italic",
@@ -90,7 +90,7 @@ const styles = StyleSheet.create({
         },
         socials: {
           width: '100%',
-          height: '6%',
+          height: '8%',
           flexDirection: 'row',
           backgroundColor: '#81d9aa'
 
@@ -106,24 +106,24 @@ const styles = StyleSheet.create({
         
 });
 
-const happycamper = [
-"https://images.otstatic.com/prod/28117442/2/huge.jpg",
-"https://www.chicagotribune.com/resizer/9zBitcXuYWji-eyuvl9O0bJV160=/800x533/top/cloudfront-us-east-1.images.arcpublishing.com/tronc/5LVIDUNDMFHB5A4S22LMPKAOPQ.jpg",
-"https://s3-media0.fl.yelpcdn.com/bphoto/VaSEwB0xSKPNp1Yjx7eznA/o.jpg",
-"https://s3-media0.fl.yelpcdn.com/bphoto/3U4MyNhyXmMldRTQ4EjdSQ/o.jpg",
-"https://cdn3.localdatacdn.com/il/chicago/5262042/original/PVuNz0cBdo.jpg"
+const dime = [
+  "https://scontent-ort2-2.xx.fbcdn.net/v/t39.30808-6/256827177_675290333857410_1923687880662733746_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=9267fe&_nc_ohc=Q2Z2IEDrUfQAX-j6X92&_nc_oc=AQmnx8q1Kd6KunZEIf3cqiSCHiA0jfKVzx6I_AB6FGS8I2RGQ8IFTXzmx4XjY3gDqt4&_nc_ht=scontent-ort2-2.xx&oh=16ca92d1a008904282f7952da82418a6&oe=61AE4BA2",
+   "https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/78566939_158829685503480_2064189259874566144_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=e3f864&_nc_ohc=SGMX0In75jAAX-Z2BOl&_nc_ht=scontent-ort2-1.xx&oh=fc51a9b7d411ede02af6349b199f4328&oe=61C38364",
+   "https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/201156058_572739830779128_5055751502644027532_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=2c4854&_nc_ohc=fvAoMqkJHekAX9oWPTo&_nc_ht=scontent-ort2-1.xx&oh=102a04e145e82d4fcd5bf2f42ac8a91f&oe=61C1CD88",
+   "https://d1t295ks1d26ah.cloudfront.net/media/pictures/files/000/021/263/xlarge_desktop/77394087_158830698836712_6283762755795156992_o.jpg?1589578908",
+   "https://scontent-ort2-2.xx.fbcdn.net/v/t39.30808-6/258091832_676527673733676_8826771448272167123_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=9267fe&_nc_ohc=wtnCrkbFXIUAX_r7oGi&_nc_ht=scontent-ort2-2.xx&oh=b44199efd21a054363d908db1ae80496&oe=61AE39F9",
 
-];
+ ];
 
 
 
-class HappyCamper extends React.Component {
+class Dime extends React.Component {
 
     render () {
         return (
           
 <View style= {styles.container}>
-<BackgroundCarousel images={happycamper} />
+<BackgroundCarousel images={dime} />
 
 
 <ScrollView keyboardShouldPersistTaps="always" style={{position: "absolute", bottom: 0, height: "60%", width: "100%"}}> 
@@ -138,7 +138,7 @@ class HappyCamper extends React.Component {
         {barName}
       </Text>
             <Text style = {styles.barAddress} >
-            {"\n"}{barLocation}
+                {"\n"}{barLocation}
             </Text>
             {"\n"}
       </Text>
@@ -154,68 +154,66 @@ class HappyCamper extends React.Component {
             {"\n"}
             </Text>
           </Text>
+
+
+  
+
     </View>
 
 
     <View style = {styles.socials}> 
           <Pressable 
-          onPress={() => Linking.openURL('https://www.instagram.com/happycamperchicago/')} >
+          onPress={() => Linking.openURL('https://www.instagram.com/thedimechi/')} >
           <Image
           style = {{width: 130, height: 130, left: 55, marginTop: 0}}
-          source = {require('./src/img/instagram.png')} />
+          source = {require('../img/instagram.png')} />
           </Pressable>
 
           <Pressable 
-          onPress={() => Linking.openURL('https://www.facebook.com/happycamperwrigleyville/')} >
+          onPress={() => Linking.openURL('https://www.facebook.com/thedimechi/')} >
           <Image
           style = {{width: 65, height: 65, left: 105, marginTop:30}}
-          source = {require('./src/img/facebook.png')} />
+          source = {require('../img/facebook.png')} />
           </Pressable> 
     </View>
 
 
 <View style = {styles.container3}>
 <Pressable 
-          onPress={() => Linking.openURL('http://happycamper.pizza/wrigley')} >
+          onPress={() => Linking.openURL('https://thedimechi.com')} >
     <Image
-          style = {{width: 210, height: 110, left: 85, marginTop: 70}}
-          source = {require('./src/img/happycamperLogo.gif')} />
+          style = {{width: 250, height: 250, left: 70, marginTop: 70}}
+          source = {require('../img/dimeLogo.png')} />
 </Pressable>
 <Text style = {styles.barHours}>
             {"\n"}HOURS
           </Text>
             <Text style = {styles.barDays} >
-            {barDays[0]} -
-            {"\n"}{barDays[1]} 
+            {barDays[0]}
             </Text>
             <Text style = {styles.barTimes} >
-              {"\n"} 10:30AM - 11PM 
+              {"\n"} 5PM - 2AM 
             </Text>
             <Text style = {styles.barDays} >
-                {"\n"}{barDays[2]}
+                {"\n"} {barDays[1]}
             </Text>
             <Text style = {styles.barTimes} >
            
-              {"\n"} 10:30AM - 12AM
+              {"\n"} 5PM - 2AM
               </Text>
             <Text style = {styles.barDays} >
-                {"\n"} {barDays[3]}
+                {"\n"} {barDays[2]}
             </Text>
             <Text style = {styles.barTimes} >
-            {"\n"} 10:30AM - 1AM
+            {"\n"}11AM - 3AM
             </Text>
             <Text style = {styles.barDays} >
-              {"\n"} {barDays[4]}
+              {"\n"} {barDays[3]}
               </Text>
             <Text style = {styles.barTimes} >
-            {"\n"} 10AM - 1AM
+            {"\n"} 11AM - 6PM
             </Text>
-            <Text style = {styles.barDays} >
-                {"\n"} {barDays[5]}
-            </Text>
-            <Text style = {styles.barTimes} >
-            {"\n"} 10AM - 11PM
-            </Text>
+
   </View>
 
   
@@ -224,7 +222,6 @@ class HappyCamper extends React.Component {
   </View>
 
   </ScrollView> 
-  
   </View>
 
 
@@ -232,4 +229,4 @@ class HappyCamper extends React.Component {
 }
 }
 
-export default HappyCamper;
+export default Dime;

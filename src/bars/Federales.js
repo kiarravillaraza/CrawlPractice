@@ -1,11 +1,12 @@
 import {Platform, StyleSheet, Text, View, SafeAreaView, Button, Alert, Pressable, Image, ScrollView, Linking} from 'react-native';
 import React from 'react';
-import { BackgroundCarousel } from './BackgroundCarousel';
+import { BackgroundCarousel } from '../../BackgroundCarousel';
 
-var barName = "Old Town Pour House";
-var barLocation = "1419 N Wells St, Chicago, IL 60610";
-var barBio = "Old Town Pour House is a vibrant bar and restaurant featuring 90 craft beers on tap and modern American food. \n  With a mouthwatering menu and energetic atmosphere, Old Town Pour House is the perfect place for lunch, happy hour, dinner, or your next private party."
-var barDays = [ " MONDAY", "WEDNESDAY", "THURSDAY", "FRIDAY" , "SATURDAY", "SUNDAY"]
+var barName = "Federales";
+var barLocation = "180 N Morgan St, Chicago, IL 60607";
+var barBio = "Federales is a lofty, open-air tequila and taco concept with an energetic atmosphere. \n Centered around authentic drinks, creative tacos, and an urban industrial vibe, it's the go-to bar for guests looking to have a great time and memorable experience."
+var barDays = [ "MONDAY", " THURSDAY", "FRIDAY" , "SATURDAY", "SUNDAY"]
+
 
 
 const styles = StyleSheet.create({
@@ -105,25 +106,25 @@ const styles = StyleSheet.create({
         
 });
 
-const oldtownpourhouse = [
-"https://img1.10bestmedia.com/Images/Photos/371169/20120314--DSC0625_55_660x440.jpg",
-"https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/123135372_3531244616898483_355760767610731697_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=2c4854&_nc_ohc=bxJtS-Sp2hEAX_D9qtq&_nc_ht=scontent-ort2-1.xx&oh=d1bc846a268d52685a9cddb6cc224af5&oe=61D20A9A",
-"https://img1.10bestmedia.com/Images/Photos/371168/20120314--DSC0504_55_660x440.jpg",
-"https://s3-media0.fl.yelpcdn.com/bphoto/vpXQoboEjWorxuM4HMJkbQ/o.jpg",
-"https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/105964976_3163320380357577_4349287549466439203_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=2c4854&_nc_ohc=okXGklYSdx0AX-uprCs&_nc_ht=scontent-ort2-1.xx&oh=27daa5ff2747ff36ba6d663007c2e8a9&oe=61D1E40B",
+const federales = [
+"https://popmenucloud.com/anfshomu/cee25714-1b47-47dd-b4f9-7dc41811578f.jpg",
+"https://hhrevolution.com/wp-content/uploads/2019/07/Federales-2-580x400.jpeg",
+"https://s3-media0.fl.yelpcdn.com/bphoto/BmxXRxkPs8QKrcjkpCX4zg/o.jpg",
+"https://s3-media0.fl.yelpcdn.com/bphoto/tCMsM_BEEcicl_xdJ2fREA/o.jpg",
+"https://popmenucloud.com/cdn-cgi/image/width=1536,height=1536,fit=scale-down,format=auto,quality=60/anfshomu/e9eed4d2-549c-4e5c-b10f-23fc07cc4546.jpg"
 
 
 ];
 
 
 
-class OldTownPourHouse extends React.Component {
+class Federales extends React.Component {
 
     render () {
         return (
           
 <View style= {styles.container}>
-<BackgroundCarousel images={oldtownpourhouse} />
+<BackgroundCarousel images={federales} />
 
 
 <ScrollView keyboardShouldPersistTaps="always" style={{position: "absolute", bottom: 0, height: "60%", width: "100%"}}> 
@@ -159,61 +160,56 @@ class OldTownPourHouse extends React.Component {
 
     <View style = {styles.socials}> 
           <Pressable 
-          onPress={() => Linking.openURL('https://www.instagram.com/otpourhouse/')} >
+          onPress={() => Linking.openURL('https://www.instagram.com/federaleschicago/')} >
           <Image
           style = {{width: 130, height: 130, left: 55, marginTop: 0}}
-          source = {require('./src/img/instagram.png')} />
+          source = {require('../img/instagram.png')} />
           </Pressable>
 
           <Pressable 
-          onPress={() => Linking.openURL('https://www.facebook.com/otpourhouse/')} >
+          onPress={() => Linking.openURL('https://www.facebook.com/federaleschicago/')} >
           <Image
           style = {{width: 65, height: 65, left: 105, marginTop:30}}
-          source = {require('./src/img/facebook.png')} />
+          source = {require('../img/facebook.png')} />
           </Pressable> 
     </View>
 
 
 <View style = {styles.container3}>
 <Pressable 
-          onPress={() => Linking.openURL('https://www.oldtownpourhouse.com/chicago/')} >
+          onPress={() => Linking.openURL('https://www.federaleschicago.com')} >
     <Image
-          style = {{width: 270, height: 175, left: 60, marginTop: 70}}
-          source = {require('./src/img/oldtownpourhouseLogo.png')} />
+          style = {{width: 300, height: 300, left: 45, marginTop: 70}}
+          source = {require('../img/federalesLogo.png')} />
 </Pressable>
 <Text style = {styles.barHours}>
             {"\n"}HOURS
           </Text>
           <Text style = {styles.barDays} >
-          {barDays[0]} -
-            {"\n"} {barDays[1]} 
+            {barDays[0]} -
+            {"\n"}{barDays[1]} 
             </Text>
             <Text style = {styles.barTimes} >
-              {"\n"} 4PM - 11PM 
+              {"\n"} 4PM - 2AM 
             </Text>
             <Text style = {styles.barDays} >
                 {"\n"} {barDays[2]}
             </Text>
             <Text style = {styles.barTimes} >
-              {"\n"} 4PM - 12AM
+           
+              {"\n"} 11PM - 2AM
               </Text>
             <Text style = {styles.barDays} >
                 {"\n"} {barDays[3]}
             </Text>
             <Text style = {styles.barTimes} >
-            {"\n"} 11AM - 2AM
+            {"\n"} 11AM - 3AM
             </Text>
             <Text style = {styles.barDays} >
               {"\n"} {barDays[4]}
               </Text>
             <Text style = {styles.barTimes} >
-            {"\n"} 10AM - 3AM
-            </Text>
-            <Text style = {styles.barDays} >
-              {"\n"} {barDays[5]}
-              </Text>
-            <Text style = {styles.barTimes} >
-            {"\n"} 10AM - 11PM
+            {"\n"} 11AM - 10PM
             </Text>
 
   </View>
@@ -232,4 +228,4 @@ class OldTownPourHouse extends React.Component {
 }
 }
 
-export default OldTownPourHouse;
+export default Federales;

@@ -1,13 +1,13 @@
 import {Platform, StyleSheet, Text, View, SafeAreaView, Button, Alert, Pressable, Image, ScrollView, Linking} from 'react-native';
 import React from 'react';
-import { BackgroundCarousel } from './BackgroundCarousel';
+import { BackgroundCarousel } from '../../BackgroundCarousel';
 
-var barName = "The Dime";
-var barLocation = "2263 N Lincoln Ave, Chicago, IL 60614";
-var barBio = "The Dime is in the heart of Lincoln Park! \n A sports bar perfect for every occasion."
-var barDays = [" THURSDAY", "FRIDAY" , "SATURDAY", "SUNDAY"]
+var barName = "Sluggers World Class Sports Bar";
+var barLocation = "3540 N Clark St, Chicago, IL 60657";
+var barBio = "Since 1985 Sluggers World Class Sports Bar and Grill has been giving the Wrigleyville area a place to go for much more than just a drink. \n With massive HD big screens and over 30 TV's to see all of your favorite sports teams in glorious HD, you'll never miss a minute of any sports action! "
+var barDays = ["MONDAY", " THURSDAY", "FRIDAY" , "SUNDAY"]
 
-
+ 
 
 const styles = StyleSheet.create({
     barTitle: {
@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
         barBiography: {
           padding: 35,
           margin: 20,
-          fontSize: 35,
+          fontSize: 33,
           color: "#ededed",
           textAlign: "center",
           fontStyle: "italic",
@@ -90,7 +90,7 @@ const styles = StyleSheet.create({
         },
         socials: {
           width: '100%',
-          height: '8%',
+          height: '7%',
           flexDirection: 'row',
           backgroundColor: '#81d9aa'
 
@@ -106,24 +106,24 @@ const styles = StyleSheet.create({
         
 });
 
-const dime = [
-  "https://scontent-ort2-2.xx.fbcdn.net/v/t39.30808-6/256827177_675290333857410_1923687880662733746_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=9267fe&_nc_ohc=Q2Z2IEDrUfQAX-j6X92&_nc_oc=AQmnx8q1Kd6KunZEIf3cqiSCHiA0jfKVzx6I_AB6FGS8I2RGQ8IFTXzmx4XjY3gDqt4&_nc_ht=scontent-ort2-2.xx&oh=16ca92d1a008904282f7952da82418a6&oe=61AE4BA2",
-   "https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/78566939_158829685503480_2064189259874566144_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=e3f864&_nc_ohc=SGMX0In75jAAX-Z2BOl&_nc_ht=scontent-ort2-1.xx&oh=fc51a9b7d411ede02af6349b199f4328&oe=61C38364",
-   "https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/201156058_572739830779128_5055751502644027532_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=2c4854&_nc_ohc=fvAoMqkJHekAX9oWPTo&_nc_ht=scontent-ort2-1.xx&oh=102a04e145e82d4fcd5bf2f42ac8a91f&oe=61C1CD88",
-   "https://d1t295ks1d26ah.cloudfront.net/media/pictures/files/000/021/263/xlarge_desktop/77394087_158830698836712_6283762755795156992_o.jpg?1589578908",
-   "https://scontent-ort2-2.xx.fbcdn.net/v/t39.30808-6/258091832_676527673733676_8826771448272167123_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=9267fe&_nc_ohc=wtnCrkbFXIUAX_r7oGi&_nc_ht=scontent-ort2-2.xx&oh=b44199efd21a054363d908db1ae80496&oe=61AE39F9",
+const sluggers = [
+"https://www.chicagotribune.com/resizer/By0CC6p-bIlhwczuyTBflXtp_bw=/800x449/top/www.trbimg.com/img-59fc7c4a/turbine/ct-1509719108-8tpy4rzvrx-snap-image",
+"https://media.gettyimages.com/photos/chicago-fans-gather-at-sluggers-bar-to-watch-the-chicago-cubs-take-on-picture-id620780276?k=20&m=620780276&s=612x612&w=0&h=xG0oEz7WlToMYoQPF_9JiVZUNn449fbwDItTRkiZ3pk=",
+"https://scontent-ort2-1.xx.fbcdn.net/v/t1.18169-9/525928_10150690958366850_301792894_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=Iazl8tjkx1QAX8plk_k&_nc_ht=scontent-ort2-1.xx&oh=7654aab7735f0678184f470cf86fd574&oe=61D2E97D",
+"https://scontent-ort2-1.xx.fbcdn.net/v/t1.18169-9/149704_10150690955491850_1640271750_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=MYGIaUBlq6QAX-NjvMU&_nc_ht=scontent-ort2-1.xx&oh=fcc86d6cded287e30d936f960e81823e&oe=61D08BE6",
+"https://www.gayot.com/images/reviews/sluggers.jpg",
 
  ];
 
 
 
-class Dime extends React.Component {
+class Sluggers extends React.Component {
 
     render () {
         return (
           
 <View style= {styles.container}>
-<BackgroundCarousel images={dime} />
+<BackgroundCarousel images={sluggers} />
 
 
 <ScrollView keyboardShouldPersistTaps="always" style={{position: "absolute", bottom: 0, height: "60%", width: "100%"}}> 
@@ -138,7 +138,7 @@ class Dime extends React.Component {
         {barName}
       </Text>
             <Text style = {styles.barAddress} >
-                {"\n"}{barLocation}
+            {"\n"}{barLocation}
             </Text>
             {"\n"}
       </Text>
@@ -154,66 +154,51 @@ class Dime extends React.Component {
             {"\n"}
             </Text>
           </Text>
-
-
-  
-
     </View>
 
 
     <View style = {styles.socials}> 
           <Pressable 
-          onPress={() => Linking.openURL('https://www.instagram.com/thedimechi/')} >
+          onPress={() => Linking.openURL('https://www.instagram.com/sluggersbar/')} >
           <Image
           style = {{width: 130, height: 130, left: 55, marginTop: 0}}
-          source = {require('./src/img/instagram.png')} />
+          source = {require('../img/instagram.png')} />
           </Pressable>
 
           <Pressable 
-          onPress={() => Linking.openURL('https://www.facebook.com/thedimechi/')} >
+          onPress={() => Linking.openURL('https://www.facebook.com/SluggersBar/')} >
           <Image
           style = {{width: 65, height: 65, left: 105, marginTop:30}}
-          source = {require('./src/img/facebook.png')} />
+          source = {require('../img/facebook.png')} />
           </Pressable> 
     </View>
 
 
 <View style = {styles.container3}>
 <Pressable 
-          onPress={() => Linking.openURL('https://thedimechi.com')} >
+          onPress={() => Linking.openURL('http://www.sluggersbar.com')} >
     <Image
-          style = {{width: 250, height: 250, left: 70, marginTop: 70}}
-          source = {require('./src/img/dimeLogo.png')} />
+          style = {{width: 375, height: 100, left: 10, marginTop: 70}}
+          source = {require('../img/sluggersLogo.png')} />
 </Pressable>
 <Text style = {styles.barHours}>
             {"\n"}HOURS
           </Text>
             <Text style = {styles.barDays} >
-            {barDays[0]}
+            {barDays[0]} -
+            {"\n"}{barDays[1]} 
             </Text>
             <Text style = {styles.barTimes} >
-              {"\n"} 5PM - 2AM 
+              {"\n"} 4PM - 10:30PM 
             </Text>
             <Text style = {styles.barDays} >
-                {"\n"} {barDays[1]}
+            {"\n"}
+            {barDays[2]} -
+            {"\n"}{barDays[3]} 
             </Text>
             <Text style = {styles.barTimes} >
-           
-              {"\n"} 5PM - 2AM
-              </Text>
-            <Text style = {styles.barDays} >
-                {"\n"} {barDays[2]}
+              {"\n"} 11AM - 11PM 
             </Text>
-            <Text style = {styles.barTimes} >
-            {"\n"}11AM - 3AM
-            </Text>
-            <Text style = {styles.barDays} >
-              {"\n"} {barDays[3]}
-              </Text>
-            <Text style = {styles.barTimes} >
-            {"\n"} 11AM - 6PM
-            </Text>
-
   </View>
 
   
@@ -222,6 +207,7 @@ class Dime extends React.Component {
   </View>
 
   </ScrollView> 
+  
   </View>
 
 
@@ -229,4 +215,4 @@ class Dime extends React.Component {
 }
 }
 
-export default Dime;
+export default Sluggers;

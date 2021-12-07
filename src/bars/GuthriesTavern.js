@@ -1,13 +1,13 @@
 import {Platform, StyleSheet, Text, View, SafeAreaView, Button, Alert, Pressable, Image, ScrollView, Linking} from 'react-native';
 import React from 'react';
-import { BackgroundCarousel } from './BackgroundCarousel';
+import { BackgroundCarousel } from '../../BackgroundCarousel';
 
-var barName = "Sluggers World Class Sports Bar";
-var barLocation = "3540 N Clark St, Chicago, IL 60657";
-var barBio = "Since 1985 Sluggers World Class Sports Bar and Grill has been giving the Wrigleyville area a place to go for much more than just a drink. \n With massive HD big screens and over 30 TV's to see all of your favorite sports teams in glorious HD, you'll never miss a minute of any sports action! "
-var barDays = ["MONDAY", " THURSDAY", "FRIDAY" , "SUNDAY"]
+var barName = "Guthries Tavern";
+var barLocation = "1300 W Addison St, Chicago, IL 60613";
+var barBio = "Originally the tavern location was a corner grocery store dating back to 1900. \n  After prohibition ended in 1933, the Moretti family turned the grocery into a corner tap."
+var barDays = ["MONDAY", "FRIDAY" , "SATURDAY", "SUNDAY"]
 
- 
+
 
 const styles = StyleSheet.create({
     barTitle: {
@@ -106,24 +106,23 @@ const styles = StyleSheet.create({
         
 });
 
-const sluggers = [
-"https://www.chicagotribune.com/resizer/By0CC6p-bIlhwczuyTBflXtp_bw=/800x449/top/www.trbimg.com/img-59fc7c4a/turbine/ct-1509719108-8tpy4rzvrx-snap-image",
-"https://media.gettyimages.com/photos/chicago-fans-gather-at-sluggers-bar-to-watch-the-chicago-cubs-take-on-picture-id620780276?k=20&m=620780276&s=612x612&w=0&h=xG0oEz7WlToMYoQPF_9JiVZUNn449fbwDItTRkiZ3pk=",
-"https://scontent-ort2-1.xx.fbcdn.net/v/t1.18169-9/525928_10150690958366850_301792894_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=Iazl8tjkx1QAX8plk_k&_nc_ht=scontent-ort2-1.xx&oh=7654aab7735f0678184f470cf86fd574&oe=61D2E97D",
-"https://scontent-ort2-1.xx.fbcdn.net/v/t1.18169-9/149704_10150690955491850_1640271750_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=MYGIaUBlq6QAX-NjvMU&_nc_ht=scontent-ort2-1.xx&oh=fcc86d6cded287e30d936f960e81823e&oe=61D08BE6",
-"https://www.gayot.com/images/reviews/sluggers.jpg",
-
+const halligan = [
+    "https://cdn.vox-cdn.com/thumbor/IC1H11puuwCPO9SXnOcp0EGehkE=/0x0:1904x1141/1520x1013/filters:focal(621x127:925x431):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/67086133/s.0.png",
+    "https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1920,f_auto,q_auto/1295286/20130726-DSC_6093_cybe1v.jpg",
+"https://s.yimg.com/ny/api/res/1.2/0N8gw9zbtkVnNs8RTmot2A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTcwNTtoPTQ3MA--/https://s.yimg.com/uu/api/res/1.2/wGy7Uxb.5WXcwHnCLQ974Q--~B/aD0xMzY1O3c9MjA0ODthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en-us/chicago_tribune_local_801/395706ecd66ef693d658f319e82c7bad",
+"https://cdn.usarestaurants.info/assets/uploads/c7413c277ef5f8f6d4c28cf5eaf4335d_-united-states-illinois-cook-county-chicago-295459-guthries-tavernhtm.jpg",
+"https://cdn.vox-cdn.com/thumbor/bjCbMzrGT1EXsmXGLhWclFY13Sw=/0x0:1272x1532/1200x800/filters:focal(419x879:621x1081)/cdn.vox-cdn.com/uploads/chorus_image/image/67084585/6_11_podgo_guthries_3x.0.jpg"
  ];
 
 
 
-class Sluggers extends React.Component {
+class GuthriesTavern extends React.Component {
 
     render () {
         return (
           
 <View style= {styles.container}>
-<BackgroundCarousel images={sluggers} />
+<BackgroundCarousel images={halligan} />
 
 
 <ScrollView keyboardShouldPersistTaps="always" style={{position: "absolute", bottom: 0, height: "60%", width: "100%"}}> 
@@ -159,37 +158,32 @@ class Sluggers extends React.Component {
 
     <View style = {styles.socials}> 
           <Pressable 
-          onPress={() => Linking.openURL('https://www.instagram.com/sluggersbar/')} >
+          onPress={() => Linking.openURL('https://www.instagram.com/official_guthries_tavern/')} >
           <Image
-          style = {{width: 130, height: 130, left: 55, marginTop: 0}}
-          source = {require('./src/img/instagram.png')} />
+          style = {{width: 130, height: 130, left: 123, marginTop: 0}}
+          source = {require('../img/instagram.png')} />
           </Pressable>
 
-          <Pressable 
-          onPress={() => Linking.openURL('https://www.facebook.com/SluggersBar/')} >
-          <Image
-          style = {{width: 65, height: 65, left: 105, marginTop:30}}
-          source = {require('./src/img/facebook.png')} />
-          </Pressable> 
+         
     </View>
 
 
 <View style = {styles.container3}>
 <Pressable 
-          onPress={() => Linking.openURL('http://www.sluggersbar.com')} >
+          onPress={() => Linking.openURL('https://www.guthriestavern.com')} >
     <Image
-          style = {{width: 375, height: 100, left: 10, marginTop: 70}}
-          source = {require('./src/img/sluggersLogo.png')} />
+          style = {{width: 200, height: 250, left: 95, marginTop: 70}}
+          source = {require('../img/guthriestavernLogo.jpeg')} />
 </Pressable>
 <Text style = {styles.barHours}>
-            {"\n"}HOURS
+{"\n"}HOURS
           </Text>
             <Text style = {styles.barDays} >
             {barDays[0]} -
             {"\n"}{barDays[1]} 
             </Text>
             <Text style = {styles.barTimes} >
-              {"\n"} 4PM - 10:30PM 
+              {"\n"} 3PM - 2AM 
             </Text>
             <Text style = {styles.barDays} >
             {"\n"}
@@ -197,7 +191,7 @@ class Sluggers extends React.Component {
             {"\n"}{barDays[3]} 
             </Text>
             <Text style = {styles.barTimes} >
-              {"\n"} 11AM - 11PM 
+              {"\n"} 12PM - 3AM 
             </Text>
   </View>
 
@@ -215,4 +209,4 @@ class Sluggers extends React.Component {
 }
 }
 
-export default Sluggers;
+export default GuthriesTavern;

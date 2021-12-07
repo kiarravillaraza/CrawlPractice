@@ -1,33 +1,32 @@
-import {StyleSheet, Text, View, SafeAreaView, Button, Alert, Pressable, Image, ScrollView, Linking} from 'react-native';
+import {Platform, StyleSheet, Text, View, SafeAreaView, Button, Alert, Pressable, Image, ScrollView, Linking} from 'react-native';
 import React from 'react';
-import { BackgroundCarousel } from './BackgroundCarousel';
+import { BackgroundCarousel } from '../../BackgroundCarousel';
 
-var barName = "Replay";
-var barLocation = "2833 N Sheffield Ave, Chicago, IL 60657";
-var barBio = "Replay is your source for quality entertainment since 2012. \n Great cocktails, awesome pop-ups, and did we mention free games?"
-var barDays = [ " MONDAY", " THURSDAY", "FRIDAY" , "SATURDAY", "SUNDAY"]
+var barName = "Halligan Bar";
+var barLocation = "2274 N Lincoln Ave, Chicago, IL 60614";
+var barBio = "Halligan Bar is located in the heart of Lincoln Park. \n A classic Irish bar known for its great beer selection & fun atmosphere."
+var barDays = ["MONDAY", "WEDNESDAY", " THURSDAY", "FRIDAY" , "SATURDAY", "SUNDAY"]
 
 
 
 const styles = StyleSheet.create({
     barTitle: {
-        padding: 35,
-        lineHeight:0, 
-        marginLeft: 20,
-        fontSize: 45,
-        color: "#fff",
-        textAlign: "center",
-        bottom: 50,
-        fontWeight: "bold",
-        fontFamily: "Futura",
-        letterSpacing: 3.5,
+    padding: 35,
+    lineHeight:0, 
+    margin: 20,
+    fontSize: 45,
+    color: "#fff",
+    textAlign: "center",
+    bottom: 50,
+    fontWeight: "bold",
+    fontFamily: "Futura",
+    letterSpacing: 3.5,
     },
     barAddress: {
         fontSize: 20,
         color: "#ededed",
-        bottom: 50,
         textAlign: "center",
-        padding: 35,
+        bottom: 50,
         fontWeight: "bold",
         fontFamily: "Futura",
         letterSpacing: 3.5,
@@ -75,7 +74,7 @@ const styles = StyleSheet.create({
           letterSpacing: 3.5,
           },
         container1: {
-          flex: 1,
+          flexGrow: 1,
           width: '100%',
           backgroundColor: '#81d9aa'
         },
@@ -91,38 +90,45 @@ const styles = StyleSheet.create({
         },
         socials: {
           width: '100%',
-          height: '8%',
+          height: '7%',
           flexDirection: 'row',
           backgroundColor: '#81d9aa'
 
         },
         container: {
-            flex:1,
-            justifyContent: "center",
-            backgroundColor: 'black',
-            alignItems: "center",
-          },
+          flex:1,
+          justifyContent: "center",
+          backgroundColor: 'black',
+          alignItems: "center",
+        },
+   
       
         
 });
 
-const replay = [
-    "https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/76702461_2791448444209752_8930288386313289728_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=mg0AsBtx1-oAX9gVtMR&_nc_ht=scontent-ort2-1.xx&oh=398b5993fdec522a79158cfb90db1bad&oe=61D0F32B",
-    "https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/80729916_2868131076541488_3183807661082673152_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=ACJAKZv32BsAX9i5dR1&tn=tPdjh7UKYw6oFUL6&_nc_ht=scontent-ort2-1.xx&oh=59f732bfa134ac930dc19e407696ea04&oe=61CED9C0",
-    "https://media.timeout.com/images/105803093/1372/772/image.jpg",
-    "https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/72566402_2695414433813154_3872120288170737664_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=qq44E8EpMIIAX9e1ben&_nc_oc=AQm33E9OFn8U--Bf7VhFcAnQ-dAgezFfcn4HqxuZR0cVIVEmP-nQVp2dK_dVc1bG40U&_nc_ht=scontent-ort2-1.xx&oh=1c25f455a0550cc45edda243556cc05d&oe=61CD6604",
-    "https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/82959556_2912261045461824_6653946309159944192_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=730e14&_nc_ohc=TMjH_R9-ziEAX-p3oTK&_nc_ht=scontent-ort2-1.xx&oh=00bfc5f338e24eb04be411cee67f663d&oe=61CF0FD2",
-];
+const halligan = [
 
-class Replay extends React.Component {
+    "https://scontent-ort2-1.xx.fbcdn.net/v/t31.18172-8/1265409_597327190308488_1288255192_o.jpg?_nc_cat=102&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=Nt7rxpnv5wsAX8L7CIt&_nc_ht=scontent-ort2-1.xx&oh=3086fa8ff888d036c75969e99b3602cf&oe=61D11DEB",
+    "https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/75486107_3388615897846256_7169672044894748672_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=9267fe&_nc_ohc=vLV1E9nWinIAX-Jh9ca&_nc_ht=scontent-ort2-1.xx&oh=f636be04edc297e3b02d85857de9db15&oe=61CED8AE",
+"https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/72402878_3271638049544042_7892682505881387008_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=9267fe&_nc_ohc=TRajjZHNxVwAX9P3dQs&_nc_ht=scontent-ort2-1.xx&oh=62d78785954d0c916fd5ef7eb4e9766c&oe=61D07E9E",
+"https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/81688012_3544554532252391_7030694062906671104_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=9267fe&_nc_ohc=RY4lX3edBe8AX8uDZxj&_nc_ht=scontent-ort2-1.xx&oh=29efa429d73166f12e7f36a6e0518d57&oe=61D24AB6",
+   "https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/192524711_5802701269771028_2585529950976560740_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=a26aad&_nc_ohc=hwYH41QLrpYAX_UPYEM&_nc_ht=scontent-ort2-1.xx&oh=39e198be9186f3efc5018cc9a0c1ae63&oe=61CDB009"
+
+ ];
+
+
+
+class Halligan extends React.Component {
 
     render () {
         return (
-
+          
 <View style= {styles.container}>
-<BackgroundCarousel images={replay} />
+<BackgroundCarousel images={halligan} />
+
 
 <ScrollView keyboardShouldPersistTaps="always" style={{position: "absolute", bottom: 0, height: "60%", width: "100%"}}> 
+
   <View style = {styles.container}>
 
 
@@ -132,9 +138,8 @@ class Replay extends React.Component {
       <Text style = {styles.barTitle}>
         {barName}
       </Text>
-
             <Text style = {styles.barAddress} >
-                {"\n"}{barLocation}
+            {"\n"}{barLocation}
             </Text>
             {"\n"}
       </Text>
@@ -155,58 +160,63 @@ class Replay extends React.Component {
 
     <View style = {styles.socials}> 
           <Pressable 
-          onPress={() => Linking.openURL('https://www.instagram.com/replaylincolnpark/')} >
+          onPress={() => Linking.openURL('https://www.instagram.com/halliganbar/')} >
           <Image
           style = {{width: 130, height: 130, left: 55, marginTop: 0}}
-          source = {require('./src/img/instagram.png')} />
+          source = {require('../img/instagram.png')} />
           </Pressable>
 
           <Pressable 
-          onPress={() => Linking.openURL('https://www.facebook.com/replaylincolnpark')} >
+          onPress={() => Linking.openURL('https://www.facebook.com/halliganbarchicago/')} >
           <Image
           style = {{width: 65, height: 65, left: 105, marginTop:30}}
-          source = {require('./src/img/facebook.png')} />
+          source = {require('../img/facebook.png')} />
           </Pressable> 
     </View>
 
 
 <View style = {styles.container3}>
 <Pressable 
-          onPress={() => Linking.openURL('https://www.replaylincolnpark.com')} >
+          onPress={() => Linking.openURL('https://halliganbarchicago.wordpress.com')} >
     <Image
-          style = {{width: 300, height: 100, left: 50, marginTop: 60}}
-          source = {require('./src/img/replayLogo.png')} />
+          style = {{width: 275, height: 275, left: 60, marginTop: 70}}
+          source = {require('../img/halliganLogo.png')} />
 </Pressable>
 <Text style = {styles.barHours}>
             {"\n"}HOURS
           </Text>
             <Text style = {styles.barDays} >
             {barDays[0]} -
-            {"\n"}{barDays[1]}
+            {"\n"}{barDays[1]} 
             </Text>
             <Text style = {styles.barTimes} >
               {"\n"} 5PM - 2AM 
             </Text>
             <Text style = {styles.barDays} >
-                {"\n"} {barDays[2]}
+                {"\n"}{barDays[2]}
             </Text>
             <Text style = {styles.barTimes} >
            
-              {"\n"} 3PM - 2AM
+              {"\n"} 12PM - 2AM
               </Text>
             <Text style = {styles.barDays} >
                 {"\n"} {barDays[3]}
             </Text>
             <Text style = {styles.barTimes} >
-            {"\n"} 12PM - 3AM
+            {"\n"} 12PM - 2AM
             </Text>
             <Text style = {styles.barDays} >
               {"\n"} {barDays[4]}
               </Text>
             <Text style = {styles.barTimes} >
-            {"\n"}  12PM - 2AM
+            {"\n"} 11AM - 3AM
             </Text>
-
+            <Text style = {styles.barDays} >
+                {"\n"} {barDays[5]}
+            </Text>
+            <Text style = {styles.barTimes} >
+            {"\n"} 11AM - 2AM
+            </Text>
   </View>
 
   
@@ -214,11 +224,13 @@ class Replay extends React.Component {
   
   </View>
 
-  </ScrollView>
+  </ScrollView> 
+  
   </View>
+
 
         );
 }
 }
 
-export default Replay;
+export default Halligan;
