@@ -29,6 +29,17 @@
 
  const Stack = createNativeStackNavigator();
 
+ function WarningScreen({ navigation }) {
+  return (
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text>Warning Screen</Text>
+      <Button
+        title="Go to Neighborhood"
+        onPress={() => navigation.navigate('NeighborhoodList')}
+      />
+    </View>
+  );
+ }
 
  function NeighborhoodScreen({ navigation }) {
   return (
@@ -36,7 +47,7 @@
       <Text>Neighborhood List</Text>
       <Button
         title="Go to Lincoln Park"
-        onPress={() => navigation.navigate('LincolnPark')}
+        onPress={() => navigation.navigate('Lincoln Park')}
       />
 
       <Button
@@ -55,15 +66,15 @@
 function LincolnParkScreen({ navigation }) {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <LincolnPark />
+      {/*<LincolnPark />*/}
       <Text>Lincoln Park Screen</Text>
       <Button
         title="Go to Dime"
-        onPress={() => navigation.navigate('Dime')}
+        onPress={() => navigation.navigate('The Dime')}
       />
       <Button
         title="Go to Halligan"
-        onPress={() => navigation.navigate('Halligan')}
+        onPress={() => navigation.navigate('Halligan Bar')}
       />
       <Button
         title="Go to Replay"
@@ -76,7 +87,7 @@ function LincolnParkScreen({ navigation }) {
 function OldTownScreen({ navigation }) {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <OldTown />
+      {/*<OldTown />*/}
       <Text>Old Town Screen</Text>
       <Button
         title="Go to Federales"
@@ -84,11 +95,11 @@ function OldTownScreen({ navigation }) {
       />
       <Button
         title="Go to Old Town Pour House"
-        onPress={() => navigation.navigate('OldTownPourHouse')}
+        onPress={() => navigation.navigate('Old Town Pour House')}
       />
       <Button
         title="Go to Utopian Tailgate"
-        onPress={() => navigation.navigate('UtopianTailgate')}
+        onPress={() => navigation.navigate('Utopian Tailgate')}
       />
     </View>
   );
@@ -97,19 +108,19 @@ function OldTownScreen({ navigation }) {
 function WrigleyvilleScreen({ navigation }) {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Wrigleyville />
+      {/*<Wrigleyville />*/}
       <Text>Wrigleyville Screen</Text>
       <Button
         title="Go to Guthries Tavern"
-        onPress={() => navigation.navigate('GuthriesTavern')}
+        onPress={() => navigation.navigate('Guthries Tavern')}
       />
       <Button
         title="Go to Happy Camper"
-        onPress={() => navigation.navigate('HappyCamper')}
+        onPress={() => navigation.navigate('Happy Camper')}
       />
       <Button
         title="Go to Sluggers"
-        onPress={() => navigation.navigate('Sluggers')}
+        onPress={() => navigation.navigate('Sluggers World Class Sports Bar')}
       />
     </View>
   );
@@ -190,7 +201,12 @@ function SluggersScreen() {
 function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="NeighborhoodList">
+      <Stack.Navigator initialRouteName="Warning">
+        <Stack.Screen
+          name="Warning"
+          component={WarningScreen}
+        />
+
         <Stack.Screen
           name="NeighborhoodList"
           component={NeighborhoodScreen}
@@ -198,7 +214,7 @@ function App() {
         />
 
         <Stack.Screen 
-          name="LincolnPark" 
+          name="Lincoln Park" 
           component={LincolnParkScreen} 
         />
 
@@ -213,12 +229,12 @@ function App() {
         />
 
         <Stack.Screen 
-          name="Dime" 
+          name="The Dime" 
           component={DimeScreen}
         />
 
         <Stack.Screen 
-          name="Halligan" 
+          name="Halligan Bar" 
           component={HalliganScreen} 
         />
 
@@ -233,27 +249,27 @@ function App() {
         />
 
         <Stack.Screen 
-          name="OldTownPourHouse" 
+          name="Old Town Pour House" 
           component={OldTownPourHouseScreen} 
         />
 
         <Stack.Screen 
-          name="UtopianTailgate" 
+          name="Utopian Tailgate" 
           component={UtopianTailgateScreen} 
         />
 
         <Stack.Screen 
-          name="GuthriesTavern" 
+          name="Guthries Tavern" 
           component={GuthriesTavernScreen}
         />
 
         <Stack.Screen 
-          name="HappyCamper" 
+          name="Happy Camper" 
           component={HappyCamperScreen} 
         />
 
         <Stack.Screen 
-          name="Sluggers" 
+          name="Sluggers World Class Sports Bar" 
           component={SluggersScreen} 
         />
 
