@@ -390,62 +390,62 @@ const oldtown = [
 
 function LincolnParkScreen({ navigation }) {
   return (
-    // <LincolnPark />
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'black' }}>
-    <BackgroundCarousel images={lincolnpark} />
+    <LincolnPark />
+  //   <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'black' }}>
+  //   <BackgroundCarousel images={lincolnpark} />
 
-    <View style = {{width: '85%', height: '8%', backgroundColor: '#219ebc', marginTop: 385}}>
-    <Pressable
-    onPress={() => navigation.navigate('The Dime')}>
-      <Text style = {{fontFamily: 'Futura', color:'white', fontSize: 35, left: 90, marginTop: 5}}>
-      The Dime
-      </Text>
-    </Pressable>
-    </View>
+  //   <View style = {{width: '85%', height: '8%', backgroundColor: '#219ebc', marginTop: 385}}>
+  //   <Pressable
+  //   onPress={() => navigation.navigate('The Dime')}>
+  //     <Text style = {{fontFamily: 'Futura', color:'white', fontSize: 35, left: 90, marginTop: 5}}>
+  //     The Dime
+  //     </Text>
+  //   </Pressable>
+  //   </View>
 
-    <View style = {{width: '85%', height: '8%', backgroundColor: '#219ebc', marginTop: 50}}>
-    <Pressable
-    onPress={() => navigation.navigate('Replay')}>
-      <Text style = {{fontFamily: 'Futura', color:'white', fontSize: 35, left: 110, marginTop: 5}}>
-      Replay 
-      </Text>
-    </Pressable>
-    </View>
+  //   <View style = {{width: '85%', height: '8%', backgroundColor: '#219ebc', marginTop: 50}}>
+  //   <Pressable
+  //   onPress={() => navigation.navigate('Replay')}>
+  //     <Text style = {{fontFamily: 'Futura', color:'white', fontSize: 35, left: 110, marginTop: 5}}>
+  //     Replay 
+  //     </Text>
+  //   </Pressable>
+  //   </View>
 
-    <View style = {{width: '85%', height: '8%', backgroundColor: '#219ebc', marginTop: 50}}>
-    <Pressable
-    onPress={() => navigation.navigate('Halligan Bar')}>
-      <Text style = {{fontFamily: 'Futura', color:'white', fontSize: 35, left: 65, marginTop: 5}}>
-      Halligan Bar
-      </Text>
-    </Pressable>
-    </View>
+  //   <View style = {{width: '85%', height: '8%', backgroundColor: '#219ebc', marginTop: 50}}>
+  //   <Pressable
+  //   onPress={() => navigation.navigate('Halligan Bar')}>
+  //     <Text style = {{fontFamily: 'Futura', color:'white', fontSize: 35, left: 65, marginTop: 5}}>
+  //     Halligan Bar
+  //     </Text>
+  //   </Pressable>
+  //   </View>
 
-    <View style = {styles.bottomBar}> 
-        <Pressable 
-        onPress={() => {navigation.navigate('NeighborhoodList')}}>
-        <Image
-        style = {{width: 65, height: 65, left: 30, marginTop: 5}}
-        source = {require('./src/img/homeIcon.png')} />
-        </Pressable>
+  //   <View style = {styles.bottomBar}> 
+  //       <Pressable 
+  //       onPress={() => {navigation.navigate('NeighborhoodList')}}>
+  //       <Image
+  //       style = {{width: 65, height: 65, left: 30, marginTop: 5}}
+  //       source = {require('./src/img/homeIcon.png')} />
+  //       </Pressable>
 
-        <Pressable 
-        onPress={() => {navigation.navigate('NeighborhoodList')}}>
-        <Image
-        style = {{width: 60, height: 60, left: 105, marginTop:10}}
-        source = {require('./src/img/generateIcon.png')} />
-        </Pressable> 
+  //       <Pressable 
+  //       onPress={() => {navigation.navigate('NeighborhoodList')}}>
+  //       <Image
+  //       style = {{width: 60, height: 60, left: 105, marginTop:10}}
+  //       source = {require('./src/img/generateIcon.png')} />
+  //       </Pressable> 
         
-        <Pressable 
-        onPress={() => {navigation.navigate('NeighborhoodList')}}>
-        <Image
-        style = {{width: 50, height: 50, left: 185, marginTop:10}}
-        source = {require('./src/img/quizIcon.png')} />
-        </Pressable> 
-      </View>
+  //       <Pressable 
+  //       onPress={() => {navigation.navigate('NeighborhoodList')}}>
+  //       <Image
+  //       style = {{width: 50, height: 50, left: 185, marginTop:10}}
+  //       source = {require('./src/img/quizIcon.png')} />
+  //       </Pressable> 
+  //     </View>
 
 
-  </View>
+  // </View>
     
   );
 }
