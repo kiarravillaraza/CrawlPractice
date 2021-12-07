@@ -390,6 +390,7 @@ const oldtown = [
 
 function LincolnParkScreen({ navigation }) {
   return (
+    // <LincolnPark />
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'black' }}>
     <BackgroundCarousel images={lincolnpark} />
 
