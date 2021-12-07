@@ -7,6 +7,10 @@ var barLocation = "2263 N Lincoln Ave, Chicago, IL 60614";
 var barBio = "The Dime is in the heart of Lincoln Park! \n A sports bar perfect for every occasion."
 var barDays = [" THURSDAY", "FRIDAY" , "SATURDAY", "SUNDAY"]
 
+ 
+ 
+
+// console.log(duplicateItem)
 
 
 const styles = StyleSheet.create({
