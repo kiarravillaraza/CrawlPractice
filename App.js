@@ -13,15 +13,15 @@
  import { NavigationContainer } from '@react-navigation/native';
  import { createNativeStackNavigator } from '@react-navigation/native-stack';
  import {BackgroundCarousel} from './BackgroundCarousel'
- import Dime from "./src/bars/Dime";
- import Federales from "./src/bars/Federales";
- import GuthriesTavern from "./src/bars/GuthriesTavern";
- import Halligan from "./src/bars/Halligan";
- import HappyCamper from "./src/bars/HappyCamper";
- import OldTownPourHouse from "./src/bars/OldTownPourHouse";
- import Replay from "./src/bars/Replay";
- import Sluggers from "./src/bars/Sluggers";
- import UtopianTailgate from "./src/bars/UtopianTailgate";
+ import Dime from "./Dime";
+ import Federales from "./Federales";
+ import GuthriesTavern from "./GuthriesTavern";
+ import Halligan from "./Halligan";
+ import HappyCamper from "./HappyCamper";
+ import OldTownPourHouse from "./OldTownPourHouse";
+ import Replay from "./Replay";
+ import Sluggers from "./Sluggers";
+ import UtopianTailgate from "./UtopianTailgate";
  import LincolnPark from './src/neighborhoods/LincolnPark';
  import OldTown from './src/neighborhoods/OldTown';
  import Wrigleyville from './src/neighborhoods/Wrigleyville';
