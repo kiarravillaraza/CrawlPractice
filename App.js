@@ -9,7 +9,7 @@
 
  //import React, { Component } from "react";
  import * as React from 'react';
- import { Platform, Button, SafeAreaView, Alert, Image, ScrollView, StyleSheet, Text, View } from 'react-native';
+ import { Platform, Button, SafeAreaView, Alert, Image, ScrollView, StyleSheet, Text, View, Pressable } from 'react-native';
  import { NavigationContainer } from '@react-navigation/native';
  import { createNativeStackNavigator } from '@react-navigation/native-stack';
  import {BackgroundCarousel} from './BackgroundCarousel'
@@ -31,15 +31,31 @@
 
  function WarningScreen({ navigation }) {
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>Warning Screen</Text>
-      <Button
-        title="Go to Neighborhood"
-        onPress={() => navigation.navigate('NeighborhoodList')}
-      />
-    </View>
+    // <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'black' }}>
+    //    <View style={{width: 300, height:100, left: 0, backgroundColor: 'white'}}>
+    //    <Text style ={{marginTop: 30, left: 30, fontSize: 25, fontFamily: "Futura", fontStyle: "italic", fontWeight: "bold", color: 'black'}}>
+    //     ARE YOU OVER 21?
+    //     {"\n"}
+    //   </Text>
+    //   </View>
+    //   <View style ={styles.warningButtons}>
+    //   <Button 
+    //     color= 'white'
+    //     title="NO"
+    //     onPress={() => Alert.alert("Sorry! \n Please come back and visit us when you're 21!")}
+    //   />
+    //   <Button
+    //     color= 'white'
+    //     title="YES"
+    //     onPress={() => navigation.navigate('NeighborhoodList')}
+    //   />
+    //   </View>
+    // </View>
+
+    <Warning />
   );
  }
+
 
  function NeighborhoodScreen({ navigation }) {
   return (
@@ -301,7 +317,12 @@ const styles = StyleSheet.create({
     color: "#333333",
     fontFamily: "Economica-Bold",
     marginBottom: 5
-  }
+  },
+  warningButtons: {
+    flexDirection: 'row',
+    marginTop: 25
+  },
+  
 });
 
 
