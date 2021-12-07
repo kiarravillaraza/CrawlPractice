@@ -161,24 +161,6 @@ class LincolnPark extends React.Component {
 
     </View>
 
-
-    <View style = {styles.socials}> 
-          <Pressable 
-          onPress={() => Linking.openURL('https://www.instagram.com/thedimechi/')} >
-          <Image
-          style = {{width: 130, height: 130, left: 55, marginTop: 0}}
-          source = {require('../img/instagram.png')} />
-          </Pressable>
-
-          <Pressable 
-          onPress={() => Linking.openURL('https://www.facebook.com/thedimechi/')} >
-          <Image
-          style = {{width: 65, height: 65, left: 105, marginTop:30}}
-          source = {require('../img/facebook.png')} />
-          </Pressable> 
-    </View>
-
-
 <View style = {styles.container3}>
 <Pressable 
           onPress={() => Linking.openURL('https://thedimechi.com')} >

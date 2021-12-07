@@ -303,21 +303,50 @@
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
       <BackgroundCarousel images={neighborhoods} />
 
-      <Text>Neighborhood List</Text>
-      <Button
-        title="Go to Lincoln Park"
-        onPress={() => navigation.navigate('Lincoln Park')}
-      />
+      <View style = {{width: '85%', height: '8%', backgroundColor: '#81d9aa', marginTop: 385}}>
+      <Pressable
+      onPress={() => navigation.navigate('Lincoln Park')}>
+        <Text style = {{fontFamily: 'Futura', fontSize: 35, left: 15, marginTop: 5}}>
+        Go to Lincoln Park
+        </Text>
+      </Pressable>
+      </View>
 
-      <Button
-        title="Go to Old Town"
-        onPress={() => navigation.navigate('Old Town')}
-      />
+      <View style = {{width: '85%', height: '8%', backgroundColor: '#81d9aa', marginTop: 50}}>
+      <Pressable
+      onPress={() => navigation.navigate('Wrigleyville')}>
+        <Text style = {{fontFamily: 'Futura', fontSize: 35, left: 15, marginTop: 5}}>
+        Go to Wrigleyville
+        </Text>
+      </Pressable>
+      </View>
 
-      <Button
-        title="Go to Wrigleyville"
-        onPress={() => navigation.navigate('Wrigleyville')}
-      />
+      <View style = {{width: '85%', height: '8%', backgroundColor: '#81d9aa', marginTop: 50}}>
+      <Pressable
+      onPress={() => navigation.navigate('Old Town')}>
+        <Text style = {{fontFamily: 'Futura', fontSize: 35, left: 35, marginTop: 5}}>
+        Go to Old Town
+        </Text>
+      </Pressable>
+      </View>
+
+      <View style = {{width: '100%', height: '18%', backgroundColor: '#81d9aa', marginTop:50}}> 
+          <Pressable 
+          onPress={() => navigation.navigate('Wrigleyville')}>
+          {/* <Image
+          style = {{width: 130, height: 130, left: 55, marginTop: 0}}
+          source = {require('./src/img/instagram.png')} /> */}
+          </Pressable>
+
+          <Pressable 
+          onPress={() => Linking.openURL('https://www.facebook.com/thedimechi/')} >
+          {/* <Image
+          style = {{width: 65, height: 65, left: 105, marginTop:30}}
+          source = {require('./src/img/facebook.png')} /> */}
+          </Pressable> 
+    </View>
+
+
     </View>
   );
 }
@@ -618,6 +647,16 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     marginTop: 25
   },
+  // bottomBar: {
+  //   marginTop: 70,
+  //   width: '100%',
+  //   height: '46%',
+  //   flexDirection: 'row',
+  //   backgroundColor: '#81d9aa'
+
+  // },
+
+  
   
 });
 
