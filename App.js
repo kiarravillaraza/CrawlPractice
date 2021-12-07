@@ -31,28 +31,37 @@
 
  function WarningScreen({ navigation }) {
   return (
-    // <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'black' }}>
-    //    <View style={{width: 300, height:100, left: 0, backgroundColor: 'white'}}>
-    //    <Text style ={{marginTop: 30, left: 30, fontSize: 25, fontFamily: "Futura", fontStyle: "italic", fontWeight: "bold", color: 'black'}}>
-    //     ARE YOU OVER 21?
-    //     {"\n"}
-    //   </Text>
-    //   </View>
-    //   <View style ={styles.warningButtons}>
-    //   <Button 
-    //     color= 'white'
-    //     title="NO"
-    //     onPress={() => Alert.alert("Sorry! \n Please come back and visit us when you're 21!")}
-    //   />
-    //   <Button
-    //     color= 'white'
-    //     title="YES"
-    //     onPress={() => navigation.navigate('NeighborhoodList')}
-    //   />
-    //   </View>
-    // </View>
-
-    <Warning />
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'black' }}>
+      <Text style ={{marginTop: -20, left: 0, fontSize: 45, fontFamily: "Futura", fontStyle: "italic", fontWeight: "bold", color: 'white'}}>
+        LET'S
+        {"\n"}
+      </Text>
+       <Image
+          style = {{width: 300, height: 300, left: -10, marginTop: -50}}
+          source = {require('./src/img/CrawlLogo.png')} />
+      <Text style ={{marginTop: -5, left: 0, fontSize: 55, fontFamily: "Futura", fontStyle: "italic", fontWeight: "bold", color: 'white'}}>
+      CRAWL
+        {"\n"}
+      </Text>
+       <View style={{width: 300, height:100, left: 0, marginTop: -30,backgroundColor: 'white'}}>
+       <Text style ={{marginTop: 30, left: 30, fontSize: 25, fontFamily: "Futura", fontStyle: "italic", fontWeight: "bold", color: 'black'}}>
+        ARE YOU OVER 21?
+        {"\n"}
+      </Text>
+      </View>
+      <View style ={styles.warningButtons}>
+      <Button 
+        color= 'white'
+        title="NO"
+        onPress={() => Alert.alert("Sorry! \n Please come back and visit us when you're 21!")}
+      />
+      <Button
+        color= 'white'
+        title="YES"
+        onPress={() => navigation.navigate('NeighborhoodList')}
+      />
+      </View>
+    </View>
   );
  }
 
