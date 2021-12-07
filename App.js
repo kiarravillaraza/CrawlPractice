@@ -300,90 +300,37 @@
 
  function NeighborhoodScreen({ navigation }) {
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'black' }}>
       <BackgroundCarousel images={neighborhoods} />
 
-      <View style = {{width: '85%', height: '8%', backgroundColor: '#81d9aa', marginTop: 385}}>
+      <View style = {{width: '85%', height: '8%', backgroundColor: '#219ebc', marginTop: 385}}>
       <Pressable
       onPress={() => navigation.navigate('Lincoln Park')}>
-        <Text style = {{fontFamily: 'Futura', fontSize: 35, left: 15, marginTop: 5}}>
-        Go to Lincoln Park
+        <Text style = {{fontFamily: 'Futura', color: 'white', fontSize: 35, left: 65, marginTop: 5}}>
+        Lincoln Park
         </Text>
       </Pressable>
       </View>
 
-      <View style = {{width: '85%', height: '8%', backgroundColor: '#81d9aa', marginTop: 50}}>
+      <View style = {{width: '85%', height: '8%', backgroundColor: '#219ebc', marginTop: 50}}>
       <Pressable
       onPress={() => navigation.navigate('Wrigleyville')}>
-        <Text style = {{fontFamily: 'Futura', fontSize: 35, left: 15, marginTop: 5}}>
-        Go to Wrigleyville
+        <Text style = {{fontFamily: 'Futura', color: 'white', fontSize: 35, left: 65, marginTop: 5}}>
+        Wrigleyville
         </Text>
       </Pressable>
       </View>
 
-      <View style = {{width: '85%', height: '8%', backgroundColor: '#81d9aa', marginTop: 50}}>
+      <View style = {{width: '85%', height: '8%', backgroundColor: '#219ebc', marginTop: 50}}>
       <Pressable
       onPress={() => navigation.navigate('Old Town')}>
-        <Text style = {{fontFamily: 'Futura', fontSize: 35, left: 35, marginTop: 5}}>
-        Go to Old Town
+        <Text style = {{fontFamily: 'Futura', color: 'white', fontSize: 35, left: 85, marginTop: 5}}>
+        Old Town
         </Text>
       </Pressable>
       </View>
 
-      <View style = {{width: '100%', height: '18%', backgroundColor: '#81d9aa', marginTop:50}}> 
-          <Pressable 
-          onPress={() => {navigation.navigate('NeighborhoodList')}}>
-          <Image
-          style = {{width: 65, height: 65, left: 35, marginTop: 5}}
-          source = {require('./src/img/homeIcon.png')} />
-          </Pressable>
-
-          <Pressable 
-          onPress={() => Linking.openURL('https://www.facebook.com/thedimechi/')} >
-          {/* <Image
-          style = {{width: 65, height: 65, left: 105, marginTop:30}}
-          source = {require('./src/img/facebook.png')} /> */}
-          </Pressable> 
-    </View>
-
-
-    </View>
-  );
-}
-
-function LincolnParkScreen({ navigation }) {
-  return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-    <BackgroundCarousel images={neighborhoods} />
-
-    <View style = {{width: '85%', height: '8%', backgroundColor: '#81d9aa', marginTop: 385}}>
-    <Pressable
-    onPress={() => navigation.navigate('The Dime')}>
-      <Text style = {{fontFamily: 'Futura', fontSize: 35, left: 90, marginTop: 5}}>
-      The Dime
-      </Text>
-    </Pressable>
-    </View>
-
-    <View style = {{width: '85%', height: '8%', backgroundColor: '#81d9aa', marginTop: 50}}>
-    <Pressable
-    onPress={() => navigation.navigate('Replay')}>
-      <Text style = {{fontFamily: 'Futura', fontSize: 35, left: 110, marginTop: 5}}>
-      Replay 
-      </Text>
-    </Pressable>
-    </View>
-
-    <View style = {{width: '85%', height: '8%', backgroundColor: '#81d9aa', marginTop: 50}}>
-    <Pressable
-    onPress={() => navigation.navigate('Halligan Bar')}>
-      <Text style = {{fontFamily: 'Futura', fontSize: 35, left: 65, marginTop: 5}}>
-      Halligan Bar
-      </Text>
-    </Pressable>
-    </View>
-
-    <View style = {{width: '100%', height: '18%', backgroundColor: '#81d9aa', marginTop:50}}> 
+      <View style = {styles.bottomBar}> 
         <Pressable 
         onPress={() => {navigation.navigate('NeighborhoodList')}}>
         <Image
@@ -392,10 +339,76 @@ function LincolnParkScreen({ navigation }) {
         </Pressable>
 
         <Pressable 
-        onPress={() => Linking.openURL('https://www.facebook.com/thedimechi/')} >
-        {/* <Image
-        style = {{width: 65, height: 65, left: 105, marginTop:30}}
-        source = {require('./src/img/facebook.png')} /> */}
+        onPress={() => {navigation.navigate('NeighborhoodList')}}>
+        <Image
+        style = {{width: 50, height: 50, left: 100, marginTop:10}}
+        source = {require('./src/img/quizIcon.png')} />
+        </Pressable> 
+        
+        <Pressable 
+        onPress={() => {navigation.navigate('NeighborhoodList')}}>
+        <Image
+        style = {{width: 50, height: 50, left: 185, marginTop:10}}
+        source = {require('./src/img/quizIcon.png')} />
+        </Pressable> 
+        </View>
+
+    </View>
+  );
+}
+
+function LincolnParkScreen({ navigation }) {
+  return (
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'black' }}>
+    <BackgroundCarousel images={neighborhoods} />
+
+    <View style = {{width: '85%', height: '8%', backgroundColor: '#219ebc', marginTop: 385}}>
+    <Pressable
+    onPress={() => navigation.navigate('The Dime')}>
+      <Text style = {{fontFamily: 'Futura', color:'white', fontSize: 35, left: 90, marginTop: 5}}>
+      The Dime
+      </Text>
+    </Pressable>
+    </View>
+
+    <View style = {{width: '85%', height: '8%', backgroundColor: '#219ebc', marginTop: 50}}>
+    <Pressable
+    onPress={() => navigation.navigate('Replay')}>
+      <Text style = {{fontFamily: 'Futura', color:'white', fontSize: 35, left: 110, marginTop: 5}}>
+      Replay 
+      </Text>
+    </Pressable>
+    </View>
+
+    <View style = {{width: '85%', height: '8%', backgroundColor: '#219ebc', marginTop: 50}}>
+    <Pressable
+    onPress={() => navigation.navigate('Halligan Bar')}>
+      <Text style = {{fontFamily: 'Futura', color:'white', fontSize: 35, left: 65, marginTop: 5}}>
+      Halligan Bar
+      </Text>
+    </Pressable>
+    </View>
+
+    <View style = {styles.bottomBar}> 
+        <Pressable 
+        onPress={() => {navigation.navigate('NeighborhoodList')}}>
+        <Image
+        style = {{width: 65, height: 65, left: 35, marginTop: 5}}
+        source = {require('./src/img/homeIcon.png')} />
+        </Pressable>
+
+        <Pressable 
+        onPress={() => {navigation.navigate('NeighborhoodList')}}>
+        <Image
+        style = {{width: 50, height: 50, left: 100, marginTop:10}}
+        source = {require('./src/img/quizIcon.png')} />
+        </Pressable> 
+        
+        <Pressable 
+        onPress={() => {navigation.navigate('NeighborhoodList')}}>
+        <Image
+        style = {{width: 50, height: 50, left: 185, marginTop:10}}
+        source = {require('./src/img/quizIcon.png')} />
         </Pressable> 
   </View>
 
@@ -680,14 +693,14 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     marginTop: 25
   },
-  // bottomBar: {
-  //   marginTop: 70,
-  //   width: '100%',
-  //   height: '46%',
-  //   flexDirection: 'row',
-  //   backgroundColor: '#81d9aa'
-
-  // },
+  bottomBar: {
+       flexDirection: 'row',
+       width: '100%', 
+       height: '18%', 
+       backgroundColor: '#023047', 
+       marginTop:50
+      }
+    
 
   
   
