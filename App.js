@@ -22,9 +22,9 @@
  import Replay from "./Replay";
  import Sluggers from "./Sluggers";
  import UtopianTailgate from "./UtopianTailgate";
- import LincolnPark from './LincolnPark';
- import OldTown from './OldTown';
- import Wrigleyville from './Wrigleyville';
+ import LincolnPark from './src/neighborhoods/LincolnPark';
+ import OldTown from './src/neighborhoods/OldTown';
+ import Wrigleyville from './src/neighborhoods/Wrigleyville';
 
 
  const Stack = createNativeStackNavigator();

@@ -1,6 +1,6 @@
 import {Platform, StyleSheet, Text, View, SafeAreaView, Button, Alert, Pressable, Image, ScrollView, Linking} from 'react-native';
 import React from 'react';
-import { BackgroundCarousel } from './BackgroundCarousel';
+import { BackgroundCarousel } from '../../BackgroundCarousel';
 
 var barName = "The Dime";
 var barLocation = "2263 N Lincoln Ave, Chicago, IL 60614";
@@ -118,7 +118,7 @@ const dime = [
 
 
 
-class Wrigleyville extends React.Component {
+class LincolnPark extends React.Component {
 
     render () {
         return (
@@ -167,14 +167,14 @@ class Wrigleyville extends React.Component {
           onPress={() => Linking.openURL('https://www.instagram.com/thedimechi/')} >
           <Image
           style = {{width: 130, height: 130, left: 55, marginTop: 0}}
-          source = {require('./src/img/instagram.png')} />
+          source = {require('../img/instagram.png')} />
           </Pressable>
 
           <Pressable 
           onPress={() => Linking.openURL('https://www.facebook.com/thedimechi/')} >
           <Image
           style = {{width: 65, height: 65, left: 105, marginTop:30}}
-          source = {require('./src/img/facebook.png')} />
+          source = {require('../img/facebook.png')} />
           </Pressable> 
     </View>
 
@@ -184,7 +184,7 @@ class Wrigleyville extends React.Component {
           onPress={() => Linking.openURL('https://thedimechi.com')} >
     <Image
           style = {{width: 250, height: 250, left: 70, marginTop: 70}}
-          source = {require('./src/img/dimeLogo.png')} />
+          source = {require('../img/dimeLogo.png')} />
 </Pressable>
 <Text style = {styles.barHours}>
             {"\n"}HOURS
@@ -230,4 +230,4 @@ class Wrigleyville extends React.Component {
 }
 }
 
-export default Wrigleyville;
+export default LincolnPark;
