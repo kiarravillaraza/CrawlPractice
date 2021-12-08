@@ -369,34 +369,37 @@ function GenerateScreen({ navigation }) {
   }
 
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'black' }}>
-
   
-      <View style = {{width:'85%', height: '8%', backgroundColor: '#C8D586', marginLeft: -60, marginTop: 165}}>
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'black' }}>
+       <Text style = {{fontFamily: 'Futura', color:'white', fontSize: 35, textAlign: 'center', marginTop: 300, fontWeight: 'bold', fontStyle: 'italic'}}>
+        LET'S GET CRAWLIN'
+      </Text>
+  
+      <View style = {{width:'85%', height: '8%', backgroundColor: '#C8D586', marginLeft: -60, marginBottom: 50}}>
         <Text style = {{fontFamily: 'Futura', color:'white', fontSize: 25, textAlign: 'center', marginTop: 10}}>
           {duplicateItem[0]}
         </Text>
       </View>
   
-      <View style = {{width: '85%', height: '8%', backgroundColor: '#A5E568', marginLeft: 60, marginTop: 50}}>
+      <View style = {{width: '85%', height: '8%', backgroundColor: '#A5E568', marginLeft: 60, marginBottom: 50}}>
         <Text style = {{fontFamily: 'Futura', color:'white', fontSize: 25, textAlign: 'center', marginTop: 10}}>
           {duplicateItem[1]}
         </Text>
       </View>
 
-      <View style = {{width: '85%', height: '8%', backgroundColor: '#81D9AA', marginLeft: -60, marginTop: 50}}>
+      <View style = {{width: '85%', height: '8%', backgroundColor: '#81D9AA', marginLeft: -60, marginBottom: 50}}>
         <Text style = {{fontFamily: 'Futura', color:'white', fontSize: 25, textAlign: 'center', marginTop: 10}}>
           {duplicateItem[2]}
         </Text>
       </View>
 
-      <View style = {{width: '85%', height: '8%', backgroundColor: '#01BBCC', marginLeft: 60, marginTop: 50}}>
+      <View style = {{width: '85%', height: '8%', backgroundColor: '#01BBCC', marginLeft: 60, marginBottom: 50}}>
         <Text style = {{fontFamily: 'Futura', color:'white', fontSize: 25, textAlign: 'center', marginTop: 10}}>
           {duplicateItem[3]}
         </Text>
       </View>
 
-      <View style = {{width: '85%', height: '8%', backgroundColor: '#219EBC', marginLeft: -60, marginTop: 50}}>
+      <View style = {{width: '85%', height: '8%', backgroundColor: '#219EBC', marginLeft: -60, marginBottom: 50}}>
         <Text style = {{fontFamily: 'Futura', color:'white', fontSize: 25, textAlign: 'center', marginTop: 10}}>
           {duplicateItem[4]}
         </Text>
@@ -620,7 +623,7 @@ const styles = StyleSheet.create({
        width: '100%', 
        height: '18%', 
        backgroundColor: '#023047', 
-       marginTop:50
+       marginBottom: 175
       },
     
 });
