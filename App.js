@@ -370,38 +370,40 @@ function GenerateScreen({ navigation }) {
 
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'black' }}>
-  
-      <View style = {{width:'85%', height: '8%', backgroundColor: '#C8D586', marginLeft: -60, marginTop: 165}}>
-        <Text style = {{fontFamily: 'Futura', color:'white', fontSize: 25, textAlign: 'center', marginTop: 10}}>
+        <Text style = {{fontFamily: 'Futura', color:'white', fontSize: 35, textAlign: 'center', fontStyle: 'italic', marginTop: 200}}>
+          LET'S GET CRAWLIN'
+        </Text>
+      <View style = {{width:'85%', height: '9.75%', backgroundColor: '#C8D586', marginLeft: -60, marginTop: 30}}>
+        <Text style = {{fontFamily: 'Futura', color:'white', fontSize: 30, textAlign: 'center', marginTop: 15}}>
           {duplicateItem[0]}
         </Text>
       </View>
   
-      <View style = {{width: '85%', height: '8%', backgroundColor: '#A5E568', marginLeft: 60, marginTop: 50}}>
-        <Text style = {{fontFamily: 'Futura', color:'white', fontSize: 25, textAlign: 'center', marginTop: 10}}>
+      <View style = {{width: '85%', height: '9.75%', backgroundColor: '#A5E568', marginLeft: 60, marginTop: 40}}>
+        <Text style = {{fontFamily: 'Futura', color:'white', fontSize: 30, textAlign: 'center', marginTop: 15}}>
           {duplicateItem[1]}
         </Text>
       </View>
 
-      <View style = {{width: '85%', height: '8%', backgroundColor: '#81D9AA', marginLeft: -60, marginTop: 50}}>
-        <Text style = {{fontFamily: 'Futura', color:'white', fontSize: 25, textAlign: 'center', marginTop: 10}}>
+      <View style = {{width: '85%', height: '9.75%', backgroundColor: '#81D9AA', marginLeft: -60, marginTop: 40}}>
+        <Text style = {{fontFamily: 'Futura', color:'white', fontSize: 30, textAlign: 'center', marginTop: 15}}>
           {duplicateItem[2]}
         </Text>
       </View>
 
-      <View style = {{width: '85%', height: '8%', backgroundColor: '#01BBCC', marginLeft: 60, marginTop: 50}}>
-        <Text style = {{fontFamily: 'Futura', color:'white', fontSize: 25, textAlign: 'center', marginTop: 10}}>
+      <View style = {{width: '85%', height: '9.75%', backgroundColor: '#01BBCC', marginLeft: 60, marginTop: 40}}>
+        <Text style = {{fontFamily: 'Futura', color:'white', fontSize: 30, textAlign: 'center', marginTop: 15}}>
           {duplicateItem[3]}
         </Text>
       </View>
 
-      <View style = {{width: '85%', height: '8%', backgroundColor: '#219EBC', marginLeft: -60, marginTop: 50}}>
-        <Text style = {{fontFamily: 'Futura', color:'white', fontSize: 25, textAlign: 'center', marginTop: 10}}>
+      <View style = {{width: '85%', height: '9.75%', backgroundColor: '#219EBC', marginLeft: -60, marginTop: 40}}>
+        <Text style = {{fontFamily: 'Futura', color:'white', fontSize: 30, textAlign: 'center', marginTop: 15}}>
           {duplicateItem[4]}
         </Text>
       </View>
 
-      <View style = {styles.bottomBar}> 
+      <View style = {{flexDirection: 'row', width: '100%', height: '18%', backgroundColor: '#023047', marginTop:180}}> 
         <Pressable 
         onPress={() => {navigation.navigate('NeighborhoodList')}}>
         <Image
