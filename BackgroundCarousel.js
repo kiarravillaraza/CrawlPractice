@@ -9,6 +9,8 @@ URL for IMAGE SLIDER CODE
 const DEVICE_WIDTH = Dimensions.get("window").width;
 
 class BackgroundCarousel extends React.Component {
+
+    
     scrollRef = React.createRef();
     constructor(props) {
 
@@ -20,6 +22,7 @@ class BackgroundCarousel extends React.Component {
     }
 
     componentDidMount = () => {
+
         setInterval(() => {
             
         this.setState(prev => ({selectedIndex: prev.selectedIndex === this.props.images.length - 1 ? 0 : prev.selectedIndex + 1}), 
