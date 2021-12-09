@@ -2,7 +2,7 @@ import {Platform, StyleSheet, Text, View, SafeAreaView, Button, Alert, Pressable
 import React from 'react';
 import { BackgroundCarousel } from '../../BackgroundCarousel';
 
-var barName = "The Dime";
+var barName = "Dime";
 var barLocation = "2263 N Lincoln Ave, Chicago, IL 60614";
 var barBio = "The Dime is in the heart of Lincoln Park! \n A sports bar perfect for every occasion."
 var barDays = [" THURSDAY", "FRIDAY" , "SATURDAY", "SUNDAY"]
