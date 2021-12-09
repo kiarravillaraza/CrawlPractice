@@ -26,7 +26,7 @@
 
  const Stack = createNativeStackNavigator();
 
- 
+
  const neighborhoods = [
   "https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/78566939_158829685503480_2064189259874566144_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=e3f864&_nc_ohc=SGMX0In75jAAX-Z2BOl&_nc_ht=scontent-ort2-1.xx&oh=fc51a9b7d411ede02af6349b199f4328&oe=61C38364",
   "https://scontent-ort2-1.xx.fbcdn.net/v/t31.18172-8/1265409_597327190308488_1288255192_o.jpg?_nc_cat=102&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=Nt7rxpnv5wsAX8L7CIt&_nc_ht=scontent-ort2-1.xx&oh=3086fa8ff888d036c75969e99b3602cf&oe=61D11DEB",
@@ -61,7 +61,6 @@ const oldtown = [
   "https://popmenucloud.com/anfshomu/cee25714-1b47-47dd-b4f9-7dc41811578f.jpg",
 ];
 
-const Tab = createBottomTabNavigator();
 
 function WarningScreen({ navigation }) {
   return (
@@ -147,7 +146,7 @@ function NeighborhoodScreen({ navigation }) {
         </Pressable>
 
         <Pressable 
-        onPress={() => {navigation.navigate('NeighborhoodList')}}>
+        onPress={() => {navigation.navigate('Generate')}}>
         <Image
         style = {{width: 60, height: 60, left: 105, marginTop:10}}
         source = {require('./src/img/generateIcon.png')} />
@@ -156,8 +155,8 @@ function NeighborhoodScreen({ navigation }) {
         <Pressable 
         onPress={() => {navigation.navigate('Generate')}}>
         <Image
-        style = {{width: 50, height: 50, left: 185, marginTop:10}}
-        source = {require('./src/img/quizIcon.png')} />
+        style = {{width: 60, height: 60, left: 185, marginTop:10}}
+        source = {require('./src/img/generateIcon.png')} />
         </Pressable> 
         </View>
 
