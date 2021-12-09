@@ -146,18 +146,18 @@ function NeighborhoodScreen({ navigation }) {
       </Pressable>
 
       <Pressable 
-      onPress={() => {navigation.navigate('NeighborhoodList')}}>
+      onPress={() => {navigation.navigate('Generate')}}>
       <Image
       style = {{width: 60, height: 60, left: 105, marginTop:10}}
       source = {require('./src/img/generateIcon.png')} />
       </Pressable> 
       
-      <Pressable 
-      onPress={() => {navigation.navigate('Generate')}}>
+      {/* <Pressable 
+      onPress={() => {navigation.navigate('Generate')}}> */}
       <Image
       style = {{width: 50, height: 50, left: 185, marginTop:10}}
       source = {require('./src/img/quizIcon.png')} />
-      </Pressable> 
+      {/* </Pressable> */}
       </View>
 
     </View>
@@ -207,18 +207,18 @@ function LincolnParkScreen({ navigation }) {
       </Pressable>
 
       <Pressable 
-      onPress={() => {navigation.navigate('NeighborhoodList')}}>
+      onPress={() => {navigation.navigate('Generate')}}>
       <Image
       style = {{width: 60, height: 60, left: 105, marginTop:10}}
       source = {require('./src/img/generateIcon.png')} />
       </Pressable> 
       
-      <Pressable 
-      onPress={() => {navigation.navigate('Generate')}}>
+      {/* <Pressable 
+      onPress={() => {navigation.navigate('Generate')}}> */}
       <Image
       style = {{width: 50, height: 50, left: 185, marginTop:10}}
       source = {require('./src/img/quizIcon.png')} />
-      </Pressable> 
+      {/* </Pressable> */}
       </View>
 
 
@@ -269,18 +269,18 @@ function OldTownScreen({ navigation }) {
       </Pressable>
 
       <Pressable 
-      onPress={() => {navigation.navigate('NeighborhoodList')}}>
+      onPress={() => {navigation.navigate('Generate')}}>
       <Image
       style = {{width: 60, height: 60, left: 105, marginTop:10}}
       source = {require('./src/img/generateIcon.png')} />
       </Pressable> 
       
-      <Pressable 
-      onPress={() => {navigation.navigate('Generate')}}>
+      {/* <Pressable 
+      onPress={() => {navigation.navigate('Generate')}}> */}
       <Image
       style = {{width: 50, height: 50, left: 185, marginTop:10}}
       source = {require('./src/img/quizIcon.png')} />
-      </Pressable> 
+      {/* </Pressable> */}
       </View>
 
   </View>
@@ -329,18 +329,18 @@ function WrigleyvilleScreen({ navigation }) {
       </Pressable>
 
       <Pressable 
-      onPress={() => {navigation.navigate('NeighborhoodList')}}>
+      onPress={() => {navigation.navigate('Generate')}}>
       <Image
       style = {{width: 60, height: 60, left: 105, marginTop:10}}
       source = {require('./src/img/generateIcon.png')} />
       </Pressable> 
       
-      <Pressable 
-      onPress={() => {navigation.navigate('Generate')}}>
+      {/* <Pressable 
+      onPress={() => {navigation.navigate('Generate')}}> */}
       <Image
       style = {{width: 50, height: 50, left: 185, marginTop:10}}
       source = {require('./src/img/quizIcon.png')} />
-      </Pressable> 
+      {/* </Pressable> */}
       </View>
 
     </View>
@@ -407,29 +407,28 @@ function GenerateScreen({ navigation }) {
         </Text>
       </View>
 
-      <View style = {styles.bottomBar}> 
-      <Pressable 
-      onPress={() => {navigation.navigate('NeighborhoodList')}}>
-      <Image
-      style = {{width: 65, height: 65, left: 30, marginTop: 5}}
-      source = {require('./src/img/homeIcon.png')} />
-      </Pressable>
+      <View style = {{flexDirection: 'row', width: '100%', height: '18%', backgroundColor: '#023047', marginTop:180}}> 
+         <Pressable 
+         onPress={() => {navigation.navigate('NeighborhoodList')}}>
+         <Image
+         style = {{width: 65, height: 65, left: 30, marginTop: 5}}
+         source = {require('./src/img/homeIcon.png')} />
+         </Pressable>
 
-      <Pressable 
-      onPress={() => {navigation.navigate('NeighborhoodList')}}>
-      <Image
-      style = {{width: 60, height: 60, left: 105, marginTop:10}}
-      source = {require('./src/img/generateIcon.png')} />
-      </Pressable> 
-      
-      <Pressable 
-      onPress={() => {navigation.navigate('Generate')}}>
-      <Image
-      style = {{width: 50, height: 50, left: 185, marginTop:10}}
-      source = {require('./src/img/quizIcon.png')} />
-      </Pressable> 
-      </View>
-      
+         <Pressable 
+         onPress={() => {navigation.navigate('Generate')}}>
+         <Image
+         style = {{width: 60, height: 60, left: 105, marginTop:10}}
+         source = {require('./src/img/generateIcon.png')} />
+         </Pressable> 
+
+         <Pressable 
+         onPress={() => {navigation.navigate('Generate')}}>
+         <Image
+         style = {{width: 50, height: 50, left: 185, marginTop:10}}
+         source = {require('./src/img/quizIcon.png')} />
+         </Pressable>
+        </View>
     </View>
   );
 }
