@@ -25,6 +25,7 @@
 
 
  const Stack = createNativeStackNavigator();
+
  
  const neighborhoods = [
   "https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/78566939_158829685503480_2064189259874566144_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=e3f864&_nc_ohc=SGMX0In75jAAX-Z2BOl&_nc_ht=scontent-ort2-1.xx&oh=fc51a9b7d411ede02af6349b199f4328&oe=61C38364",
@@ -36,12 +37,14 @@
 
  ];
 
+
  const lincolnpark = [
   "https://scontent-ort2-1.xx.fbcdn.net/v/t39.30808-6/256827177_675290333857410_1923687880662733746_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=9267fe&_nc_ohc=ueUP4HlqjO0AX9wdCoa&_nc_oc=AQkzcCYRokkwa04BhASNjrCxlMcvKLFS7O3FiEvx0Y0uX3EE368A059GsF015spKmHM&_nc_ht=scontent-ort2-1.xx&oh=74040c1c6c7234a009dd0d018a61fc63&oe=61B43A62",
   "https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/76702461_2791448444209752_8930288386313289728_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=mg0AsBtx1-oAX9gVtMR&_nc_ht=scontent-ort2-1.xx&oh=398b5993fdec522a79158cfb90db1bad&oe=61D0F32B",
   "https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/75486107_3388615897846256_7169672044894748672_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=9267fe&_nc_ohc=vLV1E9nWinIAX-Jh9ca&_nc_ht=scontent-ort2-1.xx&oh=f636be04edc297e3b02d85857de9db15&oe=61CED8AE",
 
 ];
+
 
 const wrigleyville = [
   "https://cdn.vox-cdn.com/thumbor/IC1H11puuwCPO9SXnOcp0EGehkE=/0x0:1904x1141/1520x1013/filters:focal(621x127:925x431):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/67086133/s.0.png",
@@ -60,7 +63,7 @@ const oldtown = [
 
 const Tab = createBottomTabNavigator();
 
- function WarningScreen({ navigation }) {
+function WarningScreen({ navigation }) {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'black' }}>
       <Text style ={{marginTop: -20, left: 0, fontSize: 45, fontFamily: "Futura", fontStyle: "italic", fontWeight: "bold", color: 'white'}}>
@@ -100,10 +103,10 @@ const Tab = createBottomTabNavigator();
       </View>
     </View>
   );
- }
+}
 
 
- function NeighborhoodScreen({ navigation }) {
+function NeighborhoodScreen({ navigation }) {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'black' }}>
       <BackgroundCarousel images={neighborhoods} />
@@ -161,6 +164,7 @@ const Tab = createBottomTabNavigator();
     </View>
   );
 }
+
 
 function LincolnParkScreen({ navigation }) {
   return (
@@ -224,6 +228,7 @@ function LincolnParkScreen({ navigation }) {
   );
 }
 
+
 function OldTownScreen({ navigation }) {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'black' }}>
@@ -282,6 +287,7 @@ function OldTownScreen({ navigation }) {
   </View>
   );
 }
+
 
 function WrigleyvilleScreen({ navigation }) {
   return (
@@ -437,6 +443,7 @@ function DimeScreen() {
   );
 }
 
+
 function HalliganScreen() {
   return (
     <View style={styles.container}>
@@ -444,6 +451,7 @@ function HalliganScreen() {
     </View>
   );
 }
+
 
 function ReplayScreen() {
   return (
@@ -453,6 +461,7 @@ function ReplayScreen() {
   );
 }
 
+
 function FederalesScreen() {
   return (
     <View style={styles.container}>
@@ -460,6 +469,7 @@ function FederalesScreen() {
     </View>
   );
 }
+
 
 function OldTownPourHouseScreen() {
   return (
@@ -469,6 +479,7 @@ function OldTownPourHouseScreen() {
   );
 }
 
+
 function UtopianTailgateScreen() {
   return (
     <View style={styles.container}>
@@ -476,6 +487,7 @@ function UtopianTailgateScreen() {
     </View>
   );
 }
+
 
 function GuthriesTavernScreen() {
   return (
@@ -485,6 +497,7 @@ function GuthriesTavernScreen() {
   );
 }
 
+
 function HappyCamperScreen() {
   return (
     <View style={styles.container}>
@@ -493,6 +506,7 @@ function HappyCamperScreen() {
   );
 }
 
+
 function SluggersScreen() {
   return (
     <View style={styles.container}>
@@ -500,6 +514,7 @@ function SluggersScreen() {
     </View>
   );
 }
+
 
 function App() {
   return (
@@ -588,20 +603,6 @@ function App() {
   );
 }
 
-// function MainTabNavigator() {
-//   return (
-//       <Tab.Navigator>
-//         <Tab.Screen
-//           name="Home"
-//           component={NeighborhoodScreen}
-//         />
-//         <Tab.Screen
-//           name="Generate"
-//           component={GenerateScreen}
-//         />
-//       </Tab.Navigator>
-//   )
-// }
 
 const styles = StyleSheet.create({
   container: {
