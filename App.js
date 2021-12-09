@@ -28,37 +28,53 @@
 
 
  const neighborhoods = [
-  "https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/78566939_158829685503480_2064189259874566144_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=e3f864&_nc_ohc=SGMX0In75jAAX-Z2BOl&_nc_ht=scontent-ort2-1.xx&oh=fc51a9b7d411ede02af6349b199f4328&oe=61C38364",
-  "https://scontent-ort2-1.xx.fbcdn.net/v/t31.18172-8/1265409_597327190308488_1288255192_o.jpg?_nc_cat=102&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=Nt7rxpnv5wsAX8L7CIt&_nc_ht=scontent-ort2-1.xx&oh=3086fa8ff888d036c75969e99b3602cf&oe=61D11DEB",
-  "https://www.chicagotribune.com/resizer/9zBitcXuYWji-eyuvl9O0bJV160=/800x533/top/cloudfront-us-east-1.images.arcpublishing.com/tronc/5LVIDUNDMFHB5A4S22LMPKAOPQ.jpg",
-  "https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1920,f_auto,q_auto/1295286/20130726-DSC_6093_cybe1v.jpg",
-  "https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/101299524_899946000522059_7547170047823708160_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=9267fe&_nc_ohc=X5rNbnK7eJ8AX90vtmO&tn=tPdjh7UKYw6oFUL6&_nc_ht=scontent-ort2-1.xx&oh=0be6e9bc70f8bcb65f5cc0c760f5a311&oe=61D011AE",
-  "https://hhrevolution.com/wp-content/uploads/2019/07/Federales-2-580x400.jpeg",
+   
+  "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/3-chicago-skyline-fraser-hall.jpg",
+  "https://newschannel20.com/resources/media/7ef030da-ecf0-47a1-a027-df5f22b0aeb0-large16x9_chicago201734.jpg?1562074403956",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Flag_of_Chicago%2C_Illinois.svg/1200px-Flag_of_Chicago%2C_Illinois.svg.png",
+  "https://www.fodors.com/wp-content/uploads/2019/05/WhatNOTtodoinChicago__HERO_iStock-996188444.jpg",
+  "https://gray-wmtv-prod.cdn.arcpublishing.com/resizer/7la4V77HAeKlhtRWRlzI1UCpMdw=/1200x675/smart/filters:quality(85)/cloudfront-us-east-1.images.arcpublishing.com/gray/GKELIZ2BIJBUJJU6OT6PCBB3EQ.jpg",
+  "https://images.squarespace-cdn.com/content/v1/5348b041e4b05d350c6d7c21/1575108423959-FCOJFUP28KLB1XBB8QA2/NightSkyline2015_Squarespace.jpg?format=1000w",
+  //"https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/78566939_158829685503480_2064189259874566144_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=e3f864&_nc_ohc=SGMX0In75jAAX-Z2BOl&_nc_ht=scontent-ort2-1.xx&oh=fc51a9b7d411ede02af6349b199f4328&oe=61C38364",
+  //"https://scontent-ort2-1.xx.fbcdn.net/v/t31.18172-8/1265409_597327190308488_1288255192_o.jpg?_nc_cat=102&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=Nt7rxpnv5wsAX8L7CIt&_nc_ht=scontent-ort2-1.xx&oh=3086fa8ff888d036c75969e99b3602cf&oe=61D11DEB",
+  //"https://www.chicagotribune.com/resizer/9zBitcXuYWji-eyuvl9O0bJV160=/800x533/top/cloudfront-us-east-1.images.arcpublishing.com/tronc/5LVIDUNDMFHB5A4S22LMPKAOPQ.jpg",
+  //"https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1920,f_auto,q_auto/1295286/20130726-DSC_6093_cybe1v.jpg",
+  //"https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/101299524_899946000522059_7547170047823708160_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=9267fe&_nc_ohc=X5rNbnK7eJ8AX90vtmO&tn=tPdjh7UKYw6oFUL6&_nc_ht=scontent-ort2-1.xx&oh=0be6e9bc70f8bcb65f5cc0c760f5a311&oe=61D011AE",
+  //"https://hhrevolution.com/wp-content/uploads/2019/07/Federales-2-580x400.jpeg",
 
  ];
 
 
  const lincolnpark = [
-  "https://scontent-ort2-1.xx.fbcdn.net/v/t39.30808-6/256827177_675290333857410_1923687880662733746_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=9267fe&_nc_ohc=ueUP4HlqjO0AX9wdCoa&_nc_oc=AQkzcCYRokkwa04BhASNjrCxlMcvKLFS7O3FiEvx0Y0uX3EE368A059GsF015spKmHM&_nc_ht=scontent-ort2-1.xx&oh=74040c1c6c7234a009dd0d018a61fc63&oe=61B43A62",
-  "https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/76702461_2791448444209752_8930288386313289728_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=mg0AsBtx1-oAX9gVtMR&_nc_ht=scontent-ort2-1.xx&oh=398b5993fdec522a79158cfb90db1bad&oe=61D0F32B",
-  "https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/75486107_3388615897846256_7169672044894748672_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=9267fe&_nc_ohc=vLV1E9nWinIAX-Jh9ca&_nc_ht=scontent-ort2-1.xx&oh=f636be04edc297e3b02d85857de9db15&oe=61CED8AE",
-
+    "https://2jrsul422l1h30k2za1f5dcc-wpengine.netdna-ssl.com/wp-content/uploads/2019/10/Lincoln-Park_Armitage-1920x1080.jpg",
+    "https://www.gpsmycity.com/img/ctw/308.jpg",
+    "https://neighborhood-images.s3.wasabisys.com/lincoln-park/lincoln-park-neighborhood-32.jpg",
+  //"https://scontent-ort2-1.xx.fbcdn.net/v/t39.30808-6/256827177_675290333857410_1923687880662733746_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=9267fe&_nc_ohc=ueUP4HlqjO0AX9wdCoa&_nc_oc=AQkzcCYRokkwa04BhASNjrCxlMcvKLFS7O3FiEvx0Y0uX3EE368A059GsF015spKmHM&_nc_ht=scontent-ort2-1.xx&oh=74040c1c6c7234a009dd0d018a61fc63&oe=61B43A62",
+  //"https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/76702461_2791448444209752_8930288386313289728_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=mg0AsBtx1-oAX9gVtMR&_nc_ht=scontent-ort2-1.xx&oh=398b5993fdec522a79158cfb90db1bad&oe=61D0F32B",
+  //"https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/75486107_3388615897846256_7169672044894748672_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=9267fe&_nc_ohc=vLV1E9nWinIAX-Jh9ca&_nc_ht=scontent-ort2-1.xx&oh=f636be04edc297e3b02d85857de9db15&oe=61CED8AE",
+  
 ];
 
 
 const wrigleyville = [
-  "https://cdn.vox-cdn.com/thumbor/IC1H11puuwCPO9SXnOcp0EGehkE=/0x0:1904x1141/1520x1013/filters:focal(621x127:925x431):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/67086133/s.0.png",
-  "https://images.otstatic.com/prod/28117442/2/huge.jpg",
-  "https://www.gayot.com/images/reviews/sluggers.jpg",
+   "https://cdn.choosechicago.com/uploads/2019/05/wrigleyville-1.jpg",
+   "https://assets.dnainfo.com/photo/2017/10/1507314723-311378/extralarge.jpg",
+   "https://www.bealproperties.com/wp-content/uploads/2018/07/wrigleyville-large-1.jpg",
+  //"https://cdn.vox-cdn.com/thumbor/IC1H11puuwCPO9SXnOcp0EGehkE=/0x0:1904x1141/1520x1013/filters:focal(621x127:925x431):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/67086133/s.0.png",
+  //"https://images.otstatic.com/prod/28117442/2/huge.jpg",
+  //"https://www.gayot.com/images/reviews/sluggers.jpg",
 
 
 ];
 
 
 const oldtown = [
-  "https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/186564204_1151988261984497_4821527613847711828_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=9267fe&_nc_ohc=un3NJn2zzlcAX9mcyVo&_nc_ht=scontent-ort2-1.xx&oh=3a5de757399e1b52b4c1a50d73832d3b&oe=61D23303",
-  "https://img1.10bestmedia.com/Images/Photos/371169/20120314--DSC0625_55_660x440.jpg",
-  "https://popmenucloud.com/anfshomu/cee25714-1b47-47dd-b4f9-7dc41811578f.jpg",
+  "https://www.hotspotrentals.com/wp-content/uploads/2020/05/Old-Town-Chicago-Neighborhood-Historic-Street-1024x677.jpg",
+  "https://www.hotspotrentals.com/wp-content/uploads/2020/05/Old-Town-Ale-House-1024x768.jpg",
+  "https://www.luxurychicagoapartments.com/wp-content/uploads/2017/08/IMG_6736.jpg",
+  //"https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/186564204_1151988261984497_4821527613847711828_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=9267fe&_nc_ohc=un3NJn2zzlcAX9mcyVo&_nc_ht=scontent-ort2-1.xx&oh=3a5de757399e1b52b4c1a50d73832d3b&oe=61D23303",
+  //"https://img1.10bestmedia.com/Images/Photos/371169/20120314--DSC0625_55_660x440.jpg",
+  //"https://popmenucloud.com/anfshomu/cee25714-1b47-47dd-b4f9-7dc41811578f.jpg",
 ];
 
 
@@ -374,7 +390,7 @@ function GenerateScreen({ navigation }) {
 
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'black' }}>
-        <Text style = {{fontFamily: 'Futura', color:'white', fontSize: 35, textAlign: 'center', fontStyle: 'italic', marginTop: 200}}>
+        <Text style = {{fontFamily: 'Futura', color:'white', fontSize: 35, textAlign: 'center', fontStyle: 'italic', marginTop: 255}}>
           LET'S GET CRAWLIN'
         </Text>
       <View style = {{width:'85%', height: '9.75%', backgroundColor: '#C8D586', marginLeft: -60, marginTop: 30}}>
