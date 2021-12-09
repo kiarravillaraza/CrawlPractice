@@ -429,6 +429,7 @@ function GenerateScreen({ navigation }) {
   );
 }
 
+
 function DimeScreen() {
   return (
     <View style={styles.container}>
