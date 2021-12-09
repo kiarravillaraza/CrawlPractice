@@ -22,13 +22,10 @@
  import Replay from "./src/bars/Replay";
  import Sluggers from "./src/bars/Sluggers";
  import UtopianTailgate from "./src/bars/UtopianTailgate";
- import LincolnPark from './src/neighborhoods/LincolnPark';
- import OldTown from './src/neighborhoods/OldTown';
- import Wrigleyville from './src/neighborhoods/Wrigleyville';
- //import Generate from './GenerateScreen';
 
 
  const Stack = createNativeStackNavigator();
+ 
  const neighborhoods = [
   "https://scontent-ort2-1.xx.fbcdn.net/v/t1.6435-9/78566939_158829685503480_2064189259874566144_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=e3f864&_nc_ohc=SGMX0In75jAAX-Z2BOl&_nc_ht=scontent-ort2-1.xx&oh=fc51a9b7d411ede02af6349b199f4328&oe=61C38364",
   "https://scontent-ort2-1.xx.fbcdn.net/v/t31.18172-8/1265409_597327190308488_1288255192_o.jpg?_nc_cat=102&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=Nt7rxpnv5wsAX8L7CIt&_nc_ht=scontent-ort2-1.xx&oh=3086fa8ff888d036c75969e99b3602cf&oe=61D11DEB",
@@ -60,6 +57,8 @@ const oldtown = [
   "https://img1.10bestmedia.com/Images/Photos/371169/20120314--DSC0625_55_660x440.jpg",
   "https://popmenucloud.com/anfshomu/cee25714-1b47-47dd-b4f9-7dc41811578f.jpg",
 ];
+
+const Tab = createBottomTabNavigator();
 
  function WarningScreen({ navigation }) {
   return (
@@ -589,6 +588,20 @@ function App() {
   );
 }
 
+// function MainTabNavigator() {
+//   return (
+//       <Tab.Navigator>
+//         <Tab.Screen
+//           name="Home"
+//           component={NeighborhoodScreen}
+//         />
+//         <Tab.Screen
+//           name="Generate"
+//           component={GenerateScreen}
+//         />
+//       </Tab.Navigator>
+//   )
+// }
 
 const styles = StyleSheet.create({
   container: {
