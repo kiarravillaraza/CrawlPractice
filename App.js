@@ -14,7 +14,7 @@
  import UtopianTailgate from "./src/bars/UtopianTailgate";
 
 
- const Stack = createNativeStackNavigator();
+ const Stack = createNativeStackNavigator(); // stack navigation 
 
 
  const neighborhoods = [
@@ -145,21 +145,16 @@ function NeighborhoodScreen({ navigation }) {
       source = {require('./src/img/generateIcon.png')} />
       </Pressable> 
       
-      {/* <Pressable 
-      onPress={() => {navigation.navigate('Generate')}}> */}
       <Image
       style = {{width: 50, height: 50, left: 185, marginTop:10}}
       source = {require('./src/img/quizIcon.png')} />
-      {/* </Pressable> */}
       </View>
-
     </View>
   );
 }
 
 function LincolnParkScreen({ navigation }) {
   return (
-    // <LincolnPark />
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'black' }}>
     <BackgroundCarousel images={lincolnpark} />
 
@@ -261,12 +256,9 @@ function OldTownScreen({ navigation }) {
       source = {require('./src/img/generateIcon.png')} />
       </Pressable> 
       
-      {/* <Pressable 
-      onPress={() => {navigation.navigate('Generate')}}> */}
       <Image
       style = {{width: 50, height: 50, left: 185, marginTop:10}}
       source = {require('./src/img/quizIcon.png')} />
-      {/* </Pressable> */}
       </View>
 
   </View>
@@ -343,13 +335,13 @@ function GenerateScreen({ navigation }) {
     "Old Town Pour House"
   ];
    
-  var duplicateItem = [];
+  var duplicateItem = []; // create empty array to store result after removing duplicates
    
   for (let i = 0; i < 100; i++) {
     var randomItem = myArray[Math.floor(Math.random()*myArray.length)]
-    if (!duplicateItem.includes(randomItem)) {
-        if(duplicateItem.length != 5){
-        duplicateItem.push(randomItem)
+    if (!duplicateItem.includes(randomItem)) { // if random item not in duplicateItem array
+        if(duplicateItem.length != 5){ // and also duplicateItem array isn't filled
+        duplicateItem.push(randomItem) // then push item into duplicateItem
         }
     }
   }
@@ -404,12 +396,9 @@ function GenerateScreen({ navigation }) {
          source = {require('./src/img/generateIcon.png')} />
          </Pressable> 
 
-         <Pressable 
-         onPress={() => {navigation.navigate('Generate')}}>
          <Image
          style = {{width: 50, height: 50, left: 185, marginTop:10}}
          source = {require('./src/img/quizIcon.png')} />
-         </Pressable>
         </View>
     </View>
   );
@@ -419,7 +408,7 @@ function GenerateScreen({ navigation }) {
 function DimeScreen() {
   return (
     <View style={styles.container}>
-            <Dime />
+      <Dime />
     </View>
   );
 }
@@ -428,7 +417,7 @@ function DimeScreen() {
 function HalliganScreen() {
   return (
     <View style={styles.container}>
-            <Halligan />
+      <Halligan />
     </View>
   );
 }
@@ -437,7 +426,7 @@ function HalliganScreen() {
 function ReplayScreen() {
   return (
     <View style={styles.container}>
-            <Replay />
+      <Replay />
     </View>
   );
 }
@@ -446,7 +435,7 @@ function ReplayScreen() {
 function FederalesScreen() {
   return (
     <View style={styles.container}>
-            <Federales />
+      <Federales />
     </View>
   );
 }
@@ -455,7 +444,7 @@ function FederalesScreen() {
 function OldTownPourHouseScreen() {
   return (
     <View style={styles.container}>
-            <OldTownPourHouse />
+      <OldTownPourHouse />
     </View>
   );
 }
@@ -464,7 +453,7 @@ function OldTownPourHouseScreen() {
 function UtopianTailgateScreen() {
   return (
     <View style={styles.container}>
-            <UtopianTailgate />
+      <UtopianTailgate />
     </View>
   );
 }
@@ -473,7 +462,7 @@ function UtopianTailgateScreen() {
 function GuthriesTavernScreen() {
   return (
     <View style={styles.container}>
-            <GuthriesTavern />
+      <GuthriesTavern />
     </View>
   );
 }
@@ -482,7 +471,7 @@ function GuthriesTavernScreen() {
 function HappyCamperScreen() {
   return (
     <View style={styles.container}>
-            <HappyCamper />
+      <HappyCamper />
     </View>
   );
 }
@@ -491,7 +480,7 @@ function HappyCamperScreen() {
 function SluggersScreen() {
   return (
     <View style={styles.container}>
-            <Sluggers />
+      <Sluggers />
     </View>
   );
 }
@@ -620,4 +609,7 @@ const styles = StyleSheet.create({
        marginTop:50
       },
     });
+
+
+
 export default App;
