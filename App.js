@@ -16,7 +16,8 @@
 
  const Stack = createNativeStackNavigator(); // stack navigation 
 
-
+// Structure to add image carousels to screen
+ 
  const neighborhoods = [
    
   "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/3-chicago-skyline-fraser-hall.jpg",
@@ -54,6 +55,9 @@ const oldtown = [
  
 ];
 
+// Navigation screens that the user sees for each component in the app
+
+//This is the warning screen
 
 function WarningScreen({ navigation }) {
   return (
@@ -96,7 +100,8 @@ function WarningScreen({ navigation }) {
     </View>
   );
 }
-
+  
+//This is the neighborhoods home screem
 
 function NeighborhoodScreen({ navigation }) {
   return (
@@ -130,6 +135,7 @@ function NeighborhoodScreen({ navigation }) {
       </Pressable>
       </View>
 
+      // Bottom bar Navigation that has home icon, generate icon, and quiz icon
       <View style = {styles.bottomBar}> 
       <Pressable 
       onPress={() => {navigation.navigate('NeighborhoodList')}}>
@@ -150,9 +156,10 @@ function NeighborhoodScreen({ navigation }) {
       source = {require('./src/img/quizIcon.png')} />
       </View>
     </View>
-  );
+  ); 
 }
 
+// This is one of the neighborhood screens
 function LincolnParkScreen({ navigation }) {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'black' }}>
@@ -321,7 +328,7 @@ function WrigleyvilleScreen({ navigation }) {
   );
 }
 
-
+// Generate function to randomly choose bars for the users to use
 function GenerateScreen({ navigation }) {
   var myArray = [
     "The Dime",
@@ -405,6 +412,8 @@ function GenerateScreen({ navigation }) {
 }
 
 
+//Individual bars screens
+
 function DimeScreen() {
   return (
     <View style={styles.container}>
@@ -485,6 +494,7 @@ function SluggersScreen() {
   );
 }
 
+// Our app is built off stack navigation and stack screens
 
 function App() {
   return (
@@ -573,6 +583,7 @@ function App() {
   );
 }
 
+//Styling
 
 const styles = StyleSheet.create({
   container: {
