@@ -2,6 +2,7 @@ import * as React from 'react';
 import { StyleSheet, View, Text, ScrollView, Dimensions, Image } from 'react-native';
 
 /*
+
 URL for IMAGE SLIDER CODE
  https://www.youtube.com/watch?v=ReAmjdNyMJA 
  */ 
