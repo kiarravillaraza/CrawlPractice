@@ -365,7 +365,7 @@ function GenerateScreen({ navigation }) {
         </Text>
       </View>
   
-      <View style = {{width: '85%', height: '9.75%', backgroundColor: '#A5E568', marginLeft: 60, marginTop: 40}}>
+      <View style = {{width: '85%', height: '9.75%', backgroundColor: '#87E120', marginLeft: 60, marginTop: 40}}>
         <Text style = {{fontFamily: 'Futura', color:'white', fontSize: 30, textAlign: 'center', marginTop: 15}}>
           {duplicateItem[1]}
         </Text>
