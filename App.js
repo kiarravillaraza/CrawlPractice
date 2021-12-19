@@ -135,7 +135,8 @@ function NeighborhoodScreen({ navigation }) {
       </Pressable>
       </View>
 
-      // Bottom bar Navigation that has home icon, generate icon, and quiz icon
+      {/*Bottom bar Navigation that has home icon, generate icon, and quiz icon*/}
+      
       <View style = {styles.bottomBar}> 
       <Pressable 
       onPress={() => {navigation.navigate('NeighborhoodList')}}>
